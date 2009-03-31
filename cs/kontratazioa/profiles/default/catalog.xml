@@ -1,0 +1,13 @@
+<object name="portal_catalog" meta_type="Plone Catalog Tool">
+	
+        <index name="getState" meta_type="FieldIndex">
+		<indexed_attr value="getState"/>
+        </index>
+        <column value="getState" />
+        <index name="getOrganization" meta_type="FieldIndex">
+		<indexed_attr value="getOrganization"/>
+        </index>
+        <column value="getOrganization" />
+
+
+</object>

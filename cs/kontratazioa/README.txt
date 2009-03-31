@@ -53,4 +53,250 @@ And we ensure that we get the friendly logged-in message:
 
 
 -*- extra stuff goes here -*-
+The kontratazioa content type
+===============================
+
+In this section we are tesing the kontratazioa content type by performing
+basic operations like adding, updadating and deleting kontratazioa content
+items.
+
+Adding a new kontratazioa content item
+--------------------------------
+
+We use the 'Add new' menu to add a new content item.
+
+    >>> browser.getLink('Add new').click()
+
+Then we select the type of item we want to add. In this case we select
+'kontratazioa' and click the 'Add' button to get to the add form.
+
+    >>> browser.getControl('kontratazioa').click()
+    >>> browser.getControl(name='form.button.Add').click()
+    >>> 'kontratazioa' in browser.contents
+    True
+
+Now we fill the form and submit it.
+
+    >>> browser.getControl(name='title').value = 'kontratazioa Sample'
+    >>> browser.getControl('Save').click()
+    >>> 'Changes saved' in browser.contents
+    True
+
+And we are done! We added a new 'kontratazioa' content item to the portal.
+
+Updating an existing kontratazioa content item
+---------------------------------------
+
+Let's click on the 'edit' tab and update the object attribute values.
+
+    >>> browser.getLink('Edit').click()
+    >>> browser.getControl(name='title').value = 'New kontratazioa Sample'
+    >>> browser.getControl('Save').click()
+
+We check that the changes were applied.
+
+    >>> 'Changes saved' in browser.contents
+    True
+    >>> 'New kontratazioa Sample' in browser.contents
+    True
+
+Removing a/an kontratazioa content item
+--------------------------------
+
+If we go to the home page, we can see a tab with the 'New kontratazioa
+Sample' title in the global navigation tabs.
+
+    >>> browser.open(portal_url)
+    >>> 'New kontratazioa Sample' in browser.contents
+    True
+
+Now we are going to delete the 'New kontratazioa Sample' object. First we
+go to the contents tab and select the 'New kontratazioa Sample' for
+deletion.
+
+    >>> browser.getLink('Contents').click()
+    >>> browser.getControl('New kontratazioa Sample').click()
+
+We click on the 'Delete' button.
+
+    >>> browser.getControl('Delete').click()
+    >>> 'Item(s) deleted' in browser.contents
+    True
+
+So, if we go back to the home page, there is no longer a 'New kontratazioa
+Sample' tab.
+
+    >>> browser.open(portal_url)
+    >>> 'New kontratazioa Sample' in browser.contents
+    False
+
+Adding a new kontratazioa content item as contributor
+------------------------------------------------
+
+Not only site managers are allowed to add kontratazioa content items, but
+also site contributors.
+
+Let's logout and then login as 'contributor', a portal member that has the
+contributor role assigned.
+
+    >>> browser.getLink('Log out').click()
+    >>> browser.open(portal_url)
+    >>> browser.getControl(name='__ac_name').value = 'contributor'
+    >>> browser.getControl(name='__ac_password').value = default_password
+    >>> browser.getControl(name='submit').click()
+    >>> browser.open(portal_url)
+
+We use the 'Add new' menu to add a new content item.
+
+    >>> browser.getLink('Add new').click()
+
+We select 'kontratazioa' and click the 'Add' button to get to the add form.
+
+    >>> browser.getControl('kontratazioa').click()
+    >>> browser.getControl(name='form.button.Add').click()
+    >>> 'kontratazioa' in browser.contents
+    True
+
+Now we fill the form and submit it.
+
+    >>> browser.getControl(name='title').value = 'kontratazioa Sample'
+    >>> browser.getControl('Save').click()
+    >>> 'Changes saved' in browser.contents
+    True
+
+Done! We added a new kontratazioa content item logged in as contributor.
+
+Finally, let's login back as manager.
+
+    >>> browser.getLink('Log out').click()
+    >>> browser.open(portal_url)
+    >>> browser.getControl(name='__ac_name').value = portal_owner
+    >>> browser.getControl(name='__ac_password').value = default_password
+    >>> browser.getControl(name='submit').click()
+    >>> browser.open(portal_url)
+
+
+The kontratazioaFolder content type
+===============================
+
+In this section we are tesing the kontratazioaFolder content type by performing
+basic operations like adding, updadating and deleting kontratazioaFolder content
+items.
+
+Adding a new kontratazioaFolder content item
+--------------------------------
+
+We use the 'Add new' menu to add a new content item.
+
+    >>> browser.getLink('Add new').click()
+
+Then we select the type of item we want to add. In this case we select
+'kontratazioaFolder' and click the 'Add' button to get to the add form.
+
+    >>> browser.getControl('kontratazioaFolder').click()
+    >>> browser.getControl(name='form.button.Add').click()
+    >>> 'kontratazioaFolder' in browser.contents
+    True
+
+Now we fill the form and submit it.
+
+    >>> browser.getControl(name='title').value = 'kontratazioaFolder Sample'
+    >>> browser.getControl('Save').click()
+    >>> 'Changes saved' in browser.contents
+    True
+
+And we are done! We added a new 'kontratazioaFolder' content item to the portal.
+
+Updating an existing kontratazioaFolder content item
+---------------------------------------
+
+Let's click on the 'edit' tab and update the object attribute values.
+
+    >>> browser.getLink('Edit').click()
+    >>> browser.getControl(name='title').value = 'New kontratazioaFolder Sample'
+    >>> browser.getControl('Save').click()
+
+We check that the changes were applied.
+
+    >>> 'Changes saved' in browser.contents
+    True
+    >>> 'New kontratazioaFolder Sample' in browser.contents
+    True
+
+Removing a/an kontratazioaFolder content item
+--------------------------------
+
+If we go to the home page, we can see a tab with the 'New kontratazioaFolder
+Sample' title in the global navigation tabs.
+
+    >>> browser.open(portal_url)
+    >>> 'New kontratazioaFolder Sample' in browser.contents
+    True
+
+Now we are going to delete the 'New kontratazioaFolder Sample' object. First we
+go to the contents tab and select the 'New kontratazioaFolder Sample' for
+deletion.
+
+    >>> browser.getLink('Contents').click()
+    >>> browser.getControl('New kontratazioaFolder Sample').click()
+
+We click on the 'Delete' button.
+
+    >>> browser.getControl('Delete').click()
+    >>> 'Item(s) deleted' in browser.contents
+    True
+
+So, if we go back to the home page, there is no longer a 'New kontratazioaFolder
+Sample' tab.
+
+    >>> browser.open(portal_url)
+    >>> 'New kontratazioaFolder Sample' in browser.contents
+    False
+
+Adding a new kontratazioaFolder content item as contributor
+------------------------------------------------
+
+Not only site managers are allowed to add kontratazioaFolder content items, but
+also site contributors.
+
+Let's logout and then login as 'contributor', a portal member that has the
+contributor role assigned.
+
+    >>> browser.getLink('Log out').click()
+    >>> browser.open(portal_url)
+    >>> browser.getControl(name='__ac_name').value = 'contributor'
+    >>> browser.getControl(name='__ac_password').value = default_password
+    >>> browser.getControl(name='submit').click()
+    >>> browser.open(portal_url)
+
+We use the 'Add new' menu to add a new content item.
+
+    >>> browser.getLink('Add new').click()
+
+We select 'kontratazioaFolder' and click the 'Add' button to get to the add form.
+
+    >>> browser.getControl('kontratazioaFolder').click()
+    >>> browser.getControl(name='form.button.Add').click()
+    >>> 'kontratazioaFolder' in browser.contents
+    True
+
+Now we fill the form and submit it.
+
+    >>> browser.getControl(name='title').value = 'kontratazioaFolder Sample'
+    >>> browser.getControl('Save').click()
+    >>> 'Changes saved' in browser.contents
+    True
+
+Done! We added a new kontratazioaFolder content item logged in as contributor.
+
+Finally, let's login back as manager.
+
+    >>> browser.getLink('Log out').click()
+    >>> browser.open(portal_url)
+    >>> browser.getControl(name='__ac_name').value = portal_owner
+    >>> browser.getControl(name='__ac_password').value = default_password
+    >>> browser.getControl(name='submit').click()
+    >>> browser.open(portal_url)
+
+
 
