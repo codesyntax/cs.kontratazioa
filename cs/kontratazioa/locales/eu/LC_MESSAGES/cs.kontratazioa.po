@@ -1,0 +1,170 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2009-03-31 13:46+0000\n"
+"PO-Revision-Date: 2009-03-31 15:56+0100\n"
+"Last-Translator: lur <libargutxi@codesyntax.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: eu\n"
+"Language-Name: Basque\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ./content/kontratazioa.py:187
+msgid "Description of behin_behineko_information"
+msgstr "Behin-behineko adjudikazioaren informazioa"
+
+#: ./content/kontratazioa.py:207
+msgid "Description of behin_betiko_information"
+msgstr "Behin-betiko adjudikazioaren informazioa"
+
+#: ./content/kontratazioafolder.py:97
+msgid "Description of contact_information"
+msgstr "Kontaktua"
+
+#: ./content/kontratazioafolder.py:26
+msgid "Description of contract_type"
+msgstr "Kontratu mota bakoitza lerro batean sartu"
+
+#: ./content/kontratazioa.py:118
+msgid "Description of documentation"
+msgstr "Dokumentazioa"
+
+#: ./content/kontratazioa.py:27
+msgid "Description of file_number"
+msgstr "Espediente zenbakia"
+
+#: ./content/kontratazioa.py:129
+msgid "Description of information"
+msgstr "Informazio gehiago"
+
+#: ./content/kontratazioafolder.py:50
+msgid "Description of izapidea"
+msgstr "Izapide bakoitza lerro batean sartu"
+
+#: ./content/kontratazioafolder.py:74
+msgid "Description of kontratazioa_organoa"
+msgstr "Kontratazio organo bakoitza lerro batean sartu"
+
+#: ./content/kontratazioa.py:95
+msgid "Description of last_date"
+msgstr "Eskaintzak aurkezteko azken eguna"
+
+#: ./content/kontratazioa.py:108
+msgid "Description of lizitazio_aurrekontua"
+msgstr "LIzitazio aurrekontua"
+
+#: ./content/kontratazioafolder.py:62
+msgid "Description of organization_source"
+msgstr "Erakunde bakoitza lerro batean sartu"
+
+#: ./content/kontratazioafolder.py:38
+msgid "Description of process"
+msgstr "Prozedura bakoitza lerro batean sartu"
+
+#: ./content/kontratazioafolder.py:86
+msgid "Description of state_source"
+msgstr "Egoera bakoitza lerro batean sartu"
+
+#. Default: "Description of the Example Type"
+#: ./profiles/default/types/kontratazioaFolder.xml
+#: ./profiles/default/types/kontratazioa.xml
+msgid "Description of the Example Type"
+msgstr ""
+
+#: ./browser/kontratazioaview.pt:84
+msgid "attach1"
+msgstr "Iragarkiaren testua"
+
+#: ./browser/kontratazioaview.pt:109
+msgid "behin_behineko_file"
+msgstr "Behin-behineko adjudikazioa"
+
+#: ./content/kontratazioa.py:186
+msgid "behin_behineko_information"
+msgstr "Behin-behineko adjudikazioaren informazioa"
+
+#: ./browser/kontratazioaview.pt:117
+msgid "behin_betiko_file"
+msgstr "Behin-betiko adjudikazioa"
+
+#: ./content/kontratazioa.py:206
+msgid "behin_betiko_information"
+msgstr "Behin-betiko adjudikazioaren informazioa"
+
+#: ./content/kontratazioafolder.py:96
+msgid "contact_information"
+msgstr "Kontaktua"
+
+#: ./browser/kontratazioaview.pt:21
+msgid "contract_type"
+msgstr "Kontratu motak"
+
+#: ./browser/kontratazioaview.pt:70
+msgid "documentation"
+msgstr "Dokumentazioa"
+
+#: ./browser/kontratazioaview.pt:14
+msgid "file_number"
+msgstr "Espediente zenbakia"
+
+#: ./browser/kontratazioaview.pt:77
+msgid "information"
+msgstr "Informazio gehiago"
+
+#: ./browser/kontratazioaview.pt:35
+msgid "izapidea"
+msgstr "Izapidea"
+
+#: ./browser/kontratazioaview.pt:49
+msgid "kontratazio_organoa"
+msgstr "Kontratazio organoa"
+
+#. Default: "kontratazioa"
+#: ./profiles/default/types/kontratazioa.xml
+msgid "kontratazioa"
+msgstr "Kontratazioa"
+
+#. Default: "kontratazioaFolder"
+#: ./profiles/default/types/kontratazioaFolder.xml
+msgid "kontratazioaFolder"
+msgstr "Kontratatzailearen profila"
+
+#. Default: "Kontratua"
+#: ./browser/kontratazioafolderview.pt:17
+msgid "kontratua"
+msgstr "Kontratua"
+
+#: ./browser/kontratazioaview.pt:56
+msgid "last_date"
+msgstr "Eskaintzak aurkezteko azken eguna"
+
+#: ./browser/kontratazioaview.pt:63
+msgid "lizitazio_aurrekontua"
+msgstr "Lizitazio aurrekontua"
+
+#: ./browser/kontratazioaview.pt:42
+msgid "organization"
+msgstr "Erakundea"
+
+#: ./content/kontratazioafolder.py:61
+msgid "organization_source"
+msgstr "Erakunde motak"
+
+#: ./browser/kontratazioaview.pt:28
+msgid "process"
+msgstr "Prozedura"
+
+#: ./content/kontratazioafolder.py:85
+msgid "state_source"
+msgstr "Egoera motak"
+
+#. Default: "Xedea"
+#: ./browser/kontratazioafolderview.pt:17
+msgid "xedea"
+msgstr "Xedea"
+
