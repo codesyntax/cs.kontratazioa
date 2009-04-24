@@ -132,6 +132,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         ),
      atapi.FileField('attach1',
                   searchable=1,
+                  required=True,
 		  languageIndependent=1,
                   widget=atapi.FileWidget(
                      label='attach1',

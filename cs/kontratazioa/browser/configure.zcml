@@ -47,5 +47,4 @@
       class=".kontratazioa_list.List"
       permission="zope2.View"
       />
-
 </configure>
