@@ -32,9 +32,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 		  languageIndependent=0,
 		  vocabulary='selection_contract_type',
                   widget=atapi.SelectionWidget(
-                     label='contract_type',
-                     label_msgid='label_contract_type',
-                     description_msgid='description_contract_type',
+                     label=_(u'contract_type'),
 		     
                      ),
                   ),	 
@@ -43,9 +41,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 		  languageIndependent=0,
 		  vocabulary='selection_process',
                   widget=atapi.SelectionWidget(
-                     label='process',
-                     label_msgid='label_process',
-                     description_msgid='description_process',
+                     label=_(u'process'),
 		     
                      ),
                   ),	 
@@ -54,9 +50,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 		  languageIndependent=0,
 		  vocabulary='selection_izapidea',
                   widget=atapi.SelectionWidget(
-                     label='izapidea',
-                     label_msgid='label_izapidea',
-                     description_msgid='description_izapidea',
+                     label=_(u'izapidea'),
 		     
                      ),
                   ),	 
@@ -65,9 +59,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 		  languageIndependent=0,
 		  vocabulary='selection_organization',
                   widget=atapi.SelectionWidget(
-                     label='organization',
-                     label_msgid='label_organization',
-                     description_msgid='description_organization',
+                     label=_(u'organization'),
 		     
                      ),
                   ),	 
@@ -76,9 +68,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 		  languageIndependent=0,
 		  vocabulary='selection_kontratazio_organoa',
                   widget=atapi.SelectionWidget(
-                     label='izapidea',
-                     label_msgid='label_kontratazio_organoa',
-                     description_msgid='description_kontratazio_organoa',
+                     label=_(u'izapidea'),
 		     
                      ),
                   ),	 
@@ -135,27 +125,21 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                   required=True,
 		  languageIndependent=1,
                   widget=atapi.FileWidget(
-                     label='attach1',
-                     label_msgid='label_attach1',
-                     description_msgid='description_attach1',
+                     label=_(u'attach1'),
                      ),
                   ),
      atapi.FileField('attach2',
                   searchable=1,
 		  languageIndependent=1,
                   widget=atapi.FileWidget(
-                     label='attach2',
-                     label_msgid='label_attach2',
-                     description_msgid='description_attach2',
+                     label=_(u'attach2'),
                      ),
                   ),
      atapi.FileField('attach3',
                   searchable=1,
 		  languageIndependent=1,
                   widget=atapi.FileWidget(
-                     label='attach3',
-                     label_msgid='label_attach3',
-                     description_msgid='description_attach3',
+                     label=_(u'attach3'),
                      ),
                   ),
     atapi.StringField('state',
@@ -163,9 +147,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 		  languageIndependent=0,
 		  vocabulary='selection_state',
                   widget=atapi.SelectionWidget(
-                     label='state',
-                     label_msgid='label_state',
-                     description_msgid='description_state',
+                     label=_(u'state'),
 		     
                      ),
                   ),	 
@@ -173,9 +155,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                   searchable=1,
 		  languageIndependent=1,
                   widget=atapi.FileWidget(
-                     label='behin_behineko_file',
-                     label_msgid='label_behin_behineko_file',
-                     description_msgid='description_behin_behineko_file',
+                     label=_(u'behin_behineko_file'),
                      ),
                   ),
     atapi.TextField('behin_behineko_information',
@@ -193,9 +173,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                   searchable=1,
 		  languageIndependent=1,
                   widget=atapi.FileWidget(
-                     label='behin_betiko_file',
-                     label_msgid='label_behin_betiko_file',
-                     description_msgid='description_behin_betiko_file',
+                     label=_(u'behin_betiko_file'),
                      ),
                   ),
     atapi.TextField('behin_betiko_information',
