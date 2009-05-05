@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-05-05 07:11+0000\n"
+"POT-Creation-Date: 2009-05-05 07:27+0000\n"
 "PO-Revision-Date: 2009-05-05 09:13+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,11 +88,11 @@ msgstr "Iragarkiaren testua"
 msgid "attach1_information"
 msgstr "Iragarki testuaren informazioa"
 
-#: ./content/kontratazioa.py:146
+#: ./browser/kontratazioaview.pt:97
 msgid "attach2"
 msgstr "Administrazio klausulak"
 
-#: ./content/kontratazioa.py:153
+#: ./browser/kontratazioaview.pt:105
 msgid "attach3"
 msgstr "Baldintza teknikoak"
 

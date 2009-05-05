@@ -94,7 +94,7 @@
 
           <tal:condition condition="python: here.getAttach2().size">
           <tr>
-          <td i18n:translate="attach1"></td>
+          <td i18n:translate="attach2"></td>
           <td><span metal:use-macro="python:here.widget('attach2',
  	                             mode='view')" /></td>
           </tr>
@@ -102,7 +102,7 @@
 
           <tal:condition condition="python: here.getAttach3().size">
           <tr>
-          <td i18n:translate="attach1"></td>
+          <td i18n:translate="attach3"></td>
           <td><span metal:use-macro="python:here.widget('attach3',
  	                             mode='view')" /></td>
           </tr>

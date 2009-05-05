@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-05-05 07:11+0000\n"
-"PO-Revision-Date: 2009-05-05 09:14+0100\n"
+"POT-Creation-Date: 2009-05-05 07:27+0000\n"
+"PO-Revision-Date: 2009-05-05 09:28+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -86,13 +86,13 @@ msgstr "Texto del anuncio"
 
 #: ./content/kontratazioa.py:137
 msgid "attach1_information"
-msgstr ""
+msgstr "Información sobre el texto del anuncio"
 
-#: ./content/kontratazioa.py:146
+#: ./browser/kontratazioaview.pt:97
 msgid "attach2"
 msgstr "Claúsulas administrativas"
 
-#: ./content/kontratazioa.py:153
+#: ./browser/kontratazioaview.pt:105
 msgid "attach3"
 msgstr "Prescripciones técnicas"
 
