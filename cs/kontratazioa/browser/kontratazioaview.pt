@@ -11,90 +11,63 @@
           <table class="grid">
           <tal:condition condition="here/getFile_number">
           <tr>
-          <td i18n:translate="file_number"></td>
+          <th i18n:translate="file_number"></th>
           <td tal:content="here/getFile_number"></td>
           </tr>
           </tal:condition>
 
           <tal:condition condition="here/getContract_type">
           <tr>
-          <td i18n:translate="contract_type"></td>
+          <th i18n:translate="contract_type"></th>
           <td tal:content="here/getContract_type"></td>
           </tr>
           </tal:condition>
 
           <tal:condition condition="here/getProcess">
           <tr>
-          <td i18n:translate="process"></td>
+          <th i18n:translate="process"></th>
           <td tal:content="here/getProcess"></td>
           </tr>
           </tal:condition>
 
           <tal:condition condition="here/getIzapidea">
           <tr>
-          <td i18n:translate="izapidea"></td>
+          <th i18n:translate="izapidea"></th>
           <td tal:content="here/getIzapidea"></td>
           </tr>
           </tal:condition>
 
           <tal:condition condition="here/getOrganization">
           <tr>
-          <td i18n:translate="organization"></td>
+          <th i18n:translate="organization"></th>
           <td tal:content="here/getOrganization"></td>
           </tr>
           </tal:condition>
 
           <tal:condition condition="here/getKontratazio_organoa">
           <tr>
-          <td i18n:translate="kontratazio_organoa"></td>
+          <th i18n:translate="kontratazio_organoa"></th>
           <td tal:content="here/getKontratazio_organoa"></td>
           </tr>
           </tal:condition>
           
+          <tal:condition define="last_date here/getPublished_date" condition="last_date">
           <tr>
-          <td i18n:translate="published_date">Published Date</td>
-          <td tal:define="published_date here/EffectiveDate" tal:content="python: here.toLocalizedTime(published_date)"></td>
-          </tr>
-
-          <tal:condition define="last_date here/getLast_date" condition="last_date">
-          <tr>
-          <td i18n:translate="last_date"></td>
+          <th i18n:translate="published_date"></th>
           <td tal:content="python: here.toLocalizedTime(last_date)"></td>
           </tr>
           </tal:condition>
 
           <tal:condition condition="here/getLizitazio_aurrekontua">
           <tr>
-          <td i18n:translate="lizitazio_aurrekontua"></td>
+          <th i18n:translate="lizitazio_aurrekontua"></th>
           <td tal:content="here/getLizitazio_aurrekontua"></td>
           </tr>
           </tal:condition>
-
-          <tal:condition condition="here/getDocumentation">
-          <tr>
-          <td i18n:translate="documentation"></td>
-          <td tal:content="structure here/getDocumentation"></td>
-          </tr>
-          </tal:condition>
           
-          <tal:condition condition="here/getInformation">
-          <tr>
-          <td i18n:translate="information"></td>
-          <td tal:content="structure here/getInformation"></td>
-          </tr>
-          </tal:condition>
-
-          <tal:condition condition="python: here.getAttach1().size">
-          <tr>
-          <td i18n:translate="attach1"></td>
-          <td><span metal:use-macro="python:here.widget('attach1',
- 	                             mode='view')" /><tal:con condition="here/getAttach1_information"><br /><span tal:content="structure here/getAttach1_information"></span></tal:con><br /></td>
-          </tr>
-          </tal:condition>
-
           <tal:condition condition="python: here.getAttach2().size">
           <tr>
-          <td i18n:translate="attach2"></td>
+          <th i18n:translate="attach2"></th>
           <td><span metal:use-macro="python:here.widget('attach2',
  	                             mode='view')" /></td>
           </tr>
@@ -102,30 +75,89 @@
 
           <tal:condition condition="python: here.getAttach3().size">
           <tr>
-          <td i18n:translate="attach3"></td>
+          <th i18n:translate="attach3"></th>
           <td><span metal:use-macro="python:here.widget('attach3',
  	                             mode='view')" /></td>
           </tr>
           </tal:condition>
+
          
-          
-          <tal:condition condition="python: here.getBehin_behineko_file().size">
+
+          <tal:condition condition="here/getDocumentation">
           <tr>
-          <td i18n:translate="behin_behineko_file"></td>
-          <td><span metal:use-macro="python:here.widget('behin_behineko_file',
- 	                             mode='view')" /><tal:con condition="here/getBehin_behineko_information"><br /><span tal:content="structure here/getBehin_behineko_information"></span></tal:con><br /><!--<span tal:define="file_date python: here.getBehin_behineko_file().modified()" tal:content="python: here.toLocalizedTime(file_date)"></span>--></td>
+          <th i18n:translate="documentation"></th>
+          <td tal:content="structure here/getDocumentation"></td>
           </tr>
           </tal:condition>
           
-           <tal:condition condition="python: here.getBehin_betiko_file().size">
+          <tal:condition condition="python: here.getAttach4().size">
           <tr>
-          <td i18n:translate="behin_betiko_file"></td>
-          <td><span metal:use-macro="python:here.widget('behin_betiko_file',
- 	                             mode='view')" /><tal:con condition="here/getBehin_betiko_information"><br /><span tal:content="structure here/getBehin_betiko_information"></span></tal:con><br /><!--<span tal:define="file_date python: here.getBehin_betiko_file().modified()" tal:content="python: here.toLocalizedTime(file_date)"></span>--></td>
+          <th i18n:translate="attach4"></th>
+          <td><span metal:use-macro="python:here.widget('attach4',
+ 	                             mode='view')" /></td>
           </tr>
           </tal:condition>
 
+
+          <tal:condition condition="here/getInformation">
+          <tr>
+          <th i18n:translate="information"></th>
+          <td tal:content="structure here/getInformation"></td>
+          </tr>
+          </tal:condition>
+          
+
+          <tal:condition condition="python: here.getAttach1().size">
+          <tr>
+          <th i18n:translate="attach1"></th>
+          <td><span metal:use-macro="python:here.widget('attach1',
+ 	                             mode='view')" /><tal:con condition="here/getAttach1_information"><br /><span tal:content="structure here/getAttach1_information"></span></tal:con><br /></td>
+          </tr>
+          </tal:condition>
+
+
+          <tal:condition define="last_date here/getLast_date" condition="last_date">
+          <tr>
+          <th i18n:translate="last_date"></th>
+          <td tal:content="python: here.toLocalizedTime(last_date)"></td>
+          </tr>
+          </tal:condition>
+          
+           <tal:condition condition="python: here.aq_parent.getContact_information()">
+          <tr>
+          <th i18n:translate="contact_information"></th>
+          <td tal:content="structure python: here.aq_parent.getContact_information()"></td>
+          </tr>
+          </tal:condition>
+
+          <tal:condition define="last_date here/getEskaintza_ekonomikoa_date" condition="last_date">
+          <tr>
+          <th i18n:translate="last_date"></th>
+          <td tal:content="python: here.toLocalizedTime(last_date)"></td>
+          </tr>
+          </tal:condition>
+         </table>
+
+          <table class="grid" tal:condition="python: here.getBehin_behineko_file().size">
+          
+          <tr>
+          <th i18n:translate="behin_behineko_file"></th></tr>
+          <tr><td><span metal:use-macro="python:here.widget('behin_behineko_file',
+ 	                             mode='view')" /><tal:con condition="here/getBehin_behineko_information"><br /><span tal:content="structure here/getBehin_behineko_information"></span></tal:con><br /></td>
+          </tr>
+         
           </table>
+
+           <table class="grid" condition="python: here.getBehin_betiko_file().size">
+           
+          <tr>
+          <th i18n:translate="behin_betiko_file"></th></tr>
+          <tr><td><span metal:use-macro="python:here.widget('behin_betiko_file',
+ 	                             mode='view')" /><tal:con condition="here/getBehin_betiko_information"><br /><span tal:content="structure here/getBehin_betiko_information"></span></tal:con><br /></td>
+          </tr>
+          
+           </table>
+          
         </tal:main-macro>
     </div>
 </body>

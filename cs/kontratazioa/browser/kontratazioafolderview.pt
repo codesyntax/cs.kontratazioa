@@ -11,7 +11,9 @@
 	<ul id="tabs" tal:define="lista here/@@state_list; ul_dict python: lista[0]; states python: lista[1]">
 	<li tal:repeat="li states" tal:attributes="class ul_dict/?li"><a tal:attributes="href string:${here/absolute_url}?id=${li}" tal:content="li"></a></li>
 	</ul>
-        <tal:repeat define="dict here/@@kontratazioa_list" repeat="orga python: dict.keys()">
+        <tal:repeatyear define="year_dict here/@@kontratazioa_list" repeat="year python: year_dict.keys()">
+          <h2 tal:condition="python: len(year_dict.keys())>1" tal:content="year"></h2>
+        <tal:repeat define="dict python: year_dict[year]" repeat="orga python: dict.keys()">
           <h3 tal:content="orga"></h3>
           <table class="grid">
           <tr><th i18n:translate="kontratua">Kontratua</th><th i18n:translate="xedea">Xedea</th></tr>
@@ -20,6 +22,7 @@
           </tal:define>
           </table>
         </tal:repeat>
+        </tal:repeatyear>
         </tal:main-macro>
     </div>
 </body>

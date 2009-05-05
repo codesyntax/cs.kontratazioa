@@ -8,6 +8,11 @@
 		<indexed_attr value="getOrganization"/>
         </index>
         <column value="getOrganization" />
+        
+        <index name="kontratazioa_publication_year" meta_type="FieldIndex">
+		<indexed_attr value="publication_year"/>
+        </index>
+        <column value="publication_year" />
 
 
 </object>

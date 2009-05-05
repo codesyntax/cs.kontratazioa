@@ -12,7 +12,7 @@ class List(BrowserView):
 
 			
 	def __call__(self):
-                #import pdb;pdb.set_trace()
+                
 		context = aq_inner(self.context)
                 idea=context.REQUEST.get('id', None)
                 if not idea:
@@ -21,9 +21,14 @@ class List(BrowserView):
                         idea=state_sources[0]
                 catalog = getToolByName(context, 'portal_catalog')
                 organizations=catalog.uniqueValuesFor("getOrganization")
+                publication_years=catalog.uniqueValuesFor("kontratazioa_publication_year")
                 dict={}
-                for organization in organizations:
-                    kontratazioak=catalog(portal_type="kontratazioa", review_state="published", getState=idea, getOrganization=organization)
-                    if kontratazioak:
-                        dict[organization]=kontratazioak
-                return dict
+                year_dict={}
+                for year in publication_years:
+                    for organization in organizations:
+                        kontratazioak=catalog(portal_type="kontratazioa", review_state="published", getState=idea, getOrganization=organization)
+                        if kontratazioak:
+                            dict[organization]=kontratazioak
+                    year_dict[year]=dict
+                #import pdb;pdb.set_trace()
+                return year_dict

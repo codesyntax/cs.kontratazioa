@@ -32,7 +32,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 		  languageIndependent=0,
 		  vocabulary='selection_contract_type',
                   widget=atapi.SelectionWidget(
-                     label=_(u'contract_type'),
+                     label=_(u'put_contract_type'),
 		     
                      ),
                   ),	 
@@ -68,10 +68,24 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 		  languageIndependent=0,
 		  vocabulary='selection_kontratazio_organoa',
                   widget=atapi.SelectionWidget(
-                     label=_(u'izapidea'),
+                     label=_(u'put_kontratazio_organoa'),
 		     
                      ),
-                  ),	 
+                  ),
+
+    atapi.DateTimeField(
+        name='published_date',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        #searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"published_date"),
+            description=_(u"Description of published_date"),
+        ),
+    ),	 
     atapi.DateTimeField(
         name='last_date',
         storage = atapi.AnnotationStorage(),
@@ -83,6 +97,20 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         widget=atapi.CalendarWidget(
             label=_(u"last_date"),
             description=_(u"Description of last_date"),
+        ),
+    ),
+
+    atapi.DateTimeField(
+        name='eskaintza_ekonomikoa_date',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        #searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"eskaintza_ekonomikoa_date"),
+            description=_(u"Description of eskaintza_ekonomikoa_date"),
         ),
     ),
     atapi.StringField(
@@ -104,7 +132,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 			storage=atapi.AnnotationStorage(),
                         validators=('isTidyHtmlWithCleanup',),
                         default_output_type='text/x-html-safe',
-                        widget=atapi.RichWidget(label=_(u'documentation'),
+                        widget=atapi.RichWidget(label=_(u'put_documentation'),
                                                 description=_(u'Description of documentation'),
                                                 rows=10,
                                                 allow_file_upload=False),
@@ -153,6 +181,15 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                      label=_(u'attach3'),
                      ),
                   ),
+
+     atapi.FileField('attach4',
+                  searchable=1,
+		  languageIndependent=1,
+                  widget=atapi.FileWidget(
+                     label=_(u'attach4'),
+                     ),
+                  ),
+
     atapi.StringField('state',
                   searchable=1,
 		  languageIndependent=0,
@@ -253,5 +290,9 @@ class kontratazioa(folder.ATFolder):
             situation_list=aq_parent(self).getState_source()
             
             return situation_list
+
+    def publication_year(self):
+            
+            return self.getPublished_date().year()
             
 atapi.registerType(kontratazioa, PROJECTNAME)
