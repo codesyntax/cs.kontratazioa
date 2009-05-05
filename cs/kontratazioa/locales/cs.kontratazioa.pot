@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-04-27 08:49+0000\n"
+"POT-Creation-Date: 2009-05-05 07:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,11 +14,15 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ./content/kontratazioa.py:168
+#: ./content/kontratazioa.py:138
+msgid "Description of attach1_information"
+msgstr ""
+
+#: ./content/kontratazioa.py:179
 msgid "Description of behin_behineko_information"
 msgstr ""
 
-#: ./content/kontratazioa.py:186
+#: ./content/kontratazioa.py:197
 msgid "Description of behin_betiko_information"
 msgstr ""
 
@@ -71,8 +75,8 @@ msgid "Description of state_source"
 msgstr ""
 
 #. Default: "Description of the Example Type"
-#: ./profiles/default/types/kontratazioaFolder.xml
 #: ./profiles/default/types/kontratazioa.xml
+#: ./profiles/default/types/kontratazioaFolder.xml
 msgid "Description of the Example Type"
 msgstr ""
 
@@ -80,11 +84,15 @@ msgstr ""
 msgid "attach1"
 msgstr ""
 
-#: ./content/kontratazioa.py:135
+#: ./content/kontratazioa.py:137
+msgid "attach1_information"
+msgstr ""
+
+#: ./content/kontratazioa.py:146
 msgid "attach2"
 msgstr ""
 
-#: ./content/kontratazioa.py:142
+#: ./content/kontratazioa.py:153
 msgid "attach3"
 msgstr ""
 
@@ -92,7 +100,7 @@ msgstr ""
 msgid "behin_behineko_file"
 msgstr ""
 
-#: ./content/kontratazioa.py:167
+#: ./content/kontratazioa.py:178
 msgid "behin_behineko_information"
 msgstr ""
 
@@ -100,7 +108,7 @@ msgstr ""
 msgid "behin_betiko_file"
 msgstr ""
 
-#: ./content/kontratazioa.py:185
+#: ./content/kontratazioa.py:196
 msgid "behin_betiko_information"
 msgstr ""
 
@@ -172,7 +180,7 @@ msgstr ""
 msgid "published_date"
 msgstr ""
 
-#: ./content/kontratazioa.py:150
+#: ./content/kontratazioa.py:161
 msgid "state"
 msgstr ""
 

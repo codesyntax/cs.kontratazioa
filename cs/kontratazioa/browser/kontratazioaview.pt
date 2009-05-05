@@ -88,7 +88,7 @@
           <tr>
           <td i18n:translate="attach1"></td>
           <td><span metal:use-macro="python:here.widget('attach1',
- 	                             mode='view')" /></td>
+ 	                             mode='view')" /><tal:con condition="here/getAttach1_information"><br /><span tal:content="structure here/getAttach1_information"></span></tal:con><br /></td>
           </tr>
           </tal:condition>
 
@@ -113,7 +113,7 @@
           <tr>
           <td i18n:translate="behin_behineko_file"></td>
           <td><span metal:use-macro="python:here.widget('behin_behineko_file',
- 	                             mode='view')" /><tal:con condition="here/getBehin_behineko_information"><br /><span tal:content="structure here/getBehin_behineko_information"></span></tal:con><br /><span tal:define="file_date python: here.getBehin_behineko_file().modified()" tal:content="python: here.toLocalizedTime(file_date)"></span></td>
+ 	                             mode='view')" /><tal:con condition="here/getBehin_behineko_information"><br /><span tal:content="structure here/getBehin_behineko_information"></span></tal:con><br /><!--<span tal:define="file_date python: here.getBehin_behineko_file().modified()" tal:content="python: here.toLocalizedTime(file_date)"></span>--></td>
           </tr>
           </tal:condition>
           
@@ -121,7 +121,7 @@
           <tr>
           <td i18n:translate="behin_betiko_file"></td>
           <td><span metal:use-macro="python:here.widget('behin_betiko_file',
- 	                             mode='view')" /><tal:con condition="here/getBehin_betiko_information"><br /><span tal:content="structure here/getBehin_betiko_information"></span></tal:con><br /><span tal:define="file_date python: here.getBehin_betiko_file().modified()" tal:content="python: here.toLocalizedTime(file_date)"></span></td>
+ 	                             mode='view')" /><tal:con condition="here/getBehin_betiko_information"><br /><span tal:content="structure here/getBehin_betiko_information"></span></tal:con><br /><!--<span tal:define="file_date python: here.getBehin_betiko_file().modified()" tal:content="python: here.toLocalizedTime(file_date)"></span>--></td>
           </tr>
           </tal:condition>
 

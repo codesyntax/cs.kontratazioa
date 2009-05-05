@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-04-27 08:49+0000\n"
-"PO-Revision-Date: 2009-04-27 10:51+0100\n"
+"POT-Creation-Date: 2009-05-05 07:11+0000\n"
+"PO-Revision-Date: 2009-05-05 09:13+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -14,11 +14,15 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ./content/kontratazioa.py:168
+#: ./content/kontratazioa.py:138
+msgid "Description of attach1_information"
+msgstr ""
+
+#: ./content/kontratazioa.py:179
 msgid "Description of behin_behineko_information"
 msgstr "Behin-behineko adjudikazioaren informazioa"
 
-#: ./content/kontratazioa.py:186
+#: ./content/kontratazioa.py:197
 msgid "Description of behin_betiko_information"
 msgstr "Behin-betiko adjudikazioaren informazioa"
 
@@ -71,8 +75,8 @@ msgid "Description of state_source"
 msgstr "Egoera bakoitza lerro batean sartu"
 
 #. Default: "Description of the Example Type"
-#: ./profiles/default/types/kontratazioaFolder.xml
 #: ./profiles/default/types/kontratazioa.xml
+#: ./profiles/default/types/kontratazioaFolder.xml
 msgid "Description of the Example Type"
 msgstr ""
 
@@ -80,11 +84,15 @@ msgstr ""
 msgid "attach1"
 msgstr "Iragarkiaren testua"
 
-#: ./content/kontratazioa.py:135
+#: ./content/kontratazioa.py:137
+msgid "attach1_information"
+msgstr "Iragarki testuaren informazioa"
+
+#: ./content/kontratazioa.py:146
 msgid "attach2"
 msgstr "Administrazio klausulak"
 
-#: ./content/kontratazioa.py:142
+#: ./content/kontratazioa.py:153
 msgid "attach3"
 msgstr "Baldintza teknikoak"
 
@@ -92,7 +100,7 @@ msgstr "Baldintza teknikoak"
 msgid "behin_behineko_file"
 msgstr "Behin-behineko adjudikazioa"
 
-#: ./content/kontratazioa.py:167
+#: ./content/kontratazioa.py:178
 msgid "behin_behineko_information"
 msgstr "Behin-behineko adjudikazioaren informazioa"
 
@@ -100,7 +108,7 @@ msgstr "Behin-behineko adjudikazioaren informazioa"
 msgid "behin_betiko_file"
 msgstr "Behin-betiko adjudikazioa"
 
-#: ./content/kontratazioa.py:185
+#: ./content/kontratazioa.py:196
 msgid "behin_betiko_information"
 msgstr "Behin-betiko adjudikazioaren informazioa"
 
@@ -172,7 +180,7 @@ msgstr "Prozedura"
 msgid "published_date"
 msgstr "Argitaratze data"
 
-#: ./content/kontratazioa.py:150
+#: ./content/kontratazioa.py:161
 msgid "state"
 msgstr "Egoera"
 
