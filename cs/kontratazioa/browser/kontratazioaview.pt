@@ -148,7 +148,7 @@
          
           </table>
 
-           <table class="grid" condition="python: here.getBehin_betiko_file().size">
+           <table class="grid" tal:condition="python: here.getBehin_betiko_file().size">
            
           <tr>
           <th i18n:translate="behin_betiko_file"></th></tr>
