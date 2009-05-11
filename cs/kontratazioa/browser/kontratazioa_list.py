@@ -12,23 +12,35 @@ class List(BrowserView):
 
 			
 	def __call__(self):
-                
+                #import pdb;pdb.set_trace()
 		context = aq_inner(self.context)
+                catalog = getToolByName(context, 'portal_catalog')
+                organizations=catalog.uniqueValuesFor("getOrganization")
                 idea=context.REQUEST.get('id', None)
                 if not idea:
                     state_sources=context.getState_source()
                     if state_sources:
                         idea=state_sources[0]
-                catalog = getToolByName(context, 'portal_catalog')
-                organizations=catalog.uniqueValuesFor("getOrganization")
-                publication_years=catalog.uniqueValuesFor("kontratazioa_publication_year")
-                dict={}
+
                 year_dict={}
-                for year in publication_years:
+                if idea != context.getState_source()[-1]:
+                    dict={}
                     for organization in organizations:
                         kontratazioak=catalog(portal_type="kontratazioa", review_state="published", getState=idea, getOrganization=organization)
                         if kontratazioak:
                             dict[organization]=kontratazioak
+                    year_dict['denak']=dict
+                    return year_dict
+                
+                publication_years=catalog.uniqueValuesFor("kontratazioa_publication_year")
+                
+               
+                for year in publication_years:
+                    dict={}
+                    for organization in organizations:
+                        kontratazioak=catalog(portal_type="kontratazioa", review_state="published", getState=idea, getOrganization=organization, kontratazioa_publication_year=year)
+                        if kontratazioak:
+                            dict[organization]=kontratazioak
                     year_dict[year]=dict
-                #import pdb;pdb.set_trace()
+                
                 return year_dict

@@ -141,22 +141,67 @@
           <table class="grid" tal:condition="python: here.getBehin_behineko_file().size">
           
           <tr>
-          <th i18n:translate="behin_behineko_file"></th></tr>
-          <tr><td><span metal:use-macro="python:here.widget('behin_behineko_file',
- 	                             mode='view')" /><tal:con condition="here/getBehin_behineko_information"><br /><span tal:content="structure here/getBehin_behineko_information"></span></tal:con><br /></td>
+          <th i18n:translate="behin_behineko_file"></th>
           </tr>
-         
-          </table>
-
-           <table class="grid" tal:condition="python: here.getBehin_betiko_file().size">
-           
-          <tr>
-          <th i18n:translate="behin_betiko_file"></th></tr>
-          <tr><td><span metal:use-macro="python:here.widget('behin_betiko_file',
- 	                             mode='view')" /><tal:con condition="here/getBehin_betiko_information"><br /><span tal:content="structure here/getBehin_betiko_information"></span></tal:con><br /></td>
+          <tr tal:define="adjudikazio_date here/getBehin_behineko_adjudikazio_date" tal:condition="adjudikazio_date">
+          <th i18n:translate="behin_behineko_adjudikazio_date"></th>
+          <td tal:content="adjudikazio_date"></td>
+          </tr>
+          <tr><th i18n:translate="akordioa"></th><td><span metal:use-macro="python:here.widget('behin_behineko_file',
+ 	                             mode='view')" /></td>
           </tr>
           
-           </table>
+          <tr tal:condition="here/getBehin_behineko_adjudikazioduna">
+          <th i18n:translate="behin_behineko_adjudikazioduna"></th>
+          <td tal:content="structure here/getBehin_behineko_adjudikazioduna"></td>
+          </tr>
+
+          <tr tal:condition="here/getBehin_behineko_adjudikazioaren_zenbatekoa">
+          <th i18n:translate="behin_behineko_adjudikazioaren_zenbatekoa"></th>
+          <td tal:content="structure here/getBehin_behineko_adjudikazioaren_zenbatekoa"></td>
+          </tr>
+          
+
+          <tr tal:define="profile_date here/getBehin_behineko_profile_date" tal:condition="profile_date">
+          <th i18n:translate="behin_behineko_profile_date"></th>
+          <td tal:content="profile_date"></td>
+          </tr>
+
+          </table>
+
+
+          <table class="grid" tal:condition="python: here.getBehin_betiko_file().size">
+          
+          <tr>
+          <th i18n:translate="behin_betiko_file"></th>
+          </tr>
+          <tr tal:define="adjudikazio_date here/getBehin_betiko_adjudikazio_date" tal:condition="adjudikazio_date">
+          <th i18n:translate="behin_betiko_adjudikazio_date"></th>
+          <td tal:content="adjudikazio_date"></td>
+          </tr>
+          <tr><th i18n:translate="akordioa"></th><td><span metal:use-macro="python:here.widget('behin_betiko_file',
+ 	                             mode='view')" /></td>
+          </tr>
+          
+          <tr tal:condition="here/getBehin_betiko_adjudikazioduna">
+          <th i18n:translate="behin_betiko_adjudikazioduna"></th>
+          <td tal:content="structure here/getBehin_betiko_adjudikazioduna"></td>
+          </tr>
+
+          <tr tal:condition="here/getBehin_betiko_adjudikazioaren_zenbatekoa">
+          <th i18n:translate="behin_betiko_adjudikazioaren_zenbatekoa"></th>
+          <td tal:content="structure here/getBehin_betiko_adjudikazioaren_zenbatekoa"></td>
+          </tr>
+          
+
+          <tr tal:define="profile_date here/getBehin_betiko_profile_date" tal:condition="profile_date">
+          <th i18n:translate="behin_betiko_profile_date"></th>
+          <td tal:content="profile_date"></td>
+          </tr>
+
+          </table>
+
+          
           
         </tal:main-macro>
     </div>

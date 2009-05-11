@@ -206,17 +206,56 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                      label=_(u'behin_behineko_file'),
                      ),
                   ),
-    atapi.TextField('behin_behineko_information',
+    atapi.DateTimeField(
+        name='behin_behineko_adjudikazio_date',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        #searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"behin_behineko_adjudikazio_date"),
+            description=_(u"Description of behin_behineko_adjudikazio_date"),
+        ),
+    ),
+    atapi.TextField('behin_behineko_adjudikazioduna',
                         required=False,
                         searchable=True,
 			storage=atapi.AnnotationStorage(),
                         validators=('isTidyHtmlWithCleanup',),
                         default_output_type='text/x-html-safe',
-                        widget=atapi.RichWidget(label=_(u'behin_behineko_information'),
-                                                description=_(u'Description of behin_behineko_information'),
+                        widget=atapi.RichWidget(label=_(u'behin_behineko_adjudikazioduna'),
+                                                description=_(u'Description of behin_behineko_adjudikazioduna'),
                                                 rows=10,
                                                 allow_file_upload=False),
                         ),
+
+    atapi.TextField('behin_behineko_adjudikazioaren_zenbatekoa',
+                        required=False,
+                        searchable=True,
+			storage=atapi.AnnotationStorage(),
+                        validators=('isTidyHtmlWithCleanup',),
+                        default_output_type='text/x-html-safe',
+                        widget=atapi.RichWidget(label=_(u'behin_behineko_adjudikazioaren_zenbatekoa'),
+                                                description=_(u'Description of behin_behineko_adjudikazioaren_zenbatekoa'),
+                                                rows=10,
+                                                allow_file_upload=False),
+                        ),
+
+    atapi.DateTimeField(
+        name='behin_behineko_profile_date',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        #searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"behin_behineko_profile_date"),
+            description=_(u"Description of behin_behineko_profile_date"),
+        ),
+    ),
     atapi.FileField('behin_betiko_file',
                   searchable=1,
 		  languageIndependent=1,
@@ -224,17 +263,57 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                      label=_(u'behin_betiko_file'),
                      ),
                   ),
-    atapi.TextField('behin_betiko_information',
+     atapi.DateTimeField(
+        name='behin_betiko_adjudikazio_date',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        #searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"behin_betiko_adjudikazio_date"),
+            description=_(u"Description of behin_behineko_adjudikazio_date"),
+        ),
+    ),
+    atapi.TextField('behin_betiko_adjudikazioduna',
                         required=False,
                         searchable=True,
 			storage=atapi.AnnotationStorage(),
                         validators=('isTidyHtmlWithCleanup',),
                         default_output_type='text/x-html-safe',
-                        widget=atapi.RichWidget(label=_(u'behin_betiko_information'),
-                                                description=_(u'Description of behin_betiko_information'),
+                        widget=atapi.RichWidget(label=_(u'behin_betiko_adjudikazioduna'),
+                                                description=_(u'Description of behin_betiko_adjudikazioduna'),
                                                 rows=10,
                                                 allow_file_upload=False),
                         ),
+
+    atapi.TextField('behin_betiko_adjudikazioaren_zenbatekoa',
+                        required=False,
+                        searchable=True,
+			storage=atapi.AnnotationStorage(),
+                        validators=('isTidyHtmlWithCleanup',),
+                        default_output_type='text/x-html-safe',
+                        widget=atapi.RichWidget(label=_(u'behin_betiko_adjudikazioaren_zenbatekoa'),
+                                                description=_(u'Description of behin_betiko_adjudikazioaren_zenbatekoa'),
+                                                rows=10,
+                                                allow_file_upload=False),
+                        ),
+
+    atapi.DateTimeField(
+        name='behin_betiko_profile_date',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        #searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"behin_betiko_profile_date"),
+            description=_(u"Description of behin_betiko_profile_date"),
+        ),
+    ),
+    
 ))
 
 # Set storage on fields copied from ATFolderSchema, making sure
@@ -292,7 +371,8 @@ class kontratazioa(folder.ATFolder):
             return situation_list
 
     def publication_year(self):
-            
-            return self.getPublished_date().year()
-            
+            if self.getPublished_date():
+                return self.getPublished_date().year()
+            else:
+                return 0
 atapi.registerType(kontratazioa, PROJECTNAME)

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-05-05 11:17+0000\n"
-"PO-Revision-Date: 2009-05-05 13:18+0100\n"
+"POT-Creation-Date: 2009-05-11 10:23+0000\n"
+"PO-Revision-Date: 2009-05-11 12:28+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -14,17 +14,37 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ./content/kontratazioa.py:152
+#: ./content/kontratazioa.py:166
 msgid "Description of attach1_information"
-msgstr ""
+msgstr "Iragarki testuaren informazioa"
 
-#: ./content/kontratazioa.py:202
-msgid "Description of behin_behineko_information"
-msgstr "Behin-behineko adjudikazioaren informazioa"
+#: ./content/kontratazioa.py:219
+msgid "Description of behin_behineko_adjudikazio_date"
+msgstr "Behin behineko adjudikazio data ezarri"
 
-#: ./content/kontratazioa.py:220
-msgid "Description of behin_betiko_information"
-msgstr "Behin-betiko adjudikazioaren informazioa"
+#: ./content/kontratazioa.py:241
+msgid "Description of behin_behineko_adjudikazioaren_zenbatekoa"
+msgstr "Behin behineko adjudikazioaren zenbatekoa"
+
+#: ./content/kontratazioa.py:229
+msgid "Description of behin_behineko_adjudikazioduna"
+msgstr "Behin behineko adjudikazioduna"
+
+#: ./content/kontratazioa.py:256
+msgid "Description of behin_behineko_profile_date"
+msgstr "Kontratatzailearen profileko argitaratze data"
+
+#: ./content/kontratazioa.py:298
+msgid "Description of behin_betiko_adjudikazioaren_zenbatekoa"
+msgstr "Behin betiko adjudikazioaren zebatekoa"
+
+#: ./content/kontratazioa.py:286
+msgid "Description of behin_betiko_adjudikazioduna"
+msgstr "Behin betiko adjudikazioduna"
+
+#: ./content/kontratazioa.py:313
+msgid "Description of behin_betiko_profile_date"
+msgstr "Kontratatzailearen profileko argitaratze data"
 
 #: ./content/kontratazioafolder.py:97
 msgid "Description of contact_information"
@@ -34,15 +54,19 @@ msgstr "Kontaktua"
 msgid "Description of contract_type"
 msgstr "Kontratu mota bakoitza lerro batean sartu"
 
-#: ./content/kontratazioa.py:122
+#: ./content/kontratazioa.py:136
 msgid "Description of documentation"
 msgstr "Dokumentazioa"
+
+#: ./content/kontratazioa.py:113
+msgid "Description of eskaintza_ekonomikoa_date"
+msgstr "Eskaintza ekonomikoak jendaurrean irekitzeko data"
 
 #: ./content/kontratazioa.py:27
 msgid "Description of file_number"
 msgstr "Espediente zenbakia"
 
-#: ./content/kontratazioa.py:133
+#: ./content/kontratazioa.py:147
 msgid "Description of information"
 msgstr "Informazio gehiago"
 
@@ -58,7 +82,7 @@ msgstr "Kontratazio organo bakoitza lerro batean sartu"
 msgid "Description of last_date"
 msgstr "Eskaintzak aurkezteko azken eguna"
 
-#: ./content/kontratazioa.py:112
+#: ./content/kontratazioa.py:126
 msgid "Description of lizitazio_aurrekontua"
 msgstr "LIzitazio aurrekontua"
 
@@ -72,7 +96,7 @@ msgstr "Prozedura bakoitza lerro batean sartu"
 
 #: ./content/kontratazioa.py:86
 msgid "Description of published_date"
-msgstr ""
+msgstr "Publikazio data"
 
 #: ./content/kontratazioafolder.py:86
 msgid "Description of state_source"
@@ -84,11 +108,15 @@ msgstr "Egoera bakoitza lerro batean sartu"
 msgid "Description of the Example Type"
 msgstr ""
 
+#: ./browser/kontratazioaview.pt:150
+msgid "akordioa"
+msgstr "Akordioa"
+
 #: ./browser/kontratazioaview.pt:112
 msgid "attach1"
 msgstr "Iragarkiaren testua"
 
-#: ./content/kontratazioa.py:151
+#: ./content/kontratazioa.py:165
 msgid "attach1_information"
 msgstr "Iragarki testuaren informazioa"
 
@@ -104,21 +132,45 @@ msgstr "Baldintza teknikoak"
 msgid "attach4"
 msgstr "Karatula"
 
-#: ./browser/kontratazioaview.pt:137
+#: ./browser/kontratazioaview.pt:147
+msgid "behin_behineko_adjudikazio_date"
+msgstr "Behin behineko adjudikazio data"
+
+#: ./browser/kontratazioaview.pt:160
+msgid "behin_behineko_adjudikazioaren_zenbatekoa"
+msgstr "Behin behineko adjudikazioaren zenbatekoa"
+
+#: ./browser/kontratazioaview.pt:155
+msgid "behin_behineko_adjudikazioduna"
+msgstr "Behin behineko adjudikazioduna"
+
+#: ./browser/kontratazioaview.pt:144
 msgid "behin_behineko_file"
 msgstr "Behin-behineko adjudikazioa"
 
-#: ./content/kontratazioa.py:201
-msgid "behin_behineko_information"
-msgstr "Behin-behineko adjudikazioaren informazioa"
+#: ./browser/kontratazioaview.pt:166
+msgid "behin_behineko_profile_date"
+msgstr "Kontratatzailearen profileko argitaratze data"
 
-#: ./browser/kontratazioaview.pt:147
+#: ./browser/kontratazioaview.pt:179
+msgid "behin_betiko_adjudikazio_date"
+msgstr "Behin betiko adjudikazio data"
+
+#: ./browser/kontratazioaview.pt:192
+msgid "behin_betiko_adjudikazioaren_zenbatekoa"
+msgstr "Behin betiko adjukazioaren zenbatekoa"
+
+#: ./browser/kontratazioaview.pt:187
+msgid "behin_betiko_adjudikazioduna"
+msgstr "Behin betiko adjudikazioduna"
+
+#: ./browser/kontratazioaview.pt:176
 msgid "behin_betiko_file"
 msgstr "Behin-betiko adjudikazioa"
 
-#: ./content/kontratazioa.py:219
-msgid "behin_betiko_information"
-msgstr "Behin-betiko adjudikazioaren informazioa"
+#: ./browser/kontratazioaview.pt:198
+msgid "behin_betiko_profile_date"
+msgstr "Kontratatzailearen profileko argitaratze data"
 
 #: ./browser/kontratazioaview.pt:128
 msgid "contact_information"
@@ -131,6 +183,10 @@ msgstr "Kontratu mota"
 #: ./browser/kontratazioaview.pt:88
 msgid "documentation"
 msgstr "Dokumentazio osagarria"
+
+#: ./content/kontratazioa.py:112
+msgid "eskaintza_ekonomikoa_date"
+msgstr "Eskaintza ekonomikoak jendaurrean irekitzeko data"
 
 #: ./browser/kontratazioaview.pt:14
 msgid "file_number"
@@ -159,7 +215,7 @@ msgid "kontratazioaFolder"
 msgstr "Kontratatzailearen profila"
 
 #. Default: "Kontratua"
-#: ./browser/kontratazioafolderview.pt:17
+#: ./browser/kontratazioafolderview.pt:19
 msgid "kontratua"
 msgstr "Kontratua"
 
@@ -185,13 +241,13 @@ msgstr "Prozedura"
 
 #: ./browser/kontratazioaview.pt:56
 msgid "published_date"
-msgstr "Argitaratze data"
+msgstr "Kontratatzailearen profileko argitaratze data"
 
 #: ./content/kontratazioa.py:35
 msgid "put_contract_type"
 msgstr "Kontratu mota jarri"
 
-#: ./content/kontratazioa.py:121
+#: ./content/kontratazioa.py:135
 msgid "put_documentation"
 msgstr "Dokumentazio osagarria jarri"
 
@@ -199,7 +255,7 @@ msgstr "Dokumentazio osagarria jarri"
 msgid "put_kontratazio_organoa"
 msgstr "Kontratazio organoa jarri"
 
-#: ./content/kontratazioa.py:184
+#: ./content/kontratazioa.py:198
 msgid "state"
 msgstr "Egoera"
 
@@ -208,7 +264,7 @@ msgid "state_source"
 msgstr "Egoera motak"
 
 #. Default: "Xedea"
-#: ./browser/kontratazioafolderview.pt:17
+#: ./browser/kontratazioafolderview.pt:19
 msgid "xedea"
 msgstr "Xedea"
 
