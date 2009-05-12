@@ -8,7 +8,7 @@
           <h1 class="documentFirstHeading"> 
              <tal:content content="here/Title"></tal:content>
 	  </h1>
-          <table class="grid">
+          <table class="grid orokorra">
           <tal:condition condition="here/getFile_number">
           <tr>
           <th i18n:translate="file_number"></th>
@@ -138,10 +138,10 @@
           </tal:condition>
          </table>
 
-          <table class="grid" tal:condition="python: here.getBehin_behineko_file().size">
+          <table class="grid behineko" tal:condition="python: here.getBehin_behineko_file().size">
           
           <tr>
-          <th i18n:translate="behin_behineko_file"></th>
+          <th i18n:translate="behin_behineko_file" colspan="2" class="goiburua"></th>
           </tr>
           <tr tal:define="adjudikazio_date here/getBehin_behineko_adjudikazio_date" tal:condition="adjudikazio_date">
           <th i18n:translate="behin_behineko_adjudikazio_date"></th>
@@ -170,10 +170,10 @@
           </table>
 
 
-          <table class="grid" tal:condition="python: here.getBehin_betiko_file().size">
+          <table class="grid betiko" tal:condition="python: here.getBehin_betiko_file().size">
           
           <tr>
-          <th i18n:translate="behin_betiko_file"></th>
+          <th i18n:translate="behin_betiko_file"  colspan="2" class="goiburua"></th>
           </tr>
           <tr tal:define="adjudikazio_date here/getBehin_betiko_adjudikazio_date" tal:condition="adjudikazio_date">
           <th i18n:translate="behin_betiko_adjudikazio_date"></th>

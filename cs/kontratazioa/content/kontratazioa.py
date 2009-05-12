@@ -116,7 +116,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
     atapi.StringField(
         name='lizitazio_aurrekontua',
         required=False,
-        languageIndependent=1,
+        languageIndependent=0,
 	storage=atapi.AnnotationStorage(),
         #searchable=1,
         #default='',
@@ -374,5 +374,5 @@ class kontratazioa(folder.ATFolder):
             if self.getPublished_date():
                 return self.getPublished_date().year()
             else:
-                return 0
+                return 1
 atapi.registerType(kontratazioa, PROJECTNAME)
