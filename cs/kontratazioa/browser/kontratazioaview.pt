@@ -97,16 +97,7 @@
  	                             mode='view')" /></td>
           </tr>
           </tal:condition>
-
-
-          <tal:condition condition="here/getInformation">
-          <tr>
-          <th i18n:translate="information"></th>
-          <td tal:content="structure here/getInformation"></td>
-          </tr>
-          </tal:condition>
           
-
           <tal:condition condition="python: here.getAttach1().size">
           <tr>
           <th i18n:translate="attach1"></th>
