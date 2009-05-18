@@ -98,11 +98,11 @@
           </tr>
           </tal:condition>
           
-          <tal:condition condition="python: here.getAttach1().size">
+          <tal:condition condition="python: here.getAttach1_information()">
           <tr>
           <th i18n:translate="attach1"></th>
           <td><span metal:use-macro="python:here.widget('attach1',
- 	                             mode='view')" /><tal:con condition="here/getAttach1_information"><br /><span tal:content="structure here/getAttach1_information"></span></tal:con><br /></td>
+ 	                             mode='view')" /><br /><span tal:content="structure here/getAttach1_information"></span><br /></td>
           </tr>
           </tal:condition>
 
