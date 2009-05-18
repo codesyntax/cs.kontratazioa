@@ -13,7 +13,8 @@
 	</ul>
         <div class="kontratazioafolder">
         <tal:repeatyear define="year_dict here/@@kontratazioa_list; years python: year_dict.keys(); dummy python: years.sort(); dummy python: years.reverse()" repeat="year years">
-          <h2  tal:condition="python: year !='denak'" tal:content="year"></h2>
+          <h2  tal:condition="python: year !='denak' and year!=1" tal:content="year"></h2>
+          <h2  tal:condition="python:year==1" i18n:translate="publikazio-urte-gabe">Publikazio urterik ez dutenak</h2>
         <tal:repeat define="dict python: year_dict[year]" repeat="orga python: dict.keys()">
           <h3 tal:content="orga"></h3>
           <table class="grid">

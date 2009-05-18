@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-05-11 10:23+0000\n"
-"PO-Revision-Date: 2009-05-11 12:28+0100\n"
+"POT-Creation-Date: 2009-05-18 07:14+0000\n"
+"PO-Revision-Date: 2009-05-18 13:10+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: ./content/kontratazioa.py:166
 msgid "Description of attach1_information"
-msgstr "Iragarki testuaren informazioa"
+msgstr "Iragarki testua"
 
 #: ./content/kontratazioa.py:219
 msgid "Description of behin_behineko_adjudikazio_date"
@@ -32,7 +32,7 @@ msgstr "Behin behineko adjudikazioduna"
 
 #: ./content/kontratazioa.py:256
 msgid "Description of behin_behineko_profile_date"
-msgstr "Kontratatzailearen profileko argitaratze data"
+msgstr "Argitaratze data kontratatzailearen profilean"
 
 #: ./content/kontratazioa.py:298
 msgid "Description of behin_betiko_adjudikazioaren_zenbatekoa"
@@ -215,7 +215,7 @@ msgid "kontratazioaFolder"
 msgstr "Kontratatzailearen profila"
 
 #. Default: "Kontratua"
-#: ./browser/kontratazioafolderview.pt:19
+#: ./browser/kontratazioafolderview.pt:21
 msgid "kontratua"
 msgstr "Kontratua"
 
@@ -238,6 +238,11 @@ msgstr "Erakunde motak"
 #: ./browser/kontratazioaview.pt:28
 msgid "process"
 msgstr "Prozedura"
+
+#. Default: "Publikazio urterik ez dutenak"
+#: ./browser/kontratazioafolderview.pt:17
+msgid "publikazio-urte-gabe"
+msgstr "Publikazio urterik ez dutenak"
 
 #: ./browser/kontratazioaview.pt:56
 msgid "published_date"
@@ -264,7 +269,7 @@ msgid "state_source"
 msgstr "Egoera motak"
 
 #. Default: "Xedea"
-#: ./browser/kontratazioafolderview.pt:19
+#: ./browser/kontratazioafolderview.pt:21
 msgid "xedea"
 msgstr "Xedea"
 

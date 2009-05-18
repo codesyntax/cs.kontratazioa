@@ -54,7 +54,7 @@
           <tal:condition define="last_date here/getPublished_date" condition="last_date">
           <tr>
           <th i18n:translate="published_date"></th>
-          <td tal:content="python: here.toLocalizedTime(last_date)"></td>
+          <td tal:content="python: here.toLocalizedTime(last_date, long_format=1)"></td>
           </tr>
           </tal:condition>
 
@@ -119,7 +119,7 @@
           <tal:condition define="last_date here/getLast_date" condition="last_date">
           <tr>
           <th i18n:translate="last_date"></th>
-          <td tal:content="python: here.toLocalizedTime(last_date)"></td>
+          <td tal:content="python: here.toLocalizedTime(last_date, log_format=1)"></td>
           </tr>
           </tal:condition>
           
@@ -133,7 +133,7 @@
           <tal:condition define="last_date here/getEskaintza_ekonomikoa_date" condition="last_date">
           <tr>
           <th i18n:translate="last_date"></th>
-          <td tal:content="python: here.toLocalizedTime(last_date)"></td>
+          <td tal:content="python: here.toLocalizedTime(last_date, long_format=1)"></td>
           </tr>
           </tal:condition>
          </table>
@@ -145,7 +145,7 @@
           </tr>
           <tr tal:define="adjudikazio_date here/getBehin_behineko_adjudikazio_date" tal:condition="adjudikazio_date">
           <th i18n:translate="behin_behineko_adjudikazio_date"></th>
-          <td tal:content="adjudikazio_date"></td>
+          <td tal:content="python: here.toLocalizedTime(adjudikazio_date, log_format=1)"></td>
           </tr>
           <tr><th i18n:translate="akordioa"></th><td><span metal:use-macro="python:here.widget('behin_behineko_file',
  	                             mode='view')" /></td>
@@ -164,7 +164,7 @@
 
           <tr tal:define="profile_date here/getBehin_behineko_profile_date" tal:condition="profile_date">
           <th i18n:translate="behin_behineko_profile_date"></th>
-          <td tal:content="profile_date"></td>
+          <td tal:content="python: here.toLocalizedTime(profile_date, log_format=1)"></td>
           </tr>
 
           </table>
@@ -177,7 +177,7 @@
           </tr>
           <tr tal:define="adjudikazio_date here/getBehin_betiko_adjudikazio_date" tal:condition="adjudikazio_date">
           <th i18n:translate="behin_betiko_adjudikazio_date"></th>
-          <td tal:content="adjudikazio_date"></td>
+          <td tal:content="python: here.toLocalizedTime(adjudikazio_date, log_format=1)"></td>
           </tr>
           <tr><th i18n:translate="akordioa"></th><td><span metal:use-macro="python:here.widget('behin_betiko_file',
  	                             mode='view')" /></td>
@@ -196,7 +196,7 @@
 
           <tr tal:define="profile_date here/getBehin_betiko_profile_date" tal:condition="profile_date">
           <th i18n:translate="behin_betiko_profile_date"></th>
-          <td tal:content="profile_date"></td>
+          <td tal:content="python: here.toLocalizedTime(profile_date, log_format=1)"></td>
           </tr>
 
           </table>

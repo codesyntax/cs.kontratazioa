@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-05-11 10:23+0000\n"
+"POT-Creation-Date: 2009-05-18 07:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,7 +215,7 @@ msgid "kontratazioaFolder"
 msgstr ""
 
 #. Default: "Kontratua"
-#: ./browser/kontratazioafolderview.pt:19
+#: ./browser/kontratazioafolderview.pt:21
 msgid "kontratua"
 msgstr ""
 
@@ -237,6 +237,11 @@ msgstr ""
 
 #: ./browser/kontratazioaview.pt:28
 msgid "process"
+msgstr ""
+
+#. Default: "Publikazio urterik ez dutenak"
+#: ./browser/kontratazioafolderview.pt:17
+msgid "publikazio-urte-gabe"
 msgstr ""
 
 #: ./browser/kontratazioaview.pt:56
@@ -264,7 +269,7 @@ msgid "state_source"
 msgstr ""
 
 #. Default: "Xedea"
-#: ./browser/kontratazioafolderview.pt:19
+#: ./browser/kontratazioafolderview.pt:21
 msgid "xedea"
 msgstr ""
 
