@@ -53,21 +53,21 @@
           
           <tal:condition define="last_date here/getPublished_date" condition="last_date">
           <tr>
-          <th i18n:translate="published_date"></th>
-          <td tal:content="python: here.toLocalizedTime(last_date, long_format=1)"></td>
+          <th i18n:translate="published_date">Published data</th>
+          <td tal:content="python: here.toLocalizedTime(last_date, long_format=0)"></td>
           </tr>
           </tal:condition>
 
           <tal:condition condition="here/getLizitazio_aurrekontua">
           <tr>
-          <th i18n:translate="lizitazio_aurrekontua"></th>
+          <th i18n:translate="lizitazio_aurrekontua">Lizitazio-aurrekontua</th>
           <td tal:content="here/getLizitazio_aurrekontua"></td>
           </tr>
           </tal:condition>
           
           <tal:condition condition="python: here.getAttach2().size">
           <tr>
-          <th i18n:translate="attach2"></th>
+          <th i18n:translate="attach2">Attach2</th>
           <td><span metal:use-macro="python:here.widget('attach2',
  	                             mode='view')" /></td>
           </tr>
@@ -75,7 +75,7 @@
 
           <tal:condition condition="python: here.getAttach3().size">
           <tr>
-          <th i18n:translate="attach3"></th>
+          <th i18n:translate="attach3">Attach3</th>
           <td><span metal:use-macro="python:here.widget('attach3',
  	                             mode='view')" /></td>
           </tr>
@@ -85,14 +85,14 @@
 
           <tal:condition condition="here/getDocumentation">
           <tr>
-          <th i18n:translate="documentation"></th>
+          <th i18n:translate="documentation">Documentation</th>
           <td tal:content="structure here/getDocumentation"></td>
           </tr>
           </tal:condition>
           
           <tal:condition condition="python: here.getAttach4().size">
           <tr>
-          <th i18n:translate="attach4"></th>
+          <th i18n:translate="attach4">Attach4</th>
           <td><span metal:use-macro="python:here.widget('attach4',
  	                             mode='view')" /></td>
           </tr>
@@ -100,7 +100,7 @@
           
           <tal:condition condition="python: here.getAttach1_information()">
           <tr>
-          <th i18n:translate="attach1"></th>
+          <th i18n:translate="attach1">Attach1</th>
           <td><span metal:use-macro="python:here.widget('attach1',
  	                             mode='view')" /><br /><span tal:content="structure here/getAttach1_information"></span><br /></td>
           </tr>
@@ -109,22 +109,22 @@
 
           <tal:condition define="last_date here/getLast_date" condition="last_date">
           <tr>
-          <th i18n:translate="last_date"></th>
+          <th i18n:translate="last_date">Last date</th>
           <td tal:content="python: here.toLocalizedTime(last_date, long_format=1)"></td>
           </tr>
           </tal:condition>
           
            <tal:condition condition="python: here.aq_parent.getContact_information()">
           <tr>
-          <th i18n:translate="contact_information"></th>
+          <th i18n:translate="contact_information">Contact Information</th>
           <td tal:content="structure python: here.aq_parent.getContact_information()"></td>
           </tr>
           </tal:condition>
 
-          <tal:condition define="last_date here/getEskaintza_ekonomikoa_date" condition="last_date">
+          <tal:condition define="eskaintza_ekonomikoa_date here/getEskaintza_ekonomikoa_date" condition="eskaintza_ekonomikoa_date">
           <tr>
-          <th i18n:translate="last_date"></th>
-          <td tal:content="python: here.toLocalizedTime(last_date, long_format=1)"></td>
+          <th i18n:translate="eskaintza_ekonomikoa_date"></th>
+          <td tal:content="python: here.toLocalizedTime(eskaintza_ekonomikoa_date, long_format=0)"></td>
           </tr>
           </tal:condition>
          </table>
@@ -135,27 +135,27 @@
           <th i18n:translate="behin_behineko_file" colspan="2" class="goiburua"></th>
           </tr>
           <tr tal:define="adjudikazio_date here/getBehin_behineko_adjudikazio_date" tal:condition="adjudikazio_date">
-          <th i18n:translate="behin_behineko_adjudikazio_date"></th>
-          <td tal:content="python: here.toLocalizedTime(adjudikazio_date, long_format=1)"></td>
+          <th i18n:translate="behin_behineko_adjudikazio_date">Behin behineko adjudikazio data</th>
+          <td tal:content="python: here.toLocalizedTime(adjudikazio_date, long_format=0)"></td>
           </tr>
-          <tr><th i18n:translate="akordioa"></th><td><span metal:use-macro="python:here.widget('behin_behineko_file',
+          <tr><th i18n:translate="akordioa">akordioa</th><td><span metal:use-macro="python:here.widget('behin_behineko_file',
  	                             mode='view')" /></td>
           </tr>
           
           <tr tal:condition="here/getBehin_behineko_adjudikazioduna">
-          <th i18n:translate="behin_behineko_adjudikazioduna"></th>
+          <th i18n:translate="behin_behineko_adjudikazioduna">adjudikazioduna</th>
           <td tal:content="structure here/getBehin_behineko_adjudikazioduna"></td>
           </tr>
 
           <tr tal:condition="here/getBehin_behineko_adjudikazioaren_zenbatekoa">
-          <th i18n:translate="behin_behineko_adjudikazioaren_zenbatekoa"></th>
+          <th i18n:translate="behin_behineko_adjudikazioaren_zenbatekoa">Adjudikazioaren zenbatekoa</th>
           <td tal:content="structure here/getBehin_behineko_adjudikazioaren_zenbatekoa"></td>
           </tr>
           
 
           <tr tal:define="profile_date here/getBehin_behineko_profile_date" tal:condition="profile_date">
-          <th i18n:translate="behin_behineko_profile_date"></th>
-          <td tal:content="python: here.toLocalizedTime(profile_date, long_format=1)"></td>
+          <th i18n:translate="behin_behineko_profile_date">kontratazio profileko data</th>
+          <td tal:content="python: here.toLocalizedTime(profile_date, long_format=0)"></td>
           </tr>
 
           </table>
@@ -167,27 +167,27 @@
           <th i18n:translate="behin_betiko_file"  colspan="2" class="goiburua"></th>
           </tr>
           <tr tal:define="adjudikazio_date here/getBehin_betiko_adjudikazio_date" tal:condition="adjudikazio_date">
-          <th i18n:translate="behin_betiko_adjudikazio_date"></th>
-          <td tal:content="python: here.toLocalizedTime(adjudikazio_date, long_format=1)"></td>
+          <th i18n:translate="behin_betiko_adjudikazio_date">Behin betiko adjudikazio data</th>
+          <td tal:content="python: here.toLocalizedTime(adjudikazio_date, long_format=0)"></td>
           </tr>
-          <tr><th i18n:translate="akordioa"></th><td><span metal:use-macro="python:here.widget('behin_betiko_file',
+          <tr><th i18n:translate="akordioa">akordioa</th><td><span metal:use-macro="python:here.widget('behin_betiko_file',
  	                             mode='view')" /></td>
           </tr>
           
           <tr tal:condition="here/getBehin_betiko_adjudikazioduna">
-          <th i18n:translate="behin_betiko_adjudikazioduna"></th>
+          <th i18n:translate="behin_betiko_adjudikazioduna">adjudikazioduna</th>
           <td tal:content="structure here/getBehin_betiko_adjudikazioduna"></td>
           </tr>
 
           <tr tal:condition="here/getBehin_betiko_adjudikazioaren_zenbatekoa">
-          <th i18n:translate="behin_betiko_adjudikazioaren_zenbatekoa"></th>
+          <th i18n:translate="behin_betiko_adjudikazioaren_zenbatekoa">Adjudikazioaren zenbatekoa</th>
           <td tal:content="structure here/getBehin_betiko_adjudikazioaren_zenbatekoa"></td>
           </tr>
           
 
           <tr tal:define="profile_date here/getBehin_betiko_profile_date" tal:condition="profile_date">
-          <th i18n:translate="behin_betiko_profile_date"></th>
-          <td tal:content="python: here.toLocalizedTime(profile_date, long_format=1)"></td>
+          <th i18n:translate="behin_betiko_profile_date">kontratazio profileko data</th>
+          <td tal:content="python: here.toLocalizedTime(profile_date, long_format=0)"></td>
           </tr>
 
           </table>

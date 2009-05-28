@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-05-18 07:14+0000\n"
+"POT-Creation-Date: 2009-05-25 14:23+0000\n"
 "PO-Revision-Date: 2009-05-18 13:10+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,35 +14,35 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ./content/kontratazioa.py:166
+#: ./content/kontratazioa.py:156
 msgid "Description of attach1_information"
 msgstr "Iragarki testua"
 
-#: ./content/kontratazioa.py:219
+#: ./content/kontratazioa.py:209
 msgid "Description of behin_behineko_adjudikazio_date"
 msgstr "Behin behineko adjudikazio data ezarri"
 
-#: ./content/kontratazioa.py:241
+#: ./content/kontratazioa.py:231
 msgid "Description of behin_behineko_adjudikazioaren_zenbatekoa"
 msgstr "Behin behineko adjudikazioaren zenbatekoa"
 
-#: ./content/kontratazioa.py:229
+#: ./content/kontratazioa.py:219
 msgid "Description of behin_behineko_adjudikazioduna"
 msgstr "Behin behineko adjudikazioduna"
 
-#: ./content/kontratazioa.py:256
+#: ./content/kontratazioa.py:246
 msgid "Description of behin_behineko_profile_date"
 msgstr "Argitaratze data kontratatzailearen profilean"
 
-#: ./content/kontratazioa.py:298
+#: ./content/kontratazioa.py:288
 msgid "Description of behin_betiko_adjudikazioaren_zenbatekoa"
 msgstr "Behin betiko adjudikazioaren zebatekoa"
 
-#: ./content/kontratazioa.py:286
+#: ./content/kontratazioa.py:276
 msgid "Description of behin_betiko_adjudikazioduna"
 msgstr "Behin betiko adjudikazioduna"
 
-#: ./content/kontratazioa.py:313
+#: ./content/kontratazioa.py:303
 msgid "Description of behin_betiko_profile_date"
 msgstr "Kontratatzailearen profileko argitaratze data"
 
@@ -65,10 +65,6 @@ msgstr "Eskaintza ekonomikoak jendaurrean irekitzeko data"
 #: ./content/kontratazioa.py:27
 msgid "Description of file_number"
 msgstr "Espediente zenbakia"
-
-#: ./content/kontratazioa.py:147
-msgid "Description of information"
-msgstr "Informazio gehiago"
 
 #: ./content/kontratazioafolder.py:50
 msgid "Description of izapidea"
@@ -108,15 +104,16 @@ msgstr "Egoera bakoitza lerro batean sartu"
 msgid "Description of the Example Type"
 msgstr ""
 
-#: ./browser/kontratazioaview.pt:150
+#. Default: "akordioa"
+#: ./browser/kontratazioaview.pt:141
 msgid "akordioa"
 msgstr "Akordioa"
 
-#: ./browser/kontratazioaview.pt:112
+#: ./browser/kontratazioaview.pt:103
 msgid "attach1"
 msgstr "Iragarkiaren testua"
 
-#: ./content/kontratazioa.py:165
+#: ./content/kontratazioa.py:155
 msgid "attach1_information"
 msgstr "Iragarki testuaren informazioa"
 
@@ -132,47 +129,55 @@ msgstr "Baldintza teknikoak"
 msgid "attach4"
 msgstr "Karatula"
 
-#: ./browser/kontratazioaview.pt:147
+#. Default: "Behin behineko adjudikazio data"
+#: ./browser/kontratazioaview.pt:138
 msgid "behin_behineko_adjudikazio_date"
 msgstr "Behin behineko adjudikazio data"
 
-#: ./browser/kontratazioaview.pt:160
+#. Default: "Adjudikazioaren zenbatekoa"
+#: ./browser/kontratazioaview.pt:151
 msgid "behin_behineko_adjudikazioaren_zenbatekoa"
 msgstr "Behin behineko adjudikazioaren zenbatekoa"
 
-#: ./browser/kontratazioaview.pt:155
+#. Default: "adjudikazioduna"
+#: ./browser/kontratazioaview.pt:146
 msgid "behin_behineko_adjudikazioduna"
 msgstr "Behin behineko adjudikazioduna"
 
-#: ./browser/kontratazioaview.pt:144
+#: ./browser/kontratazioaview.pt:135
 msgid "behin_behineko_file"
 msgstr "Behin-behineko adjudikazioa"
 
-#: ./browser/kontratazioaview.pt:166
+#. Default: "kontratazio profileko data"
+#: ./browser/kontratazioaview.pt:157
 msgid "behin_behineko_profile_date"
 msgstr "Kontratatzailearen profileko argitaratze data"
 
-#: ./browser/kontratazioaview.pt:179
+#. Default: "Behin betiko adjudikazio data"
+#: ./browser/kontratazioaview.pt:170
 msgid "behin_betiko_adjudikazio_date"
 msgstr "Behin betiko adjudikazio data"
 
-#: ./browser/kontratazioaview.pt:192
+#. Default: "Adjudikazioaren zenbatekoa"
+#: ./browser/kontratazioaview.pt:183
 msgid "behin_betiko_adjudikazioaren_zenbatekoa"
 msgstr "Behin betiko adjukazioaren zenbatekoa"
 
-#: ./browser/kontratazioaview.pt:187
+#. Default: "adjudikazioduna"
+#: ./browser/kontratazioaview.pt:178
 msgid "behin_betiko_adjudikazioduna"
 msgstr "Behin betiko adjudikazioduna"
 
-#: ./browser/kontratazioaview.pt:176
+#: ./browser/kontratazioaview.pt:167
 msgid "behin_betiko_file"
 msgstr "Behin-betiko adjudikazioa"
 
-#: ./browser/kontratazioaview.pt:198
+#. Default: "kontratazio profileko data"
+#: ./browser/kontratazioaview.pt:189
 msgid "behin_betiko_profile_date"
 msgstr "Kontratatzailearen profileko argitaratze data"
 
-#: ./browser/kontratazioaview.pt:128
+#: ./browser/kontratazioaview.pt:119
 msgid "contact_information"
 msgstr "Kontaktua"
 
@@ -191,10 +196,6 @@ msgstr "Eskaintza ekonomikoak jendaurrean irekitzeko data"
 #: ./browser/kontratazioaview.pt:14
 msgid "file_number"
 msgstr "Espediente zenbakia"
-
-#: ./browser/kontratazioaview.pt:104
-msgid "information"
-msgstr "Informazio gehiago"
 
 #: ./browser/kontratazioaview.pt:35
 msgid "izapidea"
@@ -215,11 +216,11 @@ msgid "kontratazioaFolder"
 msgstr "Kontratatzailearen profila"
 
 #. Default: "Kontratua"
-#: ./browser/kontratazioafolderview.pt:21
+#: ./browser/kontratazioafolderview.pt:22
 msgid "kontratua"
 msgstr "Kontratua"
 
-#: ./browser/kontratazioaview.pt:121
+#: ./browser/kontratazioaview.pt:112
 msgid "last_date"
 msgstr "Eskaintzak aurkezteko azken eguna"
 
@@ -240,7 +241,7 @@ msgid "process"
 msgstr "Prozedura"
 
 #. Default: "Publikazio urterik ez dutenak"
-#: ./browser/kontratazioafolderview.pt:17
+#: ./browser/kontratazioafolderview.pt:18
 msgid "publikazio-urte-gabe"
 msgstr "Publikazio urterik ez dutenak"
 
@@ -260,7 +261,7 @@ msgstr "Dokumentazio osagarria jarri"
 msgid "put_kontratazio_organoa"
 msgstr "Kontratazio organoa jarri"
 
-#: ./content/kontratazioa.py:198
+#: ./content/kontratazioa.py:188
 msgid "state"
 msgstr "Egoera"
 
@@ -269,7 +270,7 @@ msgid "state_source"
 msgstr "Egoera motak"
 
 #. Default: "Xedea"
-#: ./browser/kontratazioafolderview.pt:21
+#: ./browser/kontratazioafolderview.pt:22
 msgid "xedea"
 msgstr "Xedea"
 
