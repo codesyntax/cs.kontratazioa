@@ -59,6 +59,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
     atapi.StringField('organization',
                   searchable=1,
 		  languageIndependent=0,
+                  required=True,
 		  vocabulary='selection_organization',
                   widget=atapi.SelectionWidget(
                      label=_(u'organization'),
