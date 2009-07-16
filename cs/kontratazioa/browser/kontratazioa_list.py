@@ -26,8 +26,9 @@ class List(BrowserView):
                 if idea != context.getState_source()[-1]:
                     dict={}
                     for organization in organizations:
-                        kontratazioak=catalog(portal_type="kontratazioa", review_state="published", getState=idea, getOrganization=organization)
+                        kontratazioak=catalog(portal_type="kontratazioa", review_state="published", getState=idea, getOrganization=organization, sort_on="kontratazioa_contract_type")
                         if kontratazioak:
+                            list(kontratazioak).sort(cmp=lambda x,y: cmp(x.Title, y.Title))
                             dict[organization]=kontratazioak
                     year_dict['denak']=dict
                     return year_dict
@@ -38,8 +39,9 @@ class List(BrowserView):
                 for year in publication_years:
                     dict={}
                     for organization in organizations:
-                        kontratazioak=catalog(portal_type="kontratazioa", review_state="published", getState=idea, getOrganization=organization, kontratazioa_publication_year=year)
+                        kontratazioak=catalog(portal_type="kontratazioa", review_state="published", getState=idea, getOrganization=organization, kontratazioa_publication_year=year, sort_on="kontratazioa_contract_type")
                         if kontratazioak:
+                            list(kontratazioak).sort(cmp=lambda x,y: cmp(x.Title, y.Title))   
                             dict[organization]=kontratazioak
                     year_dict[year]=dict
                 

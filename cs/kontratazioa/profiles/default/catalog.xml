@@ -14,5 +14,10 @@
         </index>
         <column value="publication_year" />
 
+        <index name="kontratazioa_contract_type" meta_type="FieldIndex">
+		<indexed_attr value="kontratazioa_contract_type"/>
+        </index>
+        <column value="kontratazioa_contract_type" />
+
 
 </object>

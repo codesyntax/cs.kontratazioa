@@ -32,6 +32,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
     atapi.StringField('contract_type',
                   searchable=1,
 		  languageIndependent=0,
+                  required=1,
 		  vocabulary='selection_contract_type',
                   widget=atapi.SelectionWidget(
                      label=_(u'put_contract_type'),
@@ -378,4 +379,9 @@ class kontratazioa(folder.ATFolder):
                 return self.getPublished_date().year()
             else:
                 return 1
+
+    def kontratazioa_contract_type(self):
+            
+            return self.getContract_type()
+            
 atapi.registerType(kontratazioa, PROJECTNAME)
