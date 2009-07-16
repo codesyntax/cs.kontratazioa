@@ -129,7 +129,7 @@
           </tal:condition>
          </table>
 
-          <table class="grid behineko" tal:define="adjudikazio_date here/getBehin_behineko_adjudikazio_date;behin_behineko_file python: here.getBehin_behineko_file().size;adjudikazioduna here/getBehin_behineko_adjudikazioduna;adjudikazioaren_zenbatekoa here/getBehin_behineko_adjudikazioaren_zenbatekoa;profile_date here/getBehin_behineko_profile_date" tal:condition="python: adjudikazio_date or behin_betiko_file or adjudikazioduna or adjudikazioaren_zenbatekoa or profile_date">
+          <table class="grid behineko" tal:define="adjudikazio_date here/getBehin_behineko_adjudikazio_date;behin_behineko_file python: here.getBehin_behineko_file().size;adjudikazioduna here/getBehin_behineko_adjudikazioduna;adjudikazioaren_zenbatekoa here/getBehin_behineko_adjudikazioaren_zenbatekoa;profile_date here/getBehin_behineko_profile_date" tal:condition="python: adjudikazio_date or behin_behineko_file or adjudikazioduna or adjudikazioaren_zenbatekoa or profile_date">
           
           <tr>
           <th i18n:translate="behin_behineko_file"  colspan="2" class="goiburua"></th>
