@@ -110,7 +110,7 @@
           <tal:condition define="last_date here/getLast_date" condition="last_date">
           <tr>
           <th i18n:translate="last_date">Last date</th>
-          <td tal:content="python: here.toLocalizedTime(last_date, long_format=1)"></td>
+          <td tal:content="python: here.toLocalizedTime(last_date, long_format=0)"></td>
           </tr>
           </tal:condition>
           
@@ -124,7 +124,7 @@
           <tal:condition define="eskaintza_ekonomikoa_date here/getEskaintza_ekonomikoa_date" condition="eskaintza_ekonomikoa_date">
           <tr>
           <th i18n:translate="eskaintza_ekonomikoa_date">eskaintza_ekonomikoa_date</th>
-          <td tal:content="python: here.toLocalizedTime(eskaintza_ekonomikoa_date, long_format=0)"></td>
+          <td tal:content="python: here.toLocalizedTime(eskaintza_ekonomikoa_date, long_format=1)"></td>
           </tr>
           </tal:condition>
          </table>
