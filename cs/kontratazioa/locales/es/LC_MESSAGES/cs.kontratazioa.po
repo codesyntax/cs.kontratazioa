@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2009-05-25 14:23+0000\n"
-"PO-Revision-Date: 2009-05-18 13:09+0100\n"
+"PO-Revision-Date: 2010-01-28 16:50+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -137,7 +137,7 @@ msgstr "Fecha de adjudicación"
 #. Default: "Adjudikazioaren zenbatekoa"
 #: ./browser/kontratazioaview.pt:151
 msgid "behin_behineko_adjudikazioaren_zenbatekoa"
-msgstr "Cantidad de adjudicación"
+msgstr "Importe de adjudicación"
 
 #. Default: "adjudikazioduna"
 #: ./browser/kontratazioaview.pt:146
@@ -175,7 +175,7 @@ msgstr "Adjudicación definitiva"
 #. Default: "kontratazio profileko data"
 #: ./browser/kontratazioaview.pt:189
 msgid "behin_betiko_profile_date"
-msgstr "Fecha de publicación del perfil del contratante"
+msgstr "Fecha de publicación en el perfil del contratante"
 
 #: ./browser/kontratazioaview.pt:119
 msgid "contact_information"
@@ -191,7 +191,7 @@ msgstr "Documentación"
 
 #: ./content/kontratazioa.py:112
 msgid "eskaintza_ekonomikoa_date"
-msgstr "Fecha de la oferta económica"
+msgstr "Fecha de apertura de las proposiciones económicas"
 
 #: ./browser/kontratazioaview.pt:14
 msgid "file_number"
@@ -222,7 +222,7 @@ msgstr "Contrato"
 
 #: ./browser/kontratazioaview.pt:112
 msgid "last_date"
-msgstr "Último día para la solicitud de propuestas"
+msgstr "Último día para la presentación de proposiciones"
 
 #: ./browser/kontratazioaview.pt:63
 msgid "lizitazio_aurrekontua"
