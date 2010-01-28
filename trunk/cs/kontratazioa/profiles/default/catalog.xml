@@ -1,0 +1,23 @@
+<object name="portal_catalog" meta_type="Plone Catalog Tool">
+	
+        <index name="getState" meta_type="FieldIndex">
+		<indexed_attr value="getState"/>
+        </index>
+        <column value="getState" />
+        <index name="getOrganization" meta_type="FieldIndex">
+		<indexed_attr value="getOrganization"/>
+        </index>
+        <column value="getOrganization" />
+        
+        <index name="kontratazioa_publication_year" meta_type="FieldIndex">
+		<indexed_attr value="publication_year"/>
+        </index>
+        <column value="publication_year" />
+
+        <index name="kontratazioa_contract_type" meta_type="FieldIndex">
+		<indexed_attr value="kontratazioa_contract_type"/>
+        </index>
+        <column value="kontratazioa_contract_type" />
+
+
+</object>

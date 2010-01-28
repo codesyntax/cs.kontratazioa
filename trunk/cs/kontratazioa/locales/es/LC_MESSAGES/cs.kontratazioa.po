@@ -1,0 +1,276 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2009-05-25 14:23+0000\n"
+"PO-Revision-Date: 2010-01-28 16:50+0100\n"
+"Last-Translator: lur <libargutxi@codesyntax.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: es\n"
+"Language-Name: Espanish\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ./content/kontratazioa.py:156
+msgid "Description of attach1_information"
+msgstr "Texto del anuncio"
+
+#: ./content/kontratazioa.py:209
+msgid "Description of behin_behineko_adjudikazio_date"
+msgstr ""
+
+#: ./content/kontratazioa.py:231
+msgid "Description of behin_behineko_adjudikazioaren_zenbatekoa"
+msgstr ""
+
+#: ./content/kontratazioa.py:219
+msgid "Description of behin_behineko_adjudikazioduna"
+msgstr ""
+
+#: ./content/kontratazioa.py:246
+msgid "Description of behin_behineko_profile_date"
+msgstr ""
+
+#: ./content/kontratazioa.py:288
+msgid "Description of behin_betiko_adjudikazioaren_zenbatekoa"
+msgstr ""
+
+#: ./content/kontratazioa.py:276
+msgid "Description of behin_betiko_adjudikazioduna"
+msgstr ""
+
+#: ./content/kontratazioa.py:303
+msgid "Description of behin_betiko_profile_date"
+msgstr ""
+
+#: ./content/kontratazioafolder.py:97
+msgid "Description of contact_information"
+msgstr "Contacto"
+
+#: ./content/kontratazioafolder.py:26
+msgid "Description of contract_type"
+msgstr "Tipos de crontratos"
+
+#: ./content/kontratazioa.py:136
+msgid "Description of documentation"
+msgstr "Documentación"
+
+#: ./content/kontratazioa.py:113
+msgid "Description of eskaintza_ekonomikoa_date"
+msgstr ""
+
+#: ./content/kontratazioa.py:27
+msgid "Description of file_number"
+msgstr "Número de expediente"
+
+#: ./content/kontratazioafolder.py:50
+msgid "Description of izapidea"
+msgstr "Tramitación"
+
+#: ./content/kontratazioafolder.py:74
+msgid "Description of kontratazioa_organoa"
+msgstr "Organo de contratación"
+
+#: ./content/kontratazioa.py:99
+msgid "Description of last_date"
+msgstr "Último día para presentar las solicitudes"
+
+#: ./content/kontratazioa.py:126
+msgid "Description of lizitazio_aurrekontua"
+msgstr "Presupuesto de Licitación"
+
+#: ./content/kontratazioafolder.py:62
+msgid "Description of organization_source"
+msgstr "Institución"
+
+#: ./content/kontratazioafolder.py:38
+msgid "Description of process"
+msgstr "Procedimiento"
+
+#: ./content/kontratazioa.py:86
+msgid "Description of published_date"
+msgstr "Fecha de publicación"
+
+#: ./content/kontratazioafolder.py:86
+msgid "Description of state_source"
+msgstr "Estados"
+
+#. Default: "Description of the Example Type"
+#: ./profiles/default/types/kontratazioa.xml
+#: ./profiles/default/types/kontratazioaFolder.xml
+msgid "Description of the Example Type"
+msgstr ""
+
+#. Default: "akordioa"
+#: ./browser/kontratazioaview.pt:141
+msgid "akordioa"
+msgstr "Acuerdo"
+
+#: ./browser/kontratazioaview.pt:103
+msgid "attach1"
+msgstr "Texto del anuncio"
+
+#: ./content/kontratazioa.py:155
+msgid "attach1_information"
+msgstr "Información sobre el texto del anuncio"
+
+#: ./browser/kontratazioaview.pt:70
+msgid "attach2"
+msgstr "Claúsulas administrativas"
+
+#: ./browser/kontratazioaview.pt:78
+msgid "attach3"
+msgstr "Prescripciones técnicas"
+
+#: ./browser/kontratazioaview.pt:95
+msgid "attach4"
+msgstr "Caratula"
+
+#. Default: "Behin behineko adjudikazio data"
+#: ./browser/kontratazioaview.pt:138
+msgid "behin_behineko_adjudikazio_date"
+msgstr "Fecha de adjudicación"
+
+#. Default: "Adjudikazioaren zenbatekoa"
+#: ./browser/kontratazioaview.pt:151
+msgid "behin_behineko_adjudikazioaren_zenbatekoa"
+msgstr "Importe de adjudicación"
+
+#. Default: "adjudikazioduna"
+#: ./browser/kontratazioaview.pt:146
+msgid "behin_behineko_adjudikazioduna"
+msgstr "Adjudicatario"
+
+#: ./browser/kontratazioaview.pt:135
+msgid "behin_behineko_file"
+msgstr "Adjudicación provisional"
+
+#. Default: "kontratazio profileko data"
+#: ./browser/kontratazioaview.pt:157
+msgid "behin_behineko_profile_date"
+msgstr "Fecha de publicación del perfil del contratante"
+
+#. Default: "Behin betiko adjudikazio data"
+#: ./browser/kontratazioaview.pt:170
+msgid "behin_betiko_adjudikazio_date"
+msgstr "Fecha de adjudicación"
+
+#. Default: "Adjudikazioaren zenbatekoa"
+#: ./browser/kontratazioaview.pt:183
+msgid "behin_betiko_adjudikazioaren_zenbatekoa"
+msgstr "Cantidad de adjudicación"
+
+#. Default: "adjudikazioduna"
+#: ./browser/kontratazioaview.pt:178
+msgid "behin_betiko_adjudikazioduna"
+msgstr "Adjudicatario"
+
+#: ./browser/kontratazioaview.pt:167
+msgid "behin_betiko_file"
+msgstr "Adjudicación definitiva"
+
+#. Default: "kontratazio profileko data"
+#: ./browser/kontratazioaview.pt:189
+msgid "behin_betiko_profile_date"
+msgstr "Fecha de publicación en el perfil del contratante"
+
+#: ./browser/kontratazioaview.pt:119
+msgid "contact_information"
+msgstr "Contacto"
+
+#: ./browser/kontratazioaview.pt:21
+msgid "contract_type"
+msgstr "Tipos de contrato"
+
+#: ./browser/kontratazioaview.pt:88
+msgid "documentation"
+msgstr "Documentación"
+
+#: ./content/kontratazioa.py:112
+msgid "eskaintza_ekonomikoa_date"
+msgstr "Fecha de apertura de las proposiciones económicas"
+
+#: ./browser/kontratazioaview.pt:14
+msgid "file_number"
+msgstr "Número de expediente"
+
+#: ./browser/kontratazioaview.pt:35
+msgid "izapidea"
+msgstr "Tramitación"
+
+#: ./browser/kontratazioaview.pt:49
+msgid "kontratazio_organoa"
+msgstr "Órgano de contratación"
+
+#. Default: "kontratazioa"
+#: ./profiles/default/types/kontratazioa.xml
+msgid "kontratazioa"
+msgstr "Contrato"
+
+#. Default: "kontratazioaFolder"
+#: ./profiles/default/types/kontratazioaFolder.xml
+msgid "kontratazioaFolder"
+msgstr "Perfil del contratante"
+
+#. Default: "Kontratua"
+#: ./browser/kontratazioafolderview.pt:22
+msgid "kontratua"
+msgstr "Contrato"
+
+#: ./browser/kontratazioaview.pt:112
+msgid "last_date"
+msgstr "Último día para la presentación de proposiciones"
+
+#: ./browser/kontratazioaview.pt:63
+msgid "lizitazio_aurrekontua"
+msgstr "Presupuestos de licitación"
+
+#: ./browser/kontratazioaview.pt:42
+msgid "organization"
+msgstr "Organización"
+
+#: ./content/kontratazioafolder.py:61
+msgid "organization_source"
+msgstr "Tipos de organización"
+
+#: ./browser/kontratazioaview.pt:28
+msgid "process"
+msgstr "Procedimiento"
+
+#. Default: "Publikazio urterik ez dutenak"
+#: ./browser/kontratazioafolderview.pt:18
+msgid "publikazio-urte-gabe"
+msgstr "Sin fecha de publicación"
+
+#: ./browser/kontratazioaview.pt:56
+msgid "published_date"
+msgstr "Fecha de publicación en el perfil del contratante"
+
+#: ./content/kontratazioa.py:35
+msgid "put_contract_type"
+msgstr "Elije el tipo de contrato"
+
+#: ./content/kontratazioa.py:135
+msgid "put_documentation"
+msgstr "Inserta la documentación adicional"
+
+#: ./content/kontratazioa.py:71
+msgid "put_kontratazio_organoa"
+msgstr "Elije el organo de contratación"
+
+#: ./content/kontratazioa.py:188
+msgid "state"
+msgstr "Estado"
+
+#: ./content/kontratazioafolder.py:85
+msgid "state_source"
+msgstr "Tipos de estado"
+
+#. Default: "Xedea"
+#: ./browser/kontratazioafolderview.pt:22
+msgid "xedea"
+msgstr "Título"
+

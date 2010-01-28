@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="cs.kontratazioa">
+<body>
+    <div metal:fill-slot="main">
+        <tal:main-macro metal:define-macro="main">
+        <h1 class="documentFirstHeading"> 
+          <tal:content content="here/Title"></tal:content>
+	</h1>
+	<ul id="tabs" tal:define="lista here/@@state_list; ul_dict python: lista[0]; states python: lista[1]">
+	<li tal:repeat="li states" tal:attributes="class ul_dict/?li"><a tal:attributes="href string:${here/absolute_url}?id=${li}" tal:content="li"></a></li>
+	</ul>
+        <div class="kontratazioafolder">
+        <tal:repeatyear define="year_dict here/@@kontratazioa_list; years python: year_dict.keys(); dummy python: years.sort(); dummy python: years.reverse()" repeat="year years">
+          <tal:condition define="dict python:year_dict[year]" condition="dict">
+          <h2  tal:condition="python: year !='denak' and year!=1" tal:content="year"></h2>
+          <h2  tal:condition="python:year==1" i18n:translate="publikazio-urte-gabe">Publikazio urterik ez dutenak</h2>
+        <tal:repeat repeat="orga python: dict.keys()">
+          <h3 tal:content="orga"></h3>
+          <table class="grid">
+          <tr><th i18n:translate="kontratua">Kontratua</th><th i18n:translate="xedea">Xedea</th></tr>
+          <tal:define define="kontratazio_lista dict/?orga" repeat="kontratazioa kontratazio_lista">
+          <tr tal:define="obj python: kontratazioa.getObject()"><td tal:content="python: obj.getContract_type()"></td><td><a tal:content="kontratazioa/Title" tal:attributes="href string:${kontratazioa/getURL}"></a></td></tr>
+          </tal:define>
+          </table>
+        </tal:repeat>
+          </tal:condition>
+        </tal:repeatyear>
+        </div>
+        </tal:main-macro>
+    </div>
+</body>
+</html>
