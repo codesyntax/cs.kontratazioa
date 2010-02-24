@@ -190,15 +190,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                      ),
                   ),
 
-    atapi.StringField('state',
-                  searchable=1,
-		  languageIndependent=0,
-		  vocabulary='selection_state',
-                  widget=atapi.SelectionWidget(
-                     label=_(u'state'),
-		     
-                     ),
-                  ),	 
+    
     atapi.FileField('behin_behineko_file',
                   searchable=1,
                   storage = atapi.AnnotationStorage(migrate=True),
@@ -318,6 +310,16 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
             description=_(u"Description of behin_betiko_profile_date"),
         ),
     ),
+
+    atapi.StringField('state',
+                  searchable=1,
+		  languageIndependent=0,
+		  vocabulary='selection_state',
+                  widget=atapi.SelectionWidget(
+                     label=_(u'state'),
+		     
+                     ),
+                  ),	 
     
 ))
 
