@@ -90,6 +90,20 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
             description=_(u"Description of published_date"),
             show_hm=False,
         ),
+    ),
+    atapi.DateTimeField(
+        name='published_date_boletin',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        #searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"published_date_boletin"),
+            description=_(u"Description of published_date_boletin"),
+            show_hm=False,
+        ),
     ),	 
     atapi.DateTimeField(
         name='last_date',

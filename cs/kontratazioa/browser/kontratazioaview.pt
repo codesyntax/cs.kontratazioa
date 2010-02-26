@@ -58,6 +58,13 @@
           </tr>
           </tal:condition>
 
+           <tal:condition define="last_date here/getPublished_date_boletin" condition="last_date">
+          <tr>
+          <th i18n:translate="published_date_boletin">Published data boletin</th>
+          <td tal:content="python: here.toLocalizedTime(last_date, long_format=0)"></td>
+          </tr>
+          </tal:condition>
+
           <tal:condition condition="here/getLizitazio_aurrekontua">
           <tr>
           <th i18n:translate="lizitazio_aurrekontua">Lizitazio-aurrekontua</th>
