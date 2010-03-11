@@ -104,6 +104,20 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
             description=_(u"Description of published_date_boletin"),
             show_hm=False,
         ),
+    ),
+    atapi.DateTimeField(
+        name='organo_contratacion_date',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        #searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"organo_contratacion_date"),
+            description=_(u"Description of organo_contratacion_date"),
+            show_hm=False,
+        ),
     ),	 
     atapi.DateTimeField(
         name='last_date',
