@@ -175,7 +175,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
      atapi.FileField('attach1',
                   searchable=1,
 		  languageIndependent=1,
-                  #storage = atapi.AnnotationStorage(migrate=True),
+                  storage = atapi.AnnotationStorage(migrate=True),
                   widget=atapi.FileWidget(
                      label=_(u'attach1'),
                      ),
@@ -194,7 +194,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                    ),
      atapi.FileField('attach2',
                   searchable=1,
-                  #storage = atapi.AnnotationStorage(migrate=True),
+                  storage = atapi.AnnotationStorage(migrate=True),
 		  languageIndependent=1,
                   widget=atapi.FileWidget(
                      label=_(u'attach2'),
@@ -211,7 +211,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 
      atapi.FileField('attach4',
                   searchable=1,
-                  #storage = atapi.AnnotationStorage(migrate=True),
+                  storage = atapi.AnnotationStorage(migrate=True),
 		  languageIndependent=1,
                   widget=atapi.FileWidget(
                      label=_(u'attach4'),
@@ -221,7 +221,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
     
     atapi.FileField('behin_behineko_file',
                   searchable=1,
-                  #storage = atapi.AnnotationStorage(migrate=True),
+                  storage = atapi.AnnotationStorage(migrate=True),
 		  languageIndependent=1,
                   widget=atapi.FileWidget(
                      label=_(u'behin_behineko_file'),
@@ -281,7 +281,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
     ),
     atapi.FileField('behin_betiko_file',
                   searchable=1,
-                  #storage = atapi.AnnotationStorage(migrate=True),
+                  storage = atapi.AnnotationStorage(migrate=True),
 		  languageIndependent=1,
                   widget=atapi.FileWidget(
                      label=_(u'behin_betiko_file'),
