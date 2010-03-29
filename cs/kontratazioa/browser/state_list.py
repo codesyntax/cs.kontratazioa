@@ -14,8 +14,15 @@ class List(BrowserView):
 	def __call__(self):
 		context = aq_inner(self.context)
                 #import pdb;pdb.set_trace()
+                catalog = getToolByName(context, 'portal_catalog')
                 idea=context.REQUEST.get('id', None)
                 states=context.getState_source()
+                state_list=[]
+                for i in states:
+                    ul_dict={}
+                    ul_dict['len']=len(catalog(portal_type="kontratazioa", review_state="published", getState=i))
+                    ul_dict['state']=i
+                    state_list.append(ul_dict)
                 dict={}
                 if idea:
                    for obj in states:
@@ -27,4 +34,4 @@ class List(BrowserView):
                    dict[states[0]]="on"
                    for obj in states[1:]:
                        dict[obj]="off"
-                return [dict, states]
+                return [dict, state_list]

@@ -9,7 +9,7 @@
           <tal:content content="here/Title"></tal:content>
 	</h1>
 	<ul id="tabs" tal:define="lista here/@@state_list; ul_dict python: lista[0]; states python: lista[1]">
-	<li tal:repeat="li states" tal:attributes="class ul_dict/?li"><a tal:attributes="href string:${here/absolute_url}?id=${li}" tal:content="li"></a></li>
+	<li tal:repeat="li states" tal:attributes="class python: ul_dict[li['state']]"><a tal:attributes="href string:${here/absolute_url}?id=${li/state}" tal:content="python: li['state'] + ' (' + str(li['len']) + ')'"></a><!--<span tal:content="string: (${li/len})"></span>--></li>
 	</ul>
         <div class="kontratazioafolder">
         <tal:repeatyear define="year_dict here/@@kontratazioa_list; years python: year_dict.keys(); dummy python: years.sort(); dummy python: years.reverse()" repeat="year years">

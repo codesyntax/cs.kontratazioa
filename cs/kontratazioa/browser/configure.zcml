@@ -47,4 +47,11 @@
       class=".kontratazioa_list.List"
       permission="zope2.View"
       />
+
+    <browser:page
+      for="..interfaces.kontratazioa.Ikontratazioa"
+      name="kontratazioa_general"
+      template="kontratazioa_general.pt"
+      permission="zope2.View"
+    />
 </configure>
