@@ -206,10 +206,11 @@
           </tr>
 
           </table>
-
-      <tal:otherfiles define="contentFilter python:{'portal_type':'File'}"
-                    repeat="obj python:here.getFolderContents(contentFilter, full_objects=1)">
       
+      <table class="grid orokorra" tal:define="contentFilter python:{'portal_type':'File'}; fitxategiak python:here.getFolderContents(contentFilter, full_objects=1)">
+      <tal:otherfiles repeat="obj fitxategiak">
+      
+      <tr>
       <tal:block
           define="here nocall:obj;
                   field_macro field_macro | here/widgets/field/macros/view"
@@ -218,13 +219,16 @@
         <tal:if_visible define="mode string:view;
                                   visState python:field.widget.isVisible(here, mode);
                                   visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);
-                                  label_macro context/kontratazioa_general/macros/titlelabel; "
+                                  label_macro context/kontratazioa_general/macros/titlelabel; 
+                                  data_macro context/kontratazioa_general/macros/data"
                         condition="python:visState == 'visible' and visCondition">
           <metal:use_field use-macro="field_macro" />
         </tal:if_visible>
+        
         </tal:block>
+      </tr>
       </tal:otherfiles>
-          
+      </table>
         </tal:main-macro>
     </div>
 </body>

@@ -17,15 +17,15 @@
   </metal:label_macro>
 
   <metal:label_macro metal:define-macro="titlelabel">
-    <label tal:content="here/Title">
-    </label><br/>
+    <th tal:content="here/Title">
+    </th>
   </metal:label_macro>
 
 
   <metal:data_macro metal:define-macro="data">
-    <dd>
+    <td>
       <metal:file use-macro="here/widgets/file/macros/file_view" />
-    </dd>
+    </td>
   </metal:data_macro>
 
 
