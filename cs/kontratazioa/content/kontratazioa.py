@@ -144,7 +144,6 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         widget=atapi.CalendarWidget(
             label=_(u"eskaintza_ekonomikoa_date"),
             description=_(u"Description of eskaintza_ekonomikoa_date"),
-            show_hm=False,
         ),
     ),
     atapi.StringField(
