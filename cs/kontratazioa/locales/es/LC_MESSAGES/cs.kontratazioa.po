@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-03-11 10:54+0000\n"
-"PO-Revision-Date: 2010-03-11 11:55+0100\n"
+"POT-Creation-Date: 2010-03-30 11:28+0000\n"
+"PO-Revision-Date: 2010-03-30 13:29+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -113,9 +113,14 @@ msgid "Description of the Example Type"
 msgstr ""
 
 #. Default: "akordioa"
-#: ./browser/kontratazioaview.pt:155
+#: ./browser/kontratazioaview.pt:183
 msgid "akordioa"
 msgstr "Acuerdo"
+
+#. Default: "Anexo Documental"
+#: ./browser/kontratazioaview.pt:146
+msgid "anexo-documental"
+msgstr "Anexo Documental"
 
 #. Default: "Attach1"
 #: ./browser/kontratazioaview.pt:117
@@ -142,50 +147,50 @@ msgid "attach4"
 msgstr "Caratula"
 
 #. Default: "Behin behineko adjudikazio data"
-#: ./browser/kontratazioaview.pt:152
+#: ./browser/kontratazioaview.pt:180
 msgid "behin_behineko_adjudikazio_date"
 msgstr "Fecha de adjudicación"
 
 #. Default: "Adjudikazioaren zenbatekoa"
-#: ./browser/kontratazioaview.pt:165
+#: ./browser/kontratazioaview.pt:193
 msgid "behin_behineko_adjudikazioaren_zenbatekoa"
 msgstr "Importe de adjudicación"
 
 #. Default: "adjudikazioduna"
-#: ./browser/kontratazioaview.pt:160
+#: ./browser/kontratazioaview.pt:188
 msgid "behin_behineko_adjudikazioduna"
 msgstr "Adjudicatario"
 
-#: ./browser/kontratazioaview.pt:149
+#: ./browser/kontratazioaview.pt:177
 msgid "behin_behineko_file"
 msgstr "Adjudicación provisional"
 
 #. Default: "kontratazio profileko data"
-#: ./browser/kontratazioaview.pt:171
+#: ./browser/kontratazioaview.pt:199
 msgid "behin_behineko_profile_date"
 msgstr "Fecha de publicación del perfil del contratante"
 
 #. Default: "Behin betiko adjudikazio data"
-#: ./browser/kontratazioaview.pt:185
+#: ./browser/kontratazioaview.pt:214
 msgid "behin_betiko_adjudikazio_date"
 msgstr "Fecha de adjudicación"
 
 #. Default: "Adjudikazioaren zenbatekoa"
-#: ./browser/kontratazioaview.pt:198
+#: ./browser/kontratazioaview.pt:227
 msgid "behin_betiko_adjudikazioaren_zenbatekoa"
 msgstr "Cantidad de adjudicación"
 
 #. Default: "adjudikazioduna"
-#: ./browser/kontratazioaview.pt:193
+#: ./browser/kontratazioaview.pt:222
 msgid "behin_betiko_adjudikazioduna"
 msgstr "Adjudicatario"
 
-#: ./browser/kontratazioaview.pt:182
+#: ./browser/kontratazioaview.pt:211
 msgid "behin_betiko_file"
 msgstr "Adjudicación definitiva"
 
 #. Default: "kontratazio profileko data"
-#: ./browser/kontratazioaview.pt:204
+#: ./browser/kontratazioaview.pt:233
 msgid "behin_betiko_profile_date"
 msgstr "Fecha de publicación en el perfil del contratante"
 
