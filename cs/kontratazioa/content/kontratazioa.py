@@ -410,6 +410,12 @@ class kontratazioa(folder.ATFolder):
             else:
                 return 1
 
+    def behin_betiko_adjudikazio_date_function(self):
+            if self.getBehin_betiko_adjudikazio_date():
+                return self.getBehin_betiko_adjudikazio_date().year()
+            else:
+                return 1
+
     def kontratazioa_contract_type(self):
             
             return self.getContract_type()
