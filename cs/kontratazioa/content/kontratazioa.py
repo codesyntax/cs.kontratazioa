@@ -167,7 +167,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         default_output_type='text/x-html-safe',
                         widget=atapi.RichWidget(label=_(u'put_documentation'),
                                                 description=_(u'Description of documentation'),
-                                                rows=10,
+                                                rows=5,
                                                 allow_file_upload=False),
                         ),
    
@@ -188,7 +188,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         default_output_type='text/x-html-safe',
                         widget=atapi.RichWidget(label=_(u'attach1_information'),
                                                 description=_(u'Description of attach1_information'),
-                                                rows=10,
+                                                rows=3,
                                                 allow_file_upload=False),
                    ),
      atapi.FileField('attach2',
@@ -216,7 +216,15 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                      label=_(u'attach4'),
                      ),
                   ),
-
+    atapi.StringField('state',
+                  searchable=1,
+		  languageIndependent=0,
+		  vocabulary='selection_state',
+                  widget=atapi.SelectionWidget(
+                     label=_(u'state'),
+		     
+                     ),
+                  ),	 
     
     atapi.FileField('behin_behineko_file',
                   searchable=1,
@@ -248,7 +256,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         default_output_type='text/x-html-safe',
                         widget=atapi.RichWidget(label=_(u'behin_behineko_adjudikazioduna'),
                                                 description=_(u'Description of behin_behineko_adjudikazioduna'),
-                                                rows=10,
+                                                rows=2,
                                                 allow_file_upload=False),
                         ),
 
@@ -260,7 +268,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         default_output_type='text/x-html-safe',
                         widget=atapi.RichWidget(label=_(u'behin_behineko_adjudikazioaren_zenbatekoa'),
                                                 description=_(u'Description of behin_behineko_adjudikazioaren_zenbatekoa'),
-                                                rows=10,
+                                                rows=2,
                                                 allow_file_upload=False),
                         ),
 
@@ -308,7 +316,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         default_output_type='text/x-html-safe',
                         widget=atapi.RichWidget(label=_(u'behin_betiko_adjudikazioduna'),
                                                 description=_(u'Description of behin_betiko_adjudikazioduna'),
-                                                rows=10,
+                                                rows=2,
                                                 allow_file_upload=False),
                         ),
 
@@ -320,7 +328,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         default_output_type='text/x-html-safe',
                         widget=atapi.RichWidget(label=_(u'behin_betiko_adjudikazioaren_zenbatekoa'),
                                                 description=_(u'Description of behin_betiko_adjudikazioaren_zenbatekoa'),
-                                                rows=10,
+                                                rows=2,
                                                 allow_file_upload=False),
                         ),
 
@@ -338,15 +346,43 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         ),
     ),
 
-    atapi.StringField('state',
+
+    atapi.FileField('desierto_file',
                   searchable=1,
-		  languageIndependent=0,
-		  vocabulary='selection_state',
-                  widget=atapi.SelectionWidget(
-                     label=_(u'state'),
-		     
+                  storage = atapi.AnnotationStorage(migrate=True),
+		  languageIndependent=1,
+                  widget=atapi.FileWidget(
+                     label=_(u'desierto_file'),
                      ),
-                  ),	 
+                  ),
+     atapi.DateTimeField(
+        name='desierto_adjudikazio_date',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        #searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"desierto_adjudikazio_date"),
+            description=_(u"Description of desierto_adjudikazio_date"),
+            show_hm=False,
+        ),
+    ),
+
+    atapi.DateTimeField(
+        name='desierto_profile_date',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        #searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"desierto_profile_date"),
+            description=_(u"Description of desierto_profile_date"),
+        ),
+    ),
     
 ))
 

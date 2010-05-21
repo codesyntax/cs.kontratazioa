@@ -13,7 +13,7 @@ class List(BrowserView):
 			
 	def __call__(self):
 		context = aq_inner(self.context)
-                #import pdb;pdb.set_trace()
+                
                 catalog = getToolByName(context, 'portal_catalog')
                 idea=context.REQUEST.get('id', None)
                 states=context.getState_source()
@@ -34,4 +34,5 @@ class List(BrowserView):
                    dict[states[0]]="on"
                    for obj in states[1:]:
                        dict[obj]="off"
+                #import pdb;pdb.set_trace()
                 return [dict, state_list]
