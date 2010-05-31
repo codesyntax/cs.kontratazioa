@@ -16,15 +16,14 @@
           <tal:condition define="dict python:year_dict[year]" condition="dict">
           <h2  tal:condition="python: year !='denak' and year!=1" tal:content="year"></h2>
           <h2  tal:condition="python:year==1" i18n:translate="publikazio-urte-gabe">Publikazio urterik ez dutenak</h2>
-        <tal:repeat repeat="orga python: dict.keys()">
-          <h3 tal:content="orga"></h3>
+        
           <table class="grid">
           <tr><th i18n:translate="kontratua">Kontratua</th><th i18n:translate="xedea">Xedea</th></tr>
-          <tal:define define="kontratazio_lista dict/?orga" repeat="kontratazioa kontratazio_lista">
+          <tal:define define="kontratazio_lista dict/kontratazioak" repeat="kontratazioa kontratazio_lista">
           <tr tal:define="obj python: kontratazioa.getObject()"><td tal:content="python: obj.getContract_type()"></td><td><a tal:content="kontratazioa/Title" tal:attributes="href string:${kontratazioa/getURL}"></a></td></tr>
           </tal:define>
           </table>
-        </tal:repeat>
+        
           </tal:condition>
         </tal:repeatyear>
         </div>

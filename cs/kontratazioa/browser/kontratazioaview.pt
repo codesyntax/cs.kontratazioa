@@ -37,12 +37,12 @@
           </tr>
           </tal:condition>
 
-          <tal:condition condition="here/getOrganization">
+          <!--<tal:condition condition="here/getOrganization">
           <tr>
           <th i18n:translate="organization"></th>
           <td tal:content="here/getOrganization"></td>
           </tr>
-          </tal:condition>
+          </tal:condition>-->
 
           <tal:condition condition="here/getKontratazio_organoa">
           <tr>
@@ -58,29 +58,13 @@
           </tr>
           </tal:condition>
           
-          <tal:condition define="last_date here/getPublished_date" condition="last_date">
+          <tal:condition condition="python: here.getAttach4().size">
           <tr>
-          <th i18n:translate="published_date">Published data</th>
-          <td tal:content="python: here.toLocalizedTime(last_date, long_format=0)"></td>
+          <th i18n:translate="attach4">Attach4</th>
+          <td><span metal:use-macro="python:here.widget('attach4',
+ 	                             mode='view')" /></td>
           </tr>
           </tal:condition>
-
-           <tal:condition define="last_date here/getPublished_date_boletin" condition="last_date">
-          <tr i18n:domain="mankomunitatea.theme">
-          <th i18n:translate="published_date_boletin">Published data boletin</th>
-          <td tal:content="python: here.toLocalizedTime(last_date, long_format=0)"></td>
-          </tr>
-          </tal:condition>
-
-          
-
-          <tal:condition condition="here/getLizitazio_aurrekontua">
-          <tr>
-          <th i18n:translate="lizitazio_aurrekontua">Lizitazio-aurrekontua</th>
-          <td tal:content="here/getLizitazio_aurrekontua"></td>
-          </tr>
-          </tal:condition>
-          
           <tal:condition condition="python: here.getAttach2().size">
           <tr>
           <th i18n:translate="attach2">Attach2</th>
@@ -96,21 +80,31 @@
  	                             mode='view')" /></td>
           </tr>
           </tal:condition>
-
-         
-
+          <tal:condition condition="here/getLizitazio_aurrekontua">
+          <tr>
+          <th i18n:translate="lizitazio_aurrekontua">Lizitazio-aurrekontua</th>
+          <td tal:content="here/getLizitazio_aurrekontua"></td>
+          </tr>
+          </tal:condition>
+      
           <tal:condition condition="here/getDocumentation">
           <tr>
           <th i18n:translate="documentation">Documentation</th>
           <td tal:content="structure here/getDocumentation"></td>
           </tr>
           </tal:condition>
-          
-          <tal:condition condition="python: here.getAttach4().size">
+
+          <tal:condition define="last_date here/getPublished_date" condition="last_date">
           <tr>
-          <th i18n:translate="attach4">Attach4</th>
-          <td><span metal:use-macro="python:here.widget('attach4',
- 	                             mode='view')" /></td>
+          <th i18n:translate="published_date">Published data</th>
+          <td tal:content="python: here.toLocalizedTime(last_date, long_format=0)"></td>
+          </tr>
+          </tal:condition>
+
+           <tal:condition define="last_date here/getPublished_date_boletin" condition="last_date">
+          <tr>
+          <th i18n:translate="published_date_boletin">Published data boletin</th>
+          <td tal:content="python: here.toLocalizedTime(last_date, long_format=0)"></td>
           </tr>
           </tal:condition>
           
@@ -119,6 +113,21 @@
           <th i18n:translate="attach1">Attach1</th>
           <td><span metal:use-macro="python:here.widget('attach1',
  	                             mode='view')" /><br /><span tal:condition="here/getAttach1_information" tal:content="structure here/getAttach1_information"></span><br /></td>
+          </tr>
+          </tal:condition>
+
+           <tal:condition define="last_date here/getPublished_date_doue" condition="last_date">
+          <tr>
+          <th i18n:translate="published_date_doue">Published data DOUE</th>
+          <td tal:content="python: here.toLocalizedTime(last_date, long_format=0)"></td>
+          </tr>
+          </tal:condition>
+
+          <tal:condition condition="python: here.getDoue_file().size">
+          <tr>
+          <th i18n:translate="doue_file">DOUE PDF</th>
+          <td><span metal:use-macro="python:here.widget('doue_file',
+ 	                             mode='view')" /><br /><span tal:condition="here/getDoue_information" tal:content="structure here/getDoue_information"></span><br /></td>
           </tr>
           </tal:condition>
 
@@ -213,7 +222,7 @@
           <table class="grid betiko" tal:define="adjudikazio_date here/getDesierto_adjudikazio_date;desierto_file python: here.getDesierto_file().size;profile_date here/getDesierto_profile_date" tal:condition="python: adjudikazio_date or desierto_file or profile_date">
           
           <tr>
-          <th i18n:translate="behin_betiko_file"  colspan="2" class="goiburua"></th>
+          <th i18n:translate="desierto_goiburua"  colspan="2" class="goiburua"></th>
           </tr>
           <tr tal:condition="adjudikazio_date">
           <th i18n:translate="behin_betiko_adjudikazio_date">Behin betiko adjudikazio data</th>

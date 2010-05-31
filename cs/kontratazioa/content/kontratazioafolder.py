@@ -52,18 +52,7 @@ kontratazioaFolderSchema = folder.ATFolderSchema.copy() + atapi.Schema((
             description=_(u"Description of izapidea"),
         ),
     ),
-    atapi.LinesField(
-        name='organization_source',
-        storage = atapi.AnnotationStorage(),
-        required=False,
-        #searchable=1,
-        #default='',
-        #schemata ='default',
-        widget=atapi.LinesWidget(
-            label=_(u"organization_source"),
-            description=_(u"Description of organization_source"),
-        ),
-    ),
+    
     atapi.LinesField(
         name='kontratazio_organoa',
         storage = atapi.AnnotationStorage(),
