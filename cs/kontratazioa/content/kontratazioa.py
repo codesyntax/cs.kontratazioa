@@ -130,7 +130,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         default_output_type='text/x-html-safe',
                         widget=atapi.RichWidget(label=_(u'put_documentation'),
                                                 description=_(u'Description of documentation'),
-                                                rows=5,
+                                                rows=3,
                                                 allow_file_upload=False),
                         ),
     
