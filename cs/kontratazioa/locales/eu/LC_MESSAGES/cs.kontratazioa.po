@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-05-31 10:11+0000\n"
-"PO-Revision-Date: 2010-05-31 12:12+0100\n"
+"POT-Creation-Date: 2010-06-04 09:18+0000\n"
+"PO-Revision-Date: 2010-06-04 12:07+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -210,7 +210,8 @@ msgstr "Kontaktua"
 msgid "contract_type"
 msgstr "Kontratu mota"
 
-#: ./content/kontratazioa.py:389
+#. Default: "Esleitu gabekoaren adjudikazioduna"
+#: ./browser/kontratazioaview.pt:228
 msgid "desierto_adjudikazio_date"
 msgstr "Esleitu gabeko adjudikazio data"
 
@@ -234,11 +235,11 @@ msgstr "Dokumentazio osagarria"
 #. Default: "DOUE PDF"
 #: ./browser/kontratazioaview.pt:128
 msgid "doue_file"
-msgstr "EB aldizkari ofizialeko PDFa"
+msgstr "DOUE aldizkari ofizialeko PDFa"
 
 #: ./content/kontratazioa.py:215
 msgid "doue_information"
-msgstr "EB aldizkari ofizialeko informazioa"
+msgstr "DOUE aldizkari ofizialeko informazioa"
 
 #. Default: "eskaintza_ekonomikoa_date"
 #: ./browser/kontratazioaview.pt:151
@@ -309,7 +310,7 @@ msgstr "GAOko argitaratze data"
 #. Default: "Published data DOUE"
 #: ./browser/kontratazioaview.pt:121
 msgid "published_date_doue"
-msgstr "EB aldizkari ofizialeko argitaratze data"
+msgstr "DOUE aldizkari ofizialeko argitaratze data"
 
 #: ./content/kontratazioa.py:38
 msgid "put_contract_type"

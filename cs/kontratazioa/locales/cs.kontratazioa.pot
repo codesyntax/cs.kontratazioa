@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-05-31 10:11+0000\n"
+"POT-Creation-Date: 2010-06-04 09:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -210,7 +210,8 @@ msgstr ""
 msgid "contract_type"
 msgstr ""
 
-#: ./content/kontratazioa.py:389
+#. Default: "Esleitu gabekoaren adjudikazioduna"
+#: ./browser/kontratazioaview.pt:228
 msgid "desierto_adjudikazio_date"
 msgstr ""
 

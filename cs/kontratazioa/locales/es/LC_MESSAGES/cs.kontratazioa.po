@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-05-31 10:11+0000\n"
-"PO-Revision-Date: 2010-05-31 12:24+0100\n"
+"POT-Creation-Date: 2010-06-04 09:18+0000\n"
+"PO-Revision-Date: 2010-06-04 11:19+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -210,9 +210,10 @@ msgstr "Contacto"
 msgid "contract_type"
 msgstr "Tipos de contrato"
 
-#: ./content/kontratazioa.py:389
+#. Default: "Esleitu gabekoaren adjudikazioduna"
+#: ./browser/kontratazioaview.pt:228
 msgid "desierto_adjudikazio_date"
-msgstr "Fecha de adjudicación"
+msgstr "Fecha de adjudicación de desierto"
 
 #: ./content/kontratazioa.py:377
 msgid "desierto_file"
@@ -234,11 +235,11 @@ msgstr "Documentación"
 #. Default: "DOUE PDF"
 #: ./browser/kontratazioaview.pt:128
 msgid "doue_file"
-msgstr "PDF diario oficial de la UE"
+msgstr "PDF DOUE"
 
 #: ./content/kontratazioa.py:215
 msgid "doue_information"
-msgstr "Información sobre diario oficial de la UE"
+msgstr "Información sobre DOUE"
 
 #. Default: "eskaintza_ekonomikoa_date"
 #: ./browser/kontratazioaview.pt:151
@@ -309,7 +310,7 @@ msgstr "Fecha de publicación en el BOG"
 #. Default: "Published data DOUE"
 #: ./browser/kontratazioaview.pt:121
 msgid "published_date_doue"
-msgstr "Fecha de publicación en el diario oficial de la UE"
+msgstr "Fecha de publicación en el DOUE"
 
 #: ./content/kontratazioa.py:38
 msgid "put_contract_type"
