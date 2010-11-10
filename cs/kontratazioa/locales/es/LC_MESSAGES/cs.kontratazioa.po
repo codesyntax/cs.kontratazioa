@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-06-04 09:18+0000\n"
-"PO-Revision-Date: 2010-06-04 11:19+0100\n"
+"POT-Creation-Date: 2010-11-10 10:12+0000\n"
+"PO-Revision-Date: 2010-11-10 11:17+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -60,6 +60,14 @@ msgstr ""
 
 #: ./content/kontratazioa.py:405
 msgid "Description of desierto_profile_date"
+msgstr ""
+
+#: ./content/kontratazioa.py:426
+msgid "Description of desistimiento_adjudikazio_date"
+msgstr ""
+
+#: ./content/kontratazioa.py:441
+msgid "Description of desistimiento_profile_date"
 msgstr ""
 
 #: ./content/kontratazioa.py:132
@@ -227,6 +235,18 @@ msgstr "Adjudicación desierta"
 msgid "desierto_profile_date"
 msgstr "Fecha de publicación en el perfil del contratante"
 
+#: ./content/kontratazioa.py:425
+msgid "desistimiento_adjudikazio_date"
+msgstr "Fecha de adjudicación de desistimiento"
+
+#: ./content/kontratazioa.py:413
+msgid "desistimiento_file"
+msgstr "Fichero desistimiento"
+
+#: ./content/kontratazioa.py:440
+msgid "desistimiento_profile_date"
+msgstr "Fecha de publicación en el perfil del contratante"
+
 #. Default: "Documentation"
 #: ./browser/kontratazioaview.pt:92
 msgid "documentation"
@@ -324,7 +344,7 @@ msgstr "Inserta la documentación adicional"
 msgid "put_kontratazio_organoa"
 msgstr "Elije el organo de contratación"
 
-#: ./content/kontratazioa.py:413
+#: ./content/kontratazioa.py:449
 msgid "state"
 msgstr "Estado"
 
