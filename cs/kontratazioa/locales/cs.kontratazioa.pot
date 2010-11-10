@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-11-10 10:12+0000\n"
+"POT-Creation-Date: 2010-11-10 10:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -235,12 +235,18 @@ msgstr ""
 msgid "desierto_profile_date"
 msgstr ""
 
-#: ./content/kontratazioa.py:425
+#. Default: "Uko egitearen adjudikazio data"
+#: ./browser/kontratazioaview.pt:248
 msgid "desistimiento_adjudikazio_date"
 msgstr ""
 
-#: ./content/kontratazioa.py:413
+#. Default: "Uko egitearen fitxategia"
+#: ./browser/kontratazioaview.pt:251
 msgid "desistimiento_file"
+msgstr ""
+
+#: ./browser/kontratazioaview.pt:245
+msgid "desistimiento_goiburua"
 msgstr ""
 
 #: ./content/kontratazioa.py:440
