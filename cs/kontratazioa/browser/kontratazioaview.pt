@@ -54,7 +54,7 @@
           <tal:condition define="last_date here/getOrgano_contratacion_date" condition="last_date">
           <tr>
           <th i18n:translate="organo_contratacion_date">Organo contratacion date</th>
-          <td tal:content="python: here.toLocalizedTime(last_date, long_format=0)"></td>
+          <td tal:content="python: here.toLocalizedTime(last_date, long_format=1)"></td>
           </tr>
           </tal:condition>
           
