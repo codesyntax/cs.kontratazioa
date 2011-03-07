@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2010-03-30 11:28+0000\n"
-"PO-Revision-Date: 2010-03-30 13:30+0100\n"
+"PO-Revision-Date: 2011-03-07 11:58+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -125,16 +125,16 @@ msgstr "Eranskinak"
 #. Default: "Attach1"
 #: ./browser/kontratazioaview.pt:117
 msgid "attach1"
-msgstr "Iragarkiaren testua"
+msgstr "Baldintza agiria"
 
 #: ./content/kontratazioa.py:190
 msgid "attach1_information"
-msgstr "Iragarki testuaren informazioa"
+msgstr "Baldintza agiriaren informazioa"
 
 #. Default: "Attach2"
 #: ./browser/kontratazioaview.pt:84
 msgid "attach2"
-msgstr "Administrazio klausulak"
+msgstr "Administrazio baldintzak"
 
 #. Default: "Attach3"
 #: ./browser/kontratazioaview.pt:92
