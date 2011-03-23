@@ -146,6 +146,19 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
             description=_(u"Description of eskaintza_ekonomikoa_date"),
         ),
     ),
+    atapi.DateTimeField(
+        name='kontratuasinatu_date',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        #searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"Kontratua sinatzeko data"),
+            description=_(u"kontratua sinatzeko data"),
+        ),
+    ),
     atapi.StringField(
         name='lizitazio_aurrekontua',
         required=False,

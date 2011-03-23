@@ -142,6 +142,13 @@
           </tr>
           </tal:condition>
 
+          <tal:condition define="eskaintza_ekonomikoa_date here/getKontratuasinatu_date" condition="eskaintza_ekonomikoa_date">
+          <tr>
+          <th i18n:translate="kontratuasinatu_date">Kontratua sinatzeko data</th>
+          <td tal:content="python: here.toLocalizedTime(eskaintza_ekonomikoa_date, long_format=1)"></td>
+          </tr>
+          </tal:condition>
+
           <tr tal:define="contentFilter python:{'portal_type':'File'}; fitxategiak python:here.getFolderContents(contentFilter, full_objects=1)" tal:condition="fitxategiak">
           <th i18n:translate="anexo-documental">Anexo Documental</th>
           <td>
