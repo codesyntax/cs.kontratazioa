@@ -368,7 +368,7 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 
 kontratazioaSchema['title'].storage = atapi.AnnotationStorage()
 kontratazioaSchema['description'].storage = atapi.AnnotationStorage()
-
+kontratazioaSchema['behin_betiko_file'].widget.visible = {'edit':'hidden','view':'hidden'}
 schemata.finalizeATCTSchema(
     kontratazioaSchema,
     folderish=True,

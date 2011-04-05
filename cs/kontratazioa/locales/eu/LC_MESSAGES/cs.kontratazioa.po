@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2011-03-23 11:20+0000\n"
-"PO-Revision-Date: 2011-03-23 12:21+0100\n"
+"PO-Revision-Date: 2011-04-05 10:06+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -153,21 +153,21 @@ msgstr "Karatula"
 #. Default: "Behin behineko adjudikazio data"
 #: ./browser/kontratazioaview.pt:187
 msgid "behin_behineko_adjudikazio_date"
-msgstr "Behin behineko adjudikazio data"
+msgstr "Adjudikazio data"
 
 #. Default: "Adjudikazioaren zenbatekoa"
 #: ./browser/kontratazioaview.pt:200
 msgid "behin_behineko_adjudikazioaren_zenbatekoa"
-msgstr "Behin behineko adjudikazioaren zenbatekoa"
+msgstr "Adjudikazioaren zenbatekoa"
 
 #. Default: "adjudikazioduna"
 #: ./browser/kontratazioaview.pt:195
 msgid "behin_behineko_adjudikazioduna"
-msgstr "Behin behineko adjudikazioduna"
+msgstr "Adjudikazioduna"
 
 #: ./browser/kontratazioaview.pt:184
 msgid "behin_behineko_file"
-msgstr "Behin-behineko adjudikazioa"
+msgstr "Adjudikazioa"
 
 #. Default: "kontratazio profileko data"
 #: ./browser/kontratazioaview.pt:206
@@ -177,21 +177,21 @@ msgstr "Kontratatzailearen profileko argitaratze data"
 #. Default: "Behin betiko adjudikazio data"
 #: ./browser/kontratazioaview.pt:221
 msgid "behin_betiko_adjudikazio_date"
-msgstr "Behin betiko adjudikazio data"
+msgstr "Sinatze eguna"
 
 #. Default: "Adjudikazioaren zenbatekoa"
 #: ./browser/kontratazioaview.pt:234
 msgid "behin_betiko_adjudikazioaren_zenbatekoa"
-msgstr "Behin betiko adjukazioaren zenbatekoa"
+msgstr "Kontratuaren zenbatekoa"
 
 #. Default: "adjudikazioduna"
 #: ./browser/kontratazioaview.pt:229
 msgid "behin_betiko_adjudikazioduna"
-msgstr "Behin betiko adjudikazioduna"
+msgstr "kontratista"
 
 #: ./browser/kontratazioaview.pt:218
 msgid "behin_betiko_file"
-msgstr "Behin-betiko adjudikazioa"
+msgstr "Sinatutako kontratua"
 
 #. Default: "kontratazio profileko data"
 #: ./browser/kontratazioaview.pt:240

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2011-03-23 11:20+0000\n"
-"PO-Revision-Date: 2011-03-23 12:22+0100\n"
+"PO-Revision-Date: 2011-04-05 10:07+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -167,7 +167,7 @@ msgstr "Adjudicatario"
 
 #: ./browser/kontratazioaview.pt:184
 msgid "behin_behineko_file"
-msgstr "Adjudicación provisional"
+msgstr "Adjudicación"
 
 #. Default: "kontratazio profileko data"
 #: ./browser/kontratazioaview.pt:206
@@ -177,21 +177,21 @@ msgstr "Fecha de publicación del perfil del contratante"
 #. Default: "Behin betiko adjudikazio data"
 #: ./browser/kontratazioaview.pt:221
 msgid "behin_betiko_adjudikazio_date"
-msgstr "Fecha de adjudicación"
+msgstr "Fecha de formalización"
 
 #. Default: "Adjudikazioaren zenbatekoa"
 #: ./browser/kontratazioaview.pt:234
 msgid "behin_betiko_adjudikazioaren_zenbatekoa"
-msgstr "Cantidad de adjudicación"
+msgstr "Importe del contrato"
 
 #. Default: "adjudikazioduna"
 #: ./browser/kontratazioaview.pt:229
 msgid "behin_betiko_adjudikazioduna"
-msgstr "Adjudicatario"
+msgstr "Contratista"
 
 #: ./browser/kontratazioaview.pt:218
 msgid "behin_betiko_file"
-msgstr "Adjudicación definitiva"
+msgstr "Contrato formalizado"
 
 #. Default: "kontratazio profileko data"
 #: ./browser/kontratazioaview.pt:240
