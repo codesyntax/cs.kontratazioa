@@ -155,22 +155,9 @@
             <tal:fitxategiak>
       <tal:otherfiles repeat="obj fitxategiak">
       
+      <span metal:use-macro="python:obj.widget('file',
+ 	                             mode='view')" />
       
-      <tal:block
-          define="here nocall:obj;
-                  field_macro field_macro | here/widgets/field/macros/view"
-          repeat="field python:[here.getField(f) for f in ['file']]">
-        
-        <tal:if_visible define="mode string:view;
-                                  visState python:field.widget.isVisible(here, mode);
-                                  visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);
-                                  label_macro context/kontratazioa_general/macros/titlelabel;
-                                  data_macro context/kontratazioa_general/macros/data"
-                        condition="python:visState == 'visible' and visCondition">
-          <metal:use_field use-macro="field_macro" />
-        </tal:if_visible>
-        
-        </tal:block>
       
       </tal:otherfiles>
       </tal:fitxategiak>
