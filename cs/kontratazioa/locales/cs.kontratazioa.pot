@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-11-10 10:49+0000\n"
+"POT-Creation-Date: 2011-05-19 06:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,19 +54,23 @@ msgstr ""
 msgid "Description of contract_type"
 msgstr ""
 
-#: ./content/kontratazioa.py:390
+#: ./content/kontratazioa.py:378
+msgid "Description of contrato_date"
+msgstr ""
+
+#: ./content/kontratazioa.py:401
 msgid "Description of desierto_adjudikazio_date"
 msgstr ""
 
-#: ./content/kontratazioa.py:405
+#: ./content/kontratazioa.py:416
 msgid "Description of desierto_profile_date"
 msgstr ""
 
-#: ./content/kontratazioa.py:426
+#: ./content/kontratazioa.py:437
 msgid "Description of desistimiento_adjudikazio_date"
 msgstr ""
 
-#: ./content/kontratazioa.py:441
+#: ./content/kontratazioa.py:452
 msgid "Description of desistimiento_profile_date"
 msgstr ""
 
@@ -218,12 +222,16 @@ msgstr ""
 msgid "contract_type"
 msgstr ""
 
+#: ./content/kontratazioa.py:377
+msgid "contrato_date"
+msgstr ""
+
 #. Default: "Esleitu gabekoaren adjudikazioduna"
 #: ./browser/kontratazioaview.pt:228
 msgid "desierto_adjudikazio_date"
 msgstr ""
 
-#: ./content/kontratazioa.py:377
+#: ./content/kontratazioa.py:388
 msgid "desierto_file"
 msgstr ""
 
@@ -231,7 +239,7 @@ msgstr ""
 msgid "desierto_goiburua"
 msgstr ""
 
-#: ./content/kontratazioa.py:404
+#: ./content/kontratazioa.py:415
 msgid "desierto_profile_date"
 msgstr ""
 
@@ -249,7 +257,7 @@ msgstr ""
 msgid "desistimiento_goiburua"
 msgstr ""
 
-#: ./content/kontratazioa.py:440
+#: ./content/kontratazioa.py:451
 msgid "desistimiento_profile_date"
 msgstr ""
 
@@ -350,7 +358,7 @@ msgstr ""
 msgid "put_kontratazio_organoa"
 msgstr ""
 
-#: ./content/kontratazioa.py:449
+#: ./content/kontratazioa.py:460
 msgid "state"
 msgstr ""
 

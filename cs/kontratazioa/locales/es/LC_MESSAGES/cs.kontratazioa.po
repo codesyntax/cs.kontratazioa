@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-11-10 10:49+0000\n"
-"PO-Revision-Date: 2010-11-10 11:50+0100\n"
+"POT-Creation-Date: 2011-05-19 06:58+0000\n"
+"PO-Revision-Date: 2011-05-19 08:58+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -20,31 +20,31 @@ msgstr "Texto del anuncio"
 
 #: ./content/kontratazioa.py:269
 msgid "Description of behin_behineko_adjudikazio_date"
-msgstr ""
+msgstr "Fecha de clasificación"
 
 #: ./content/kontratazioa.py:292
 msgid "Description of behin_behineko_adjudikazioaren_zenbatekoa"
-msgstr ""
+msgstr "Importe de la clasificación"
 
 #: ./content/kontratazioa.py:280
 msgid "Description of behin_behineko_adjudikazioduna"
-msgstr ""
+msgstr "Clasificado"
 
 #: ./content/kontratazioa.py:307
 msgid "Description of behin_behineko_profile_date"
-msgstr ""
+msgstr "Fecha de publicación del perfil del contratante"
 
 #: ./content/kontratazioa.py:352
 msgid "Description of behin_betiko_adjudikazioaren_zenbatekoa"
-msgstr ""
+msgstr "Importe de la clasificación"
 
 #: ./content/kontratazioa.py:340
 msgid "Description of behin_betiko_adjudikazioduna"
-msgstr ""
+msgstr "djudicatario"
 
 #: ./content/kontratazioa.py:367
 msgid "Description of behin_betiko_profile_date"
-msgstr ""
+msgstr "Fecha de publicación del perfil del contratante"
 
 #: ./content/kontratazioafolder.py:88
 msgid "Description of contact_information"
@@ -54,19 +54,23 @@ msgstr "Contacto"
 msgid "Description of contract_type"
 msgstr "Tipos de crontratos"
 
-#: ./content/kontratazioa.py:390
+#: ./content/kontratazioa.py:378
+msgid "Description of contrato_date"
+msgstr "Fecha de contrato"
+
+#: ./content/kontratazioa.py:401
 msgid "Description of desierto_adjudikazio_date"
 msgstr ""
 
-#: ./content/kontratazioa.py:405
+#: ./content/kontratazioa.py:416
 msgid "Description of desierto_profile_date"
 msgstr ""
 
-#: ./content/kontratazioa.py:426
+#: ./content/kontratazioa.py:437
 msgid "Description of desistimiento_adjudikazio_date"
 msgstr ""
 
-#: ./content/kontratazioa.py:441
+#: ./content/kontratazioa.py:452
 msgid "Description of desistimiento_profile_date"
 msgstr ""
 
@@ -164,21 +168,21 @@ msgstr "Caratula"
 #. Default: "Behin behineko adjudikazio data"
 #: ./browser/kontratazioaview.pt:163
 msgid "behin_behineko_adjudikazio_date"
-msgstr "Fecha de adjudicación"
+msgstr "Fecha de clasificación"
 
 #. Default: "Adjudikazioaren zenbatekoa"
 #: ./browser/kontratazioaview.pt:176
 msgid "behin_behineko_adjudikazioaren_zenbatekoa"
-msgstr "Importe de adjudicación"
+msgstr "Importe de la clasificación"
 
 #. Default: "adjudikazioduna"
 #: ./browser/kontratazioaview.pt:171
 msgid "behin_behineko_adjudikazioduna"
-msgstr "Adjudicatario"
+msgstr "Clasificado"
 
 #: ./browser/kontratazioaview.pt:160
 msgid "behin_behineko_file"
-msgstr "Adjudicación provisional"
+msgstr "Clasificación de ofertas"
 
 #. Default: "kontratazio profileko data"
 #: ./browser/kontratazioaview.pt:182
@@ -202,7 +206,7 @@ msgstr "Adjudicatario"
 
 #: ./browser/kontratazioaview.pt:193
 msgid "behin_betiko_file"
-msgstr "Adjudicación definitiva"
+msgstr "Adjudicación"
 
 #. Default: "kontratazio profileko data"
 #: ./browser/kontratazioaview.pt:215
@@ -218,12 +222,16 @@ msgstr "Contacto"
 msgid "contract_type"
 msgstr "Tipos de contrato"
 
+#: ./content/kontratazioa.py:377
+msgid "contrato_date"
+msgstr "Fecha de contrato"
+
 #. Default: "Esleitu gabekoaren adjudikazioduna"
 #: ./browser/kontratazioaview.pt:228
 msgid "desierto_adjudikazio_date"
 msgstr "Fecha de adjudicación de desierto"
 
-#: ./content/kontratazioa.py:377
+#: ./content/kontratazioa.py:388
 msgid "desierto_file"
 msgstr "Fichero desierto"
 
@@ -231,7 +239,7 @@ msgstr "Fichero desierto"
 msgid "desierto_goiburua"
 msgstr "Adjudicación desierta"
 
-#: ./content/kontratazioa.py:404
+#: ./content/kontratazioa.py:415
 msgid "desierto_profile_date"
 msgstr "Fecha de publicación en el perfil del contratante"
 
@@ -249,7 +257,7 @@ msgstr "Fichero desistimiento"
 msgid "desistimiento_goiburua"
 msgstr "Desistimiento"
 
-#: ./content/kontratazioa.py:440
+#: ./content/kontratazioa.py:451
 msgid "desistimiento_profile_date"
 msgstr "Fecha de publicación en el perfil del contratante"
 
@@ -350,7 +358,7 @@ msgstr "Inserta la documentación adicional"
 msgid "put_kontratazio_organoa"
 msgstr "Elije el organo de contratación"
 
-#: ./content/kontratazioa.py:449
+#: ./content/kontratazioa.py:460
 msgid "state"
 msgstr "Estado"
 

@@ -368,6 +368,17 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         ),
     ),
 
+    atapi.TextField('contrato_date',
+                        required=False,
+                        searchable=True,
+			storage=atapi.AnnotationStorage(),
+                        validators=('isTidyHtmlWithCleanup',),
+                        default_output_type='text/x-html-safe',
+                        widget=atapi.RichWidget(label=_(u'contrato_date'),
+                                                description=_(u'Description of contrato_date'),
+                                                rows=3,
+                                                allow_file_upload=False),
+                   ),
 
     atapi.FileField('desierto_file',
                   searchable=1,
