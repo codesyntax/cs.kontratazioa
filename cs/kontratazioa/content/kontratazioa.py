@@ -380,6 +380,18 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                                                 allow_file_upload=False),
                    ),
 
+    atapi.TextField('texto_del_anuncio',
+                        required=False,
+                        searchable=True,
+			storage=atapi.AnnotationStorage(),
+                        validators=('isTidyHtmlWithCleanup',),
+                        default_output_type='text/x-html-safe',
+                        widget=atapi.RichWidget(label=_(u'texto_del_anuncio'),
+                                                description=_(u'Description of texto_del_anuncio'),
+                                                rows=3,
+                                                allow_file_upload=False),
+                   ),
+
     atapi.FileField('desierto_file',
                   searchable=1,
                   storage = atapi.AnnotationStorage(migrate=True),

@@ -232,6 +232,10 @@
             <th i18n:translate="contrato_date">Kontratu data</th>
             <td tal:content="contrato_date"></td>
           </tr>
+          <tr tal:define="contrato_date here/getTexto_del_anuncio" tal:condition="contrato_date">
+            <th i18n:translate="texto_del_anuncio">Texto del anuncio</th>
+            <td tal:content="contrato_date"></td>
+          </tr>
           <tr tal:condition="desierto_file"><th i18n:translate="akordioa">akordioa</th><td><span metal:use-macro="python:here.widget('desierto_file',
  	                             mode='view')" /></td>
           </tr>
