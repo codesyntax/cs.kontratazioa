@@ -13,8 +13,9 @@ from cs.kontratazioa import kontratazioaMessageFactory as _
 from cs.kontratazioa.interfaces import Ikontratazioa
 from cs.kontratazioa.config import PROJECTNAME
 
-kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
+fields = folder.ATFolderSchema.copy().fields()
 
+kontratazioaSchema = atapi.ManagedSchema((
     # -*- Your Archetypes field definitions here ... -*-
     atapi.StringField(
         name='file_number',
@@ -26,7 +27,6 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         #schemata ='default',
         widget=atapi.StringWidget(
             label=_(u"file_number"),
-            description=_(u"Description of file_number"),
         ),
     ),
     atapi.StringField('contract_type',
@@ -36,7 +36,6 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 		  vocabulary='selection_contract_type',
                   widget=atapi.SelectionWidget(
                      label=_(u'put_contract_type'),
-		     
                      ),
                   ),	 
     atapi.StringField('process',
@@ -87,7 +86,6 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         #schemata ='default',
         widget=atapi.CalendarWidget(
             label=_(u"published_date"),
-            description=_(u"Description of published_date"),
             show_hm=False,
         ),
     ),
@@ -101,7 +99,6 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         #schemata ='default',
         widget=atapi.CalendarWidget(
             label=_(u"published_date_boletin"),
-            description=_(u"Description of published_date_boletin"),
             show_hm=False,
         ),
     ),
@@ -115,7 +112,6 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         #schemata ='default',
         widget=atapi.CalendarWidget(
             label=_(u"organo_contratacion_date"),
-            description=_(u"Description of organo_contratacion_date"),
             show_hm=False,
         ),
     ),	 
@@ -129,7 +125,6 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         #schemata ='default',
         widget=atapi.CalendarWidget(
             label=_(u"last_date"),
-            description=_(u"Description of last_date"),
         ),
     ),
 
@@ -143,7 +138,6 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         #schemata ='default',
         widget=atapi.CalendarWidget(
             label=_(u"eskaintza_ekonomikoa_date"),
-            description=_(u"Description of eskaintza_ekonomikoa_date"),
         ),
     ),
     atapi.DateTimeField(
@@ -156,7 +150,6 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         #schemata ='default',
         widget=atapi.CalendarWidget(
             label=_(u"Kontratua sinatzeko data"),
-            description=_(u"kontratua sinatzeko data"),
         ),
     ),
     atapi.StringField(
@@ -169,7 +162,6 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         #schemata ='default',
         widget=atapi.StringWidget(
             label=_(u"lizitazio_aurrekontua"),
-            description=_(u"Description of lizitazio_aurrekontua"),
         ),
     ),
     atapi.TextField('documentation',
@@ -179,7 +171,6 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         validators=('isTidyHtmlWithCleanup',),
                         default_output_type='text/x-html-safe',
                         widget=atapi.RichWidget(label=_(u'put_documentation'),
-                                                description=_(u'Description of documentation'),
                                                 rows=10,
                                                 allow_file_upload=False),
                         ),
@@ -200,7 +191,6 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         validators=('isTidyHtmlWithCleanup',),
                         default_output_type='text/x-html-safe',
                         widget=atapi.RichWidget(label=_(u'attach1_information'),
-                                                description=_(u'Description of attach1_information'),
                                                 rows=10,
                                                 allow_file_upload=False),
                    ),
@@ -249,7 +239,19 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         #schemata ='default',
         widget=atapi.CalendarWidget(
             label=_(u"behin_behineko_adjudikazio_date"),
-            description=_(u"Description of behin_behineko_adjudikazio_date"),
+            show_hm=False,
+        ),
+    ),
+    atapi.DateTimeField(
+        name='behin_behineko_profile_date',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        #searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"behin_behineko_profile_date"),
             show_hm=False,
         ),
     ),
@@ -260,7 +262,6 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         validators=('isTidyHtmlWithCleanup',),
                         default_output_type='text/x-html-safe',
                         widget=atapi.RichWidget(label=_(u'behin_behineko_adjudikazioduna'),
-                                                description=_(u'Description of behin_behineko_adjudikazioduna'),
                                                 rows=10,
                                                 allow_file_upload=False),
                         ),
@@ -272,25 +273,10 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         validators=('isTidyHtmlWithCleanup',),
                         default_output_type='text/x-html-safe',
                         widget=atapi.RichWidget(label=_(u'behin_behineko_adjudikazioaren_zenbatekoa'),
-                                                description=_(u'Description of behin_behineko_adjudikazioaren_zenbatekoa'),
                                                 rows=10,
                                                 allow_file_upload=False),
                         ),
 
-    atapi.DateTimeField(
-        name='behin_behineko_profile_date',
-        storage = atapi.AnnotationStorage(),
-        required=False,
-        languageIndependent=1,
-        #searchable=1,
-        #default='',
-        #schemata ='default',
-        widget=atapi.CalendarWidget(
-            label=_(u"behin_behineko_profile_date"),
-            description=_(u"Description of behin_behineko_profile_date"),
-            show_hm=False,
-        ),
-    ),
     atapi.FileField('behin_betiko_file',
                   searchable=1,
                   storage = atapi.AnnotationStorage(migrate=True),
@@ -309,8 +295,19 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         #schemata ='default',
         widget=atapi.CalendarWidget(
             label=_(u"behin_betiko_adjudikazio_date"),
-            description=_(u"Description of behin_behineko_adjudikazio_date"),
             show_hm=False,
+        ),
+    ),
+     atapi.DateTimeField(
+        name='behin_betiko_profile_date',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        #searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"behin_betiko_profile_date"),
         ),
     ),
     atapi.TextField('behin_betiko_adjudikazioduna',
@@ -320,7 +317,6 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         validators=('isTidyHtmlWithCleanup',),
                         default_output_type='text/x-html-safe',
                         widget=atapi.RichWidget(label=_(u'behin_betiko_adjudikazioduna'),
-                                                description=_(u'Description of behin_betiko_adjudikazioduna'),
                                                 rows=10,
                                                 allow_file_upload=False),
                         ),
@@ -332,24 +328,9 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         validators=('isTidyHtmlWithCleanup',),
                         default_output_type='text/x-html-safe',
                         widget=atapi.RichWidget(label=_(u'behin_betiko_adjudikazioaren_zenbatekoa'),
-                                                description=_(u'Description of behin_betiko_adjudikazioaren_zenbatekoa'),
                                                 rows=10,
                                                 allow_file_upload=False),
                         ),
-
-    atapi.DateTimeField(
-        name='behin_betiko_profile_date',
-        storage = atapi.AnnotationStorage(),
-        required=False,
-        languageIndependent=1,
-        #searchable=1,
-        #default='',
-        #schemata ='default',
-        widget=atapi.CalendarWidget(
-            label=_(u"behin_betiko_profile_date"),
-            description=_(u"Description of behin_betiko_profile_date"),
-        ),
-    ),
 
     atapi.StringField('state',
                   searchable=1,
@@ -359,29 +340,99 @@ kontratazioaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                      label=_(u'state'),
 		     
                      ),
-                  ),	 
+                  ),
     
-))
+) + tuple(fields))
 
 # Set storage on fields copied from ATFolderSchema, making sure
 # they work well with the python bridge properties.
 
 kontratazioaSchema['title'].storage = atapi.AnnotationStorage()
 kontratazioaSchema['description'].storage = atapi.AnnotationStorage()
-#kontratazioaSchema['behin_betiko_file'].widget.visible = {'edit':'hidden','view':'hidden'}
-schemata.finalizeATCTSchema(
-    kontratazioaSchema,
-    folderish=True,
-    moveDiscussion=False
-)
+
+
+kontratazioaSchema.changeSchemataForField('title', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('description', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('file_number', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('contract_type', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('process', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('izapidea', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('organization', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('kontratazio_organoa', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('published_date', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('published_date_boletin', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('organo_contratacion_date', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('last_date', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('eskaintza_ekonomikoa_date', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('kontratuasinatu_date', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('lizitazio_aurrekontua', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('documentation', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('attach1', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('attach1_information', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('attach2', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('attach3', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('attach4', 'lizitazioa')
+
+kontratazioaSchema.changeSchemataForField('behin_behineko_file', 'adjudikazioa')
+kontratazioaSchema.changeSchemataForField('behin_behineko_adjudikazio_date', 'adjudikazioa')
+kontratazioaSchema.changeSchemataForField('behin_behineko_adjudikazioduna', 'adjudikazioa')
+kontratazioaSchema.changeSchemataForField('behin_behineko_adjudikazioaren_zenbatekoa', 'adjudikazioa')
+kontratazioaSchema.changeSchemataForField('behin_behineko_profile_date', 'adjudikazioa')
+
+kontratazioaSchema.changeSchemataForField('behin_betiko_file', 'formalizazioa')
+kontratazioaSchema.changeSchemataForField('behin_betiko_adjudikazio_date', 'formalizazioa')
+kontratazioaSchema.changeSchemataForField('behin_betiko_adjudikazioduna', 'formalizazioa')
+kontratazioaSchema.changeSchemataForField('behin_betiko_adjudikazioaren_zenbatekoa', 'formalizazioa')
+kontratazioaSchema.changeSchemataForField('behin_betiko_profile_date', 'formalizazioa')
+kontratazioaSchema.changeSchemataForField('state', 'egoera')
+
+kontratazioaSchema.changeSchemataForField('language', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('relatedItems', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('allowDiscussion', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('subject', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('location', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('contributors', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('creators', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('effectiveDate', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('expirationDate', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('rights', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('creation_date', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('modification_date', 'lizitazioa')
+kontratazioaSchema.changeSchemataForField('constrainTypesMode', 'lizitazioa')
+kontratazioaSchema['language'].widget.visible['edit']='invisible'
+kontratazioaSchema['relatedItems'].widget.visible['edit']='invisible'
+kontratazioaSchema['allowDiscussion'].widget.visible['edit']='invisible'
+kontratazioaSchema['subject'].widget.visible['edit']='invisible'
+kontratazioaSchema['location'].widget.visible['edit']='invisible'
+kontratazioaSchema['contributors'].widget.visible['edit']='invisible'
+kontratazioaSchema['creators'].widget.visible['edit']='invisible'
+kontratazioaSchema['effectiveDate'].widget.visible['edit']='invisible'
+kontratazioaSchema['expirationDate'].widget.visible['edit']='invisible'
+kontratazioaSchema['rights'].widget.visible['edit']='invisible'
+kontratazioaSchema['creation_date'].widget.visible['edit']='invisible'
+kontratazioaSchema['modification_date'].widget.visible['edit']='invisible'
+kontratazioaSchema['constrainTypesMode'].widget.visible['edit']='invisible'
+
+#schemata.finalizeATCTSchema(
+#    kontratazioaSchema,
+#    folderish=True,
+#    moveDiscussion=False
+#)
+
+kontratazioaSchema.delSchemata('default')
+kontratazioaSchema.delSchemata('categorization')
+kontratazioaSchema.delSchemata('dates')
+kontratazioaSchema.delSchemata('ownership')
+kontratazioaSchema.delSchemata('settings')
+
+
 
 class kontratazioa(folder.ATFolder):
-    """Description of the Example Type"""
+    
     implements(Ikontratazioa)
 
     meta_type = "kontratazioa"
     schema = kontratazioaSchema
-
     title = atapi.ATFieldProperty('title')
     description = atapi.ATFieldProperty('description')
     
