@@ -1,6 +1,13 @@
 Changelog
 =========
 
+2.0.1 (2011-10-06)
+--------------------
+
+- Remove nasty egg-info directory creation instruction
+  in setup.py that avoided creating proper eggs [erral]
+
+
 2.0 (2011-10-06)
 ----------------
 
