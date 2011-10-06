@@ -7,9 +7,10 @@ Changelog
 - Remove nasty egg-info directory creation instruction
   in setup.py that avoided creating proper eggs [erral]
 
+- Add documentation [erral]
 
 2.0 (2011-10-06)
-----------------
+------------------
 
 - Add Plone dependency. This version is targeted for Plone >= 4 [erral]
 

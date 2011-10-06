@@ -13,18 +13,7 @@ version = '2.1'
 long_description = (
     read('README.txt')
     + '\n' +
-    'Change history\n'
-    '**************\n'
-    + '\n' +
     read('CHANGES.txt')
-    + '\n' +
-    'Contributors\n'
-    '************\n'
-    + '\n' +
-    read('CONTRIBUTORS.txt')
-    + '\n' +
-    'Download\n'
-    '********\n'
     )
 
 tests_require=['zope.testing']
@@ -43,7 +32,7 @@ setup(name='cs.kontratazioa',
       keywords='',
       author='Lur Ibargutxi',
       author_email='libargutxi@codesyntax.com',
-      url='http://code.codesyntax.com/private',
+      url='http://www.codesyntax.com/en/products/cs.kontratazioa',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['cs', ],
