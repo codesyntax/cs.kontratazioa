@@ -1,17 +1,14 @@
-.. contents::
+Introduction 
+=============
 
-.. Note!
-   -----
-   Update the following URLs to point to your:
+Spanish Public Administrations' websites must have a 
+so called "Contractors profile" in which the Administration
+must publish all information about the different contracts 
+and its assignation procedure: public notice of it, the document
+with the contract grant, the signature of the contract, ...
 
-   - code repository
-   - bug tracker
-   - questions/comments feedback mail
-   (do not set a real mail, to avoid spams)
-
-   Or remove it if not used.
-
-- Code repository: http://svn.somewhere.com/...
-- Questions and comments to somemailing_list
-- Report bugs at http://bug.somewhere.com/..
+Each Administration wants to change the way to show this
+information: PDF files, HTML text-fields, ... so we tried to
+create the most generic product as possible and then let each
+project change it.
 

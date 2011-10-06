@@ -1,8 +1,16 @@
 Changelog
 =========
 
+2.0 (2011-10-06)
+----------------
+
+- Add Plone dependency. This version is targeted for Plone >= 4 [erral]
+
+- Group items in specially created fieldsets [lur]
+
+
+
 1.0 (xxxx-xx-xx)
 ----------------
 
-- Created recipe with ZopeSkel
-  [Lur Ibargutxi]
+- Created recipe with ZopeSkel [lur]

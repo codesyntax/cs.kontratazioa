@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-version = '1.34'
+version = '2.0'
 
 long_description = (
     read('README.txt')
@@ -17,11 +17,6 @@ long_description = (
     '**************\n'
     + '\n' +
     read('CHANGES.txt')
-    + '\n' +
-    'Detailed Documentation\n'
-    '**********************\n'
-    + '\n' +
-    read('cs', 'kontratazioa', 'README.txt')
     + '\n' +
     'Contributors\n'
     '************\n'
@@ -36,7 +31,7 @@ tests_require=['zope.testing']
 
 setup(name='cs.kontratazioa',
       version=version,
-      description="",
+      description="A product to publish public contract information in Spanish Public Administration's websites",
       long_description=long_description,
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
@@ -56,6 +51,7 @@ setup(name='cs.kontratazioa',
       zip_safe=False,
       install_requires=['setuptools',
                         # -*- Extra requirements: -*-
+                        'Plone'
                         ],
       tests_require=tests_require,
       extras_require=dict(tests=tests_require),
@@ -67,6 +63,9 @@ setup(name='cs.kontratazioa',
 
       [egg_info.writers]
       paster_plugins.txt = setuptools.command.egg_info:write_arg
+
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
       paster_plugins = ["ZopeSkel"],
       )
