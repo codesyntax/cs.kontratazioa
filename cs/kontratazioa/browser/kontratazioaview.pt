@@ -138,7 +138,12 @@
           <td tal:content="python: here.toLocalizedTime(last_date, long_format=1)"></td>
           </tr>
           </tal:condition>
-          
+           <tal:condition define="eskaintza_ekonomikoa_date here/getEskaintza_ekonomikoa_date" condition="eskaintza_ekonomikoa_date">
+          <tr>
+          <th i18n:translate="eskaintza_ekonomikoa_date">eskaintza_ekonomikoa_date</th>
+          <td tal:content="python: here.toLocalizedTime(eskaintza_ekonomikoa_date, long_format=1)"></td>
+          </tr>
+          </tal:condition>
            <tal:condition condition="python: here.aq_parent.getContact_information()">
           <tr>
           <th i18n:translate="contact_information">Contact Information</th>
@@ -146,12 +151,7 @@
           </tr>
           </tal:condition>
 
-          <tal:condition define="eskaintza_ekonomikoa_date here/getEskaintza_ekonomikoa_date" condition="eskaintza_ekonomikoa_date">
-          <tr>
-          <th i18n:translate="eskaintza_ekonomikoa_date">eskaintza_ekonomikoa_date</th>
-          <td tal:content="python: here.toLocalizedTime(eskaintza_ekonomikoa_date, long_format=1)"></td>
-          </tr>
-          </tal:condition>
+          
          </table>
 
           <table class="grid behineko" tal:define="adjudikazio_date here/getBehin_behineko_adjudikazio_date;behin_behineko_file python: here.getBehin_behineko_file().size;adjudikazioduna here/getBehin_behineko_adjudikazioduna;adjudikazioaren_zenbatekoa here/getBehin_behineko_adjudikazioaren_zenbatekoa;profile_date here/getBehin_behineko_profile_date" tal:condition="python: adjudikazio_date or behin_behineko_file or adjudikazioduna or adjudikazioaren_zenbatekoa or profile_date">
