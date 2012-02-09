@@ -1,0 +1,57 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="cs.kontratazioa">
+
+  <include package="plone.app.contentmenu" />
+
+  <!-- -*- extra stuff goes here -*- -->
+
+  <browser:page
+      for="..interfaces.kontratazioa.Ikontratazioa"
+      name="view"
+      class=".kontratazioaview.kontratazioaView"
+      template="kontratazioaview.pt"
+      permission="zope.Public"
+    />
+    <browser:menuItem
+        for="..interfaces.kontratazioa.Ikontratazioa"
+        menu="plone_displayviews"
+        title="kontratazioa view"
+        action="@@view"
+        description="Default representation of a kontratazioa"
+        />
+   <browser:page
+      for="..interfaces.kontratazioafolder.IkontratazioaFolder"
+      name="view"
+      class=".kontratazioafolderview.kontratazioaFolderView"
+      template="kontratazioafolderview.pt"
+      permission="zope.Public"
+    />
+    <browser:menuItem
+        for="..interfaces.kontratazioafolder.IkontratazioaFolder"
+        menu="plone_displayviews"
+        title="kontratazioafolder view"
+        action="@@view"
+        description="Default representation of a kontratazioafolder"
+        />
+    <browser:page
+      name="state_list"
+      for="*"
+      class=".state_list.List"
+      permission="zope2.View"
+      />
+    <browser:page
+      name="kontratazioa_list"
+      for="*"
+      class=".kontratazioa_list.List"
+      permission="zope2.View"
+      />
+
+    <browser:page
+      for="..interfaces.kontratazioa.Ikontratazioa"
+      name="kontratazioa_general"
+      template="kontratazioa_general.pt"
+      permission="zope2.View"
+    />
+</configure>

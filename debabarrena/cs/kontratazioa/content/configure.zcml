@@ -1,0 +1,30 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="cs.kontratazioa">
+
+  <!-- configure your content components here -->
+  
+  <!-- -*- extra stuff goes here -*- -->
+  <class class=".kontratazioa.kontratazioa">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.Ikontratazioa"
+        />
+    <require
+        permission="cmf.ModifyPortalContent"
+        set_schema="..interfaces.Ikontratazioa"
+        />
+  </class>
+  <class class=".kontratazioafolder.kontratazioaFolder">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IkontratazioaFolder"
+        />
+    <require
+        permission="cmf.ModifyPortalContent"
+        set_schema="..interfaces.IkontratazioaFolder"
+        />
+  </class>
+
+</configure>
