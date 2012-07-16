@@ -18,9 +18,11 @@
           <h2  tal:condition="python:year==1" i18n:translate="publikazio-urte-gabe">Publikazio urterik ez dutenak</h2>
         
           <table class="grid">
-          <tr><th i18n:translate="kontratua">Kontratua</th><th i18n:translate="xedea">Xedea</th></tr>
+          <tr><th i18n:translate="kontratua">Kontratua</th><th i18n:translate="xedea">Xedea</th><th i18n:translate="file-number"></th></tr>
           <tal:define define="kontratazio_lista dict/kontratazioak" repeat="kontratazioa kontratazio_lista">
-          <tr tal:define="obj python: kontratazioa.getObject()"><td tal:content="python: obj.getContract_type()"></td><td><a tal:content="kontratazioa/Title" tal:attributes="href string:${kontratazioa/getURL}"></a></td></tr>
+          <tr tal:define="obj python: kontratazioa.getObject()"><td tal:content="python: obj.getContract_type()"></td><td><a tal:content="kontratazioa/Title" tal:attributes="href string:${kontratazioa/getURL}"></a></td>
+          <td tal:content="python:obj.getFile_number()"></td>
+          </tr>
           </tal:define>
           </table>
         

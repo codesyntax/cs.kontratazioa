@@ -17,6 +17,7 @@ class List(BrowserView):
                         idea=state_sources[0]
 
                 year_dict={}
+                """
                 if idea != context.getState_source()[-1]:
                     dict={}
                     
@@ -26,7 +27,7 @@ class List(BrowserView):
                             dict['kontratazioak']=kontratazioak
                     year_dict['denak']=dict
                     return year_dict
-                
+                """
                 publication_years=catalog.uniqueValuesFor("kontratazioa_publication_year")
                 
                
