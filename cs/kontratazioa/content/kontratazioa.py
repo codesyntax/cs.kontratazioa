@@ -423,7 +423,7 @@ kontratazioaSchema.delSchemata('default')
 kontratazioaSchema.delSchemata('categorization')
 kontratazioaSchema.delSchemata('dates')
 kontratazioaSchema.delSchemata('ownership')
-kontratazioaSchema.delSchemata('settings')
+#kontratazioaSchema.delSchemata('settings')
 
 
 

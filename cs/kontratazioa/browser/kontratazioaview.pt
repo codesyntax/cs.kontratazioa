@@ -149,7 +149,7 @@
           </tr>
           </tal:condition>
 
-          <tr tal:define="contentFilter python:{'portal_type':'File'}; fitxategiak python:here.getFolderContents(contentFilter)" tal:condition="fitxategiak">
+          <tr tal:define="contentFilter python:{'portal_type':'File'}; fitxategiak python:here.getFolderContents(contentFilter,full_objects=1)" tal:condition="fitxategiak">
           <th i18n:translate="anexo-documental">Anexo Documental</th>
           <td>
             <tal:fitxategiak>
