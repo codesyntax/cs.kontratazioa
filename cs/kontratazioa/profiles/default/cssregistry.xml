@@ -3,8 +3,9 @@
 
  <stylesheet title=""
     id="++resource++cs.kontratazioa.css/cs.kontratazioa.css"
-    media="screen" rel="stylesheet" rendering="import"
+    media="screen" rel="stylesheet" rendering="link"
     cacheable="True" compression="safe" cookable="True"
-    enabled="1" expression=""/>
+    enabled="1" expression=""
+    condition="python:context.portal_type == 'kontratazioa'"/>
 
 </object>
