@@ -1,6 +1,13 @@
 Changelog
 =========
 
+2.1 (2013-03-21)
+------------------
+
+- PEP8 and indentation fixes [erral]
+
+- Plone 4.3 compatibility [lur]
+
 2.0.2 (2011-12-14)
 -------------------
 
