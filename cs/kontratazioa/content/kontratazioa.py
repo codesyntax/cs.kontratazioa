@@ -1,14 +1,13 @@
 """Definition of the kontratazioa content type
 """
 
-from zope.interface import implements, directlyProvides
+from zope.interface import implements
 try:
     from Products.LinguaPlone import public as atapi
 except ImportError:
     from Products.Archetypes import atapi
 from Products.ATContentTypes.content import folder
-from Products.ATContentTypes.content import schemata
-from Acquisition import aq_inner, aq_parent
+from Acquisition import aq_parent
 from cs.kontratazioa import kontratazioaMessageFactory as _
 from cs.kontratazioa.interfaces import Ikontratazioa
 from cs.kontratazioa.config import PROJECTNAME
@@ -21,7 +20,7 @@ kontratazioaSchema = atapi.ManagedSchema((
         name='file_number',
         required=False,
         languageIndependent=1,
-	storage=atapi.AnnotationStorage(),
+        storage=atapi.AnnotationStorage(),
         #searchable=1,
         #default='',
         #schemata ='default',
@@ -31,54 +30,54 @@ kontratazioaSchema = atapi.ManagedSchema((
     ),
     atapi.StringField('contract_type',
                   searchable=1,
-		  languageIndependent=0,
+                  languageIndependent=0,
                   required=1,
-		  vocabulary='selection_contract_type',
+                  vocabulary='selection_contract_type',
                   widget=atapi.SelectionWidget(
                      label=_(u'put_contract_type'),
                      ),
-                  ),	 
+                  ),
     atapi.StringField('process',
                   searchable=1,
-		  languageIndependent=0,
-		  vocabulary='selection_process',
+                  languageIndependent=0,
+                  vocabulary='selection_process',
                   widget=atapi.SelectionWidget(
                      label=_(u'process'),
-		     
+
                      ),
-                  ),	 
+                  ),
     atapi.StringField('izapidea',
                   searchable=1,
-		  languageIndependent=0,
-		  vocabulary='selection_izapidea',
+                  languageIndependent=0,
+                  vocabulary='selection_izapidea',
                   widget=atapi.SelectionWidget(
                      label=_(u'izapidea'),
-		     
+
                      ),
-                  ),	 
+                  ),
     atapi.StringField('organization',
                   searchable=1,
-		  languageIndependent=0,
+                                  languageIndependent=0,
                   required=True,
-		  vocabulary='selection_organization',
+                  vocabulary='selection_organization',
                   widget=atapi.SelectionWidget(
                      label=_(u'organization'),
-		     
+
                      ),
-                  ),	 
+                  ),
     atapi.StringField('kontratazio_organoa',
                   searchable=1,
-		  languageIndependent=0,
-		  vocabulary='selection_kontratazio_organoa',
+                  languageIndependent=0,
+                  vocabulary='selection_kontratazio_organoa',
                   widget=atapi.SelectionWidget(
                      label=_(u'put_kontratazio_organoa'),
-		     
+
                      ),
                   ),
 
     atapi.DateTimeField(
         name='published_date',
-        storage = atapi.AnnotationStorage(),
+        storage=atapi.AnnotationStorage(),
         required=False,
         languageIndependent=1,
         #searchable=1,
@@ -91,7 +90,7 @@ kontratazioaSchema = atapi.ManagedSchema((
     ),
     atapi.DateTimeField(
         name='published_date_boletin',
-        storage = atapi.AnnotationStorage(),
+        storage=atapi.AnnotationStorage(),
         required=False,
         languageIndependent=1,
         #searchable=1,
@@ -104,7 +103,7 @@ kontratazioaSchema = atapi.ManagedSchema((
     ),
     atapi.DateTimeField(
         name='organo_contratacion_date',
-        storage = atapi.AnnotationStorage(),
+        storage=atapi.AnnotationStorage(),
         required=False,
         languageIndependent=1,
         #searchable=1,
@@ -114,10 +113,10 @@ kontratazioaSchema = atapi.ManagedSchema((
             label=_(u"organo_contratacion_date"),
             show_hm=False,
         ),
-    ),	 
+    ),
     atapi.DateTimeField(
         name='last_date',
-        storage = atapi.AnnotationStorage(),
+        storage=atapi.AnnotationStorage(),
         required=False,
         languageIndependent=1,
         #searchable=1,
@@ -130,7 +129,7 @@ kontratazioaSchema = atapi.ManagedSchema((
 
     atapi.DateTimeField(
         name='eskaintza_ekonomikoa_date',
-        storage = atapi.AnnotationStorage(),
+        storage=atapi.AnnotationStorage(),
         required=False,
         languageIndependent=1,
         #searchable=1,
@@ -142,7 +141,7 @@ kontratazioaSchema = atapi.ManagedSchema((
     ),
     atapi.DateTimeField(
         name='kontratuasinatu_date',
-        storage = atapi.AnnotationStorage(),
+        storage=atapi.AnnotationStorage(),
         required=False,
         languageIndependent=1,
         #searchable=1,
@@ -156,7 +155,7 @@ kontratazioaSchema = atapi.ManagedSchema((
         name='lizitazio_aurrekontua',
         required=False,
         languageIndependent=0,
-	storage=atapi.AnnotationStorage(),
+        storage=atapi.AnnotationStorage(),
         #searchable=1,
         #default='',
         #schemata ='default',
@@ -167,44 +166,44 @@ kontratazioaSchema = atapi.ManagedSchema((
     atapi.TextField('documentation',
                         required=False,
                         searchable=True,
-			storage=atapi.AnnotationStorage(),
+                        storage=atapi.AnnotationStorage(),
                         validators=('isTidyHtmlWithCleanup',),
                         default_output_type='text/x-html-safe',
                         widget=atapi.RichWidget(label=_(u'put_documentation'),
                                                 rows=10,
                                                 allow_file_upload=False),
                         ),
-   
+
      atapi.FileField('attach1',
                   searchable=1,
-		  languageIndependent=1,
-                  storage = atapi.AnnotationStorage(migrate=True),
+                  languageIndependent=1,
+                  storage=atapi.AnnotationStorage(migrate=True),
                   widget=atapi.FileWidget(
                      label=_(u'attach1'),
                      ),
                   ),
 
      atapi.TextField('attach1_information',
-                        required=False,
-                        searchable=True,
-			storage=atapi.AnnotationStorage(),
-                        validators=('isTidyHtmlWithCleanup',),
-                        default_output_type='text/x-html-safe',
-                        widget=atapi.RichWidget(label=_(u'attach1_information'),
-                                                rows=10,
-                                                allow_file_upload=False),
+                    required=False,
+                    searchable=True,
+                    storage=atapi.AnnotationStorage(),
+                    validators=('isTidyHtmlWithCleanup',),
+                    default_output_type='text/x-html-safe',
+                    widget=atapi.RichWidget(label=_(u'attach1_information'),
+                                            rows=10,
+                                            allow_file_upload=False),
                    ),
      atapi.FileField('attach2',
                   searchable=1,
-                  storage = atapi.AnnotationStorage(migrate=True),
-		  languageIndependent=1,
+                  storage=atapi.AnnotationStorage(migrate=True),
+                  languageIndependent=1,
                   widget=atapi.FileWidget(
                      label=_(u'attach2'),
                      ),
                   ),
      atapi.FileField('attach3',
                   searchable=1,
-		  languageIndependent=1,
+                  languageIndependent=1,
                   #storage = atapi.AnnotationStorage(migrate=True),
                   widget=atapi.FileWidget(
                      label=_(u'attach3'),
@@ -213,25 +212,26 @@ kontratazioaSchema = atapi.ManagedSchema((
 
      atapi.FileField('attach4',
                   searchable=1,
-                  storage = atapi.AnnotationStorage(migrate=True),
-		  languageIndependent=1,
+                  storage=atapi.AnnotationStorage(migrate=True),
+                  languageIndependent=1,
                   widget=atapi.FileWidget(
                      label=_(u'attach4'),
                      ),
                   ),
 
-    
+
     atapi.FileField('behin_behineko_file',
                   searchable=1,
-                  storage = atapi.AnnotationStorage(migrate=True),
-		  languageIndependent=1,
+                  storage=atapi.AnnotationStorage(migrate=True),
+                  languageIndependent=1,
                   widget=atapi.FileWidget(
                      label=_(u'behin_behineko_file'),
                      ),
                   ),
+
     atapi.DateTimeField(
         name='behin_behineko_adjudikazio_date',
-        storage = atapi.AnnotationStorage(),
+        storage=atapi.AnnotationStorage(),
         required=False,
         languageIndependent=1,
         #searchable=1,
@@ -242,6 +242,7 @@ kontratazioaSchema = atapi.ManagedSchema((
             show_hm=False,
         ),
     ),
+
     atapi.DateTimeField(
         name='behin_behineko_profile_date',
         storage = atapi.AnnotationStorage(),
@@ -255,39 +256,41 @@ kontratazioaSchema = atapi.ManagedSchema((
             show_hm=False,
         ),
     ),
+
     atapi.TextField('behin_behineko_adjudikazioduna',
-                        required=False,
-                        searchable=True,
-			storage=atapi.AnnotationStorage(),
-                        validators=('isTidyHtmlWithCleanup',),
-                        default_output_type='text/x-html-safe',
-                        widget=atapi.RichWidget(label=_(u'behin_behineko_adjudikazioduna'),
-                                                rows=10,
-                                                allow_file_upload=False),
-                        ),
+            required=False,
+            searchable=True,
+            storage=atapi.AnnotationStorage(),
+            validators=('isTidyHtmlWithCleanup',),
+            default_output_type='text/x-html-safe',
+            widget=atapi.RichWidget(label=_(u'behin_behineko_adjudikazioduna'),
+                                    rows=10,
+                                    allow_file_upload=False),
+            ),
 
     atapi.TextField('behin_behineko_adjudikazioaren_zenbatekoa',
-                        required=False,
-                        searchable=True,
-			storage=atapi.AnnotationStorage(),
-                        validators=('isTidyHtmlWithCleanup',),
-                        default_output_type='text/x-html-safe',
-                        widget=atapi.RichWidget(label=_(u'behin_behineko_adjudikazioaren_zenbatekoa'),
-                                                rows=10,
-                                                allow_file_upload=False),
-                        ),
+        required=False,
+        searchable=True,
+        storage=atapi.AnnotationStorage(),
+        validators=('isTidyHtmlWithCleanup',),
+        default_output_type='text/x-html-safe',
+        widget=atapi.RichWidget(label=_(u'behin_behineko_adjudikazioaren_zenbatekoa'),
+                                rows=10,
+                                allow_file_upload=False),
+        ),
 
     atapi.FileField('behin_betiko_file',
                   searchable=1,
                   storage = atapi.AnnotationStorage(migrate=True),
-		  languageIndependent=1,
+                  languageIndependent=1,
                   widget=atapi.FileWidget(
                      label=_(u'behin_betiko_file'),
                      ),
                   ),
-     atapi.DateTimeField(
+
+    atapi.DateTimeField(
         name='behin_betiko_adjudikazio_date',
-        storage = atapi.AnnotationStorage(),
+        storage=atapi.AnnotationStorage(),
         required=False,
         languageIndependent=1,
         #searchable=1,
@@ -298,9 +301,10 @@ kontratazioaSchema = atapi.ManagedSchema((
             show_hm=False,
         ),
     ),
-     atapi.DateTimeField(
+
+    atapi.DateTimeField(
         name='behin_betiko_profile_date',
-        storage = atapi.AnnotationStorage(),
+        storage=atapi.AnnotationStorage(),
         required=False,
         languageIndependent=1,
         #searchable=1,
@@ -311,37 +315,37 @@ kontratazioaSchema = atapi.ManagedSchema((
         ),
     ),
     atapi.TextField('behin_betiko_adjudikazioduna',
-                        required=False,
-                        searchable=True,
-			storage=atapi.AnnotationStorage(),
-                        validators=('isTidyHtmlWithCleanup',),
-                        default_output_type='text/x-html-safe',
-                        widget=atapi.RichWidget(label=_(u'behin_betiko_adjudikazioduna'),
-                                                rows=10,
-                                                allow_file_upload=False),
-                        ),
+        required=False,
+        searchable=True,
+        storage=atapi.AnnotationStorage(),
+        validators=('isTidyHtmlWithCleanup',),
+        default_output_type='text/x-html-safe',
+        widget=atapi.RichWidget(label=_(u'behin_betiko_adjudikazioduna'),
+                                rows=10,
+                                allow_file_upload=False),
+        ),
 
     atapi.TextField('behin_betiko_adjudikazioaren_zenbatekoa',
-                        required=False,
-                        searchable=True,
-			storage=atapi.AnnotationStorage(),
-                        validators=('isTidyHtmlWithCleanup',),
-                        default_output_type='text/x-html-safe',
-                        widget=atapi.RichWidget(label=_(u'behin_betiko_adjudikazioaren_zenbatekoa'),
-                                                rows=10,
-                                                allow_file_upload=False),
-                        ),
+        required=False,
+        searchable=True,
+        storage=atapi.AnnotationStorage(),
+        validators=('isTidyHtmlWithCleanup',),
+        default_output_type='text/x-html-safe',
+        widget=atapi.RichWidget(label=_(u'behin_betiko_adjudikazioaren_zenbatekoa'),
+                                rows=10,
+                                allow_file_upload=False),
+        ),
 
     atapi.StringField('state',
-                  searchable=1,
-		  languageIndependent=0,
-		  vocabulary='selection_state',
-                  widget=atapi.SelectionWidget(
-                     label=_(u'state'),
-		     
-                     ),
-                  ),
-    
+          searchable=1,
+          languageIndependent=0,
+          vocabulary='selection_state',
+          widget=atapi.SelectionWidget(
+             label=_(u'state'),
+
+             ),
+          ),
+
 ) + tuple(fields))
 
 # Set storage on fields copied from ATFolderSchema, making sure
@@ -426,62 +430,46 @@ kontratazioaSchema.delSchemata('ownership')
 #kontratazioaSchema.delSchemata('settings')
 
 
-
 class kontratazioa(folder.ATFolder):
-    
+
     implements(Ikontratazioa)
 
     meta_type = "kontratazioa"
     schema = kontratazioaSchema
     title = atapi.ATFieldProperty('title')
     description = atapi.ATFieldProperty('description')
-    
-    # -*- Your ATSchema to Python Property Bridges Here ... -*-
+
     def selection_contract_type(self):
-            #import pdb;pdb.set_trace()
-            situation_list=aq_parent(self).getContract_type()
-            
-            return situation_list
+        return aq_parent(self).getContract_type()
+
     def selection_process(self):
-            #import pdb;pdb.set_trace()
-            situation_list=aq_parent(self).getProcess()
-            
-            return situation_list
+        return aq_parent(self).getProcess()
+
     def selection_izapidea(self):
-            #import pdb;pdb.set_trace()
-            situation_list=aq_parent(self).getIzapidea()
-            
-            return situation_list
+        return aq_parent(self).getIzapidea()
+
     def selection_organization(self):
-            #import pdb;pdb.set_trace()
-            situation_list=aq_parent(self).getOrganization_source()
-            
-            return situation_list
+        return aq_parent(self).getOrganization_source()
+
     def selection_kontratazio_organoa(self):
-            #import pdb;pdb.set_trace()
-            situation_list=aq_parent(self).getKontratazio_organoa()
-            
-            return situation_list
+        return aq_parent(self).getKontratazio_organoa()
+
     def selection_state(self):
-            #import pdb;pdb.set_trace()
-            situation_list=aq_parent(self).getState_source()
-            
-            return situation_list
+        return aq_parent(self).getState_source()
 
     def publication_year(self):
-            if self.getPublished_date():
-                return self.getPublished_date().year()
-            else:
-                return 1
+        if self.getPublished_date():
+            return self.getPublished_date().year()
+        else:
+            return 1
 
     def behin_betiko_adjudikazio_date_function(self):
-            if self.getBehin_betiko_adjudikazio_date():
-                return self.getBehin_betiko_adjudikazio_date().year()
-            else:
-                return 1
+        if self.getBehin_betiko_adjudikazio_date():
+            return self.getBehin_betiko_adjudikazio_date().year()
+        else:
+            return 1
 
     def kontratazioa_contract_type(self):
-            
-            return self.getContract_type()
-            
+        return self.getContract_type()
+
 atapi.registerType(kontratazioa, PROJECTNAME)
