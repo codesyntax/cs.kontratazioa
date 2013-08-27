@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.2
+-----------------
+
+- Fix cssregistry.xml with the condition expression 
+
 2.1 (2013-03-21)
 ------------------
 
