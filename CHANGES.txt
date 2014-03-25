@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.2
+2.2 (2014-03-25)
 -----------------
 
 - Fix cssregistry.xml with the condition expression 
