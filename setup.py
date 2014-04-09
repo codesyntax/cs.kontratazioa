@@ -8,37 +8,19 @@ from setuptools import setup, find_packages
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-version = '1.16debabarrena'
+
+version = '2.3debabarrena'
 
 long_description = (
     read('README.txt')
     + '\n' +
-    'Change history\n'
-    '**************\n'
-    + '\n' +
     read('CHANGES.txt')
-    + '\n' +
-    'Detailed Documentation\n'
-    '**********************\n'
-    + '\n' +
-    read('cs', 'kontratazioa', 'README.txt')
-    + '\n' +
-    'Contributors\n'
-    '************\n'
-    + '\n' +
-    read('CONTRIBUTORS.txt')
-    + '\n' +
-    'Download\n'
-    '********\n'
     )
-
-tests_require=['zope.testing']
 
 setup(name='cs.kontratazioa',
       version=version,
-      description="",
+      description="A product to publish public contract information in Spanish Public Administration's websites",
       long_description=long_description,
-      # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         'Framework :: Plone',
         'Intended Audience :: Developers',
@@ -48,7 +30,7 @@ setup(name='cs.kontratazioa',
       keywords='',
       author='Lur Ibargutxi',
       author_email='libargutxi@codesyntax.com',
-      url='http://code.codesyntax.com/private',
+      url='http://github.com/codesyntax/cs.kontratazioa',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['cs', ],
@@ -56,17 +38,12 @@ setup(name='cs.kontratazioa',
       zip_safe=False,
       install_requires=['setuptools',
                         # -*- Extra requirements: -*-
+                        'Plone'
                         ],
-      tests_require=tests_require,
-      extras_require=dict(tests=tests_require),
-      test_suite = 'cs.kontratazioa.tests.test_docs.test_suite',
       entry_points="""
-      # -*- entry_points -*- 
-      [distutils.setup_keywords]
-      paster_plugins = setuptools.dist:assert_string_list
+      # -*- entry_points -*-
 
-      [egg_info.writers]
-      paster_plugins.txt = setuptools.command.egg_info:write_arg
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
-      paster_plugins = ["ZopeSkel"],
       )

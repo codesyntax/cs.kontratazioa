@@ -1,7 +1,7 @@
 """Definition of the kontratazioaFolder content type
 """
 
-from zope.interface import implements, directlyProvides
+from zope.interface import implements
 try:
     from Products.LinguaPlone import public as atapi
 except ImportError:
@@ -18,7 +18,7 @@ kontratazioaFolderSchema = folder.ATFolderSchema.copy() + atapi.Schema((
     # -*- Your Archetypes field definitions here ... -*-
     atapi.LinesField(
         name='contract_type',
-        storage = atapi.AnnotationStorage(),
+        storage=atapi.AnnotationStorage(),
         required=False,
         #searchable=1,
         #default='',
@@ -30,7 +30,7 @@ kontratazioaFolderSchema = folder.ATFolderSchema.copy() + atapi.Schema((
     ),
     atapi.LinesField(
         name='process',
-        storage = atapi.AnnotationStorage(),
+        storage=atapi.AnnotationStorage(),
         required=False,
         #searchable=1,
         #default='',
@@ -42,7 +42,7 @@ kontratazioaFolderSchema = folder.ATFolderSchema.copy() + atapi.Schema((
     ),
     atapi.LinesField(
         name='izapidea',
-        storage = atapi.AnnotationStorage(),
+        storage=atapi.AnnotationStorage(),
         required=False,
         #searchable=1,
         #default='',
@@ -52,10 +52,11 @@ kontratazioaFolderSchema = folder.ATFolderSchema.copy() + atapi.Schema((
             description=_(u"Description of izapidea"),
         ),
     ),
-    
+
+
     atapi.LinesField(
         name='kontratazio_organoa',
-        storage = atapi.AnnotationStorage(),
+        storage=atapi.AnnotationStorage(),
         required=False,
         #searchable=1,
         #default='',
@@ -67,7 +68,7 @@ kontratazioaFolderSchema = folder.ATFolderSchema.copy() + atapi.Schema((
     ),
      atapi.LinesField(
         name='state_source',
-        storage = atapi.AnnotationStorage(),
+        storage=atapi.AnnotationStorage(),
         required=False,
         #searchable=1,
         #default='',
@@ -77,18 +78,18 @@ kontratazioaFolderSchema = folder.ATFolderSchema.copy() + atapi.Schema((
             description=_(u"Description of state_source"),
         ),
     ),
-    
+
     atapi.TextField('contact_information',
-                        required=False,
-                        searchable=True,
-			storage=atapi.AnnotationStorage(),
-                        validators=('isTidyHtmlWithCleanup',),
-                        default_output_type='text/x-html-safe',
-                        widget=atapi.RichWidget(label=_(u'contact_information'),
-                                                description=_(u'Description of contact_information'),
-                                                rows=10,
-                                                allow_file_upload=False),
-                        ),
+        required=False,
+        searchable=True,
+        storage=atapi.AnnotationStorage(),
+        validators=('isTidyHtmlWithCleanup',),
+        default_output_type='text/x-html-safe',
+        widget=atapi.RichWidget(label=_(u'contact_information'),
+                                description=_(u'Description of contact_information'),
+                                rows=10,
+                                allow_file_upload=False),
+        ),
 ))
 
 # Set storage on fields copied from ATFolderSchema, making sure
@@ -103,8 +104,9 @@ schemata.finalizeATCTSchema(
     moveDiscussion=False
 )
 
+
 class kontratazioaFolder(folder.ATFolder):
-    """Description of the Example Type"""
+    """A folder to save kontratazioa items"""
     implements(IkontratazioaFolder)
 
     meta_type = "kontratazioaFolder"
@@ -112,7 +114,6 @@ class kontratazioaFolder(folder.ATFolder):
 
     title = atapi.ATFieldProperty('title')
     description = atapi.ATFieldProperty('description')
-    
-    # -*- Your ATSchema to Python Property Bridges Here ... -*-
+
 
 atapi.registerType(kontratazioaFolder, PROJECTNAME)

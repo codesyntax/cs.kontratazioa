@@ -1,0 +1,29 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cs.kontratazioa\n"
+"POT-Creation-Date: 2011-12-07 12:06+0000\n"
+"PO-Revision-Date: 2011-12-14 15:13+0100\n"
+"Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
+"Language-Team: es <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+"X-Poedit-Language: Spanish\n"
+
+msgid "label_schema_adjudikazioa"
+msgstr "Adjudicación"
+
+msgid "label_schema_formalizazioa"
+msgstr "Formalización"
+
+msgid "label_schema_lizitazioa"
+msgstr "Licitación"
+
+msgid "label_schema_others"
+msgstr "Otros"
+
