@@ -204,9 +204,9 @@
           <th i18n:translate="behin_betiko_adjudikazio_date">Behin betiko adjudikazio data</th>
           <td tal:content="python: here.toLocalizedTime(adjudikazio_date, long_format=0)"></td>
           </tr>
-          <!--<tr tal:condition="behin_betiko_file"><th i18n:translate="akordioa">akordioa</th><td><span metal:use-macro="python:here.widget('behin_betiko_file',
+          <tr tal:condition="behin_betiko_file"><th i18n:translate="akordioa">akordioa</th><td><span metal:use-macro="python:here.widget('behin_betiko_file',
  	                             mode='view')" /></td>
-          </tr>-->
+          </tr>
 
           <tr tal:condition="adjudikazioduna">
           <th i18n:translate="behin_betiko_adjudikazioduna">adjudikazioduna</th>
