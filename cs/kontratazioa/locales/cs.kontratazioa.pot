@@ -1,11 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-<<<<<<< HEAD
-"POT-Creation-Date: 2011-07-08 07:40+0000\n"
-=======
-"POT-Creation-Date: 2011-03-23 11:20+0000\n"
->>>>>>> master
+"POT-Creation-Date: 2015-10-07 12:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,487 +14,380 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-<<<<<<< HEAD
-#: ./content/kontratazioa.py:181
+#: ./content/kontratazioa.py:175
 msgid "Description of attach1_information"
 msgstr ""
 
-#: ./content/kontratazioa.py:269
-msgid "Description of behin_behineko_adjudikazio_date"
-msgstr ""
-
-#: ./content/kontratazioa.py:292
+#: ./content/kontratazioa.py:295
 msgid "Description of behin_behineko_adjudikazioaren_zenbatekoa"
 msgstr ""
 
-#: ./content/kontratazioa.py:280
+#: ./content/kontratazioa.py:283
 msgid "Description of behin_behineko_adjudikazioduna"
 msgstr ""
 
-#: ./content/kontratazioa.py:307
-msgid "Description of behin_behineko_profile_date"
-msgstr ""
-
-#: ./content/kontratazioa.py:352
+#: ./content/kontratazioa.py:378
 msgid "Description of behin_betiko_adjudikazioaren_zenbatekoa"
 msgstr ""
 
-#: ./content/kontratazioa.py:340
+#: ./content/kontratazioa.py:366
 msgid "Description of behin_betiko_adjudikazioduna"
 msgstr ""
 
-#: ./content/kontratazioa.py:367
-=======
-#: ./content/kontratazioa.py:203
-msgid "Description of attach1_information"
-msgstr ""
-
-#: ./content/kontratazioa.py:252
-msgid "Description of behin_behineko_adjudikazio_date"
-msgstr ""
-
-#: ./content/kontratazioa.py:275
-msgid "Description of behin_behineko_adjudikazioaren_zenbatekoa"
-msgstr ""
-
-#: ./content/kontratazioa.py:263
-msgid "Description of behin_behineko_adjudikazioduna"
-msgstr ""
-
-#: ./content/kontratazioa.py:290
-msgid "Description of behin_behineko_profile_date"
-msgstr ""
-
-#: ./content/kontratazioa.py:335
-msgid "Description of behin_betiko_adjudikazioaren_zenbatekoa"
-msgstr ""
-
-#: ./content/kontratazioa.py:323
-msgid "Description of behin_betiko_adjudikazioduna"
-msgstr ""
-
-#: ./content/kontratazioa.py:350
->>>>>>> master
-msgid "Description of behin_betiko_profile_date"
-msgstr ""
-
-#: ./content/kontratazioafolder.py:88
+#: ./content/kontratazioafolder.py:91
 msgid "Description of contact_information"
 msgstr ""
 
-#: ./content/kontratazioafolder.py:28
+#: ./content/kontratazioafolder.py:30
 msgid "Description of contract_type"
 msgstr ""
 
-<<<<<<< HEAD
-#: ./content/kontratazioa.py:378
+#: ./content/kontratazioa.py:424
 msgid "Description of contrato_date"
 msgstr ""
 
-#: ./content/kontratazioa.py:413
+#: ./content/kontratazioa.py:459
 msgid "Description of desierto_adjudikazio_date"
 msgstr ""
 
-#: ./content/kontratazioa.py:428
+#: ./content/kontratazioa.py:474
 msgid "Description of desierto_profile_date"
 msgstr ""
 
-#: ./content/kontratazioa.py:449
+#: ./content/kontratazioa.py:495
 msgid "Description of desistimiento_adjudikazio_date"
 msgstr ""
 
-#: ./content/kontratazioa.py:464
+#: ./content/kontratazioa.py:510
 msgid "Description of desistimiento_profile_date"
 msgstr ""
 
-#: ./content/kontratazioa.py:132
-=======
-#: ./content/kontratazioa.py:182
->>>>>>> master
+#: ./content/kontratazioa.py:128
 msgid "Description of documentation"
 msgstr ""
 
-#: ./content/kontratazioa.py:216
+#: ./content/kontratazioa.py:210
 msgid "Description of doue_information"
 msgstr ""
 
-#: ./content/kontratazioa.py:245
-msgid "Description of eskaintza_ekonomikoa_date"
-msgstr ""
-
-#: ./content/kontratazioa.py:29
-msgid "Description of file_number"
-msgstr ""
-
-#: ./content/kontratazioafolder.py:52
+#: ./content/kontratazioafolder.py:54
 msgid "Description of izapidea"
 msgstr ""
 
-#: ./content/kontratazioafolder.py:65
+#: ./content/kontratazioafolder.py:68
 msgid "Description of kontratazioa_organoa"
 msgstr ""
 
-#: ./content/kontratazioa.py:231
-msgid "Description of last_date"
-msgstr ""
-
-<<<<<<< HEAD
-#: ./content/kontratazioa.py:122
-=======
-#: ./content/kontratazioa.py:172
->>>>>>> master
+#: ./content/kontratazioa.py:118
 msgid "Description of lizitazio_aurrekontua"
 msgstr ""
 
-#: ./content/kontratazioa.py:81
+#: ./content/kontratazioa.py:77
 msgid "Description of organo_contratacion_date"
 msgstr ""
 
-#: ./content/kontratazioafolder.py:40
+#: ./content/kontratazioafolder.py:42
 msgid "Description of process"
 msgstr ""
 
-#: ./content/kontratazioa.py:147
-msgid "Description of published_date"
-msgstr ""
-
-#: ./content/kontratazioa.py:161
-msgid "Description of published_date_boletin"
-msgstr ""
-
-#: ./content/kontratazioa.py:196
+#: ./content/kontratazioa.py:190
 msgid "Description of published_date_doue"
 msgstr ""
 
-#: ./content/kontratazioafolder.py:77
+#: ./content/kontratazioafolder.py:80
 msgid "Description of state_source"
 msgstr ""
 
-#: ./content/kontratazioa.py:390
+#: ./content/kontratazioa.py:436
 msgid "Description of texto_del_anuncio"
 msgstr ""
 
-#. Default: "Description of the Example Type"
 #: ./profiles/default/types/kontratazioaFolder.xml
-#: ./profiles/default/types/kontratazioa.xml
 msgid "Description of the Example Type"
 msgstr ""
 
-#: ./content/kontratazioa.py:158
+#: ./content/kontratazioa.py:250
 msgid "Kontratua sinatzeko data"
 msgstr ""
 
-#. Default: "akordioa"
-<<<<<<< HEAD
-#: ./browser/kontratazioaview.pt:166
+#: ./browser/kontratazioaview.pt:174
 msgid "akordioa"
 msgstr ""
 
-=======
-#: ./browser/kontratazioaview.pt:190
-msgid "akordioa"
-msgstr ""
-
-#. Default: "Anexo Documental"
-#: ./browser/kontratazioaview.pt:153
-msgid "anexo-documental"
-msgstr ""
-
->>>>>>> master
 #. Default: "Attach1"
-#: ./browser/kontratazioaview.pt:113
+#: ./browser/kontratazioaview.pt:119
+#: ./content/kontratazioa.py:164
 msgid "attach1"
 msgstr ""
 
-<<<<<<< HEAD
-#: ./content/kontratazioa.py:180
-=======
-#: ./content/kontratazioa.py:202
->>>>>>> master
+#: ./content/kontratazioa.py:174
 msgid "attach1_information"
 msgstr ""
 
 #. Default: "Attach2"
-#: ./browser/kontratazioaview.pt:70
+#: ./browser/kontratazioaview.pt:72
+#: ./content/kontratazioa.py:96
 msgid "attach2"
 msgstr ""
 
 #. Default: "Attach3"
-#: ./browser/kontratazioaview.pt:78
+#: ./browser/kontratazioaview.pt:80
+#: ./content/kontratazioa.py:105
 msgid "attach3"
 msgstr ""
 
 #. Default: "Attach4"
-#: ./browser/kontratazioaview.pt:63
+#: ./browser/kontratazioaview.pt:64
+#: ./content/kontratazioa.py:87
 msgid "attach4"
 msgstr ""
 
 #. Default: "Behin behineko adjudikazio data"
-<<<<<<< HEAD
-#: ./browser/kontratazioaview.pt:163
-=======
-#: ./browser/kontratazioaview.pt:187
->>>>>>> master
+#: ./browser/kontratazioaview.pt:171
+#: ./content/kontratazioa.py:272
 msgid "behin_behineko_adjudikazio_date"
 msgstr ""
 
 #. Default: "Adjudikazioaren zenbatekoa"
-<<<<<<< HEAD
-#: ./browser/kontratazioaview.pt:176
-=======
-#: ./browser/kontratazioaview.pt:200
->>>>>>> master
+#: ./browser/kontratazioaview.pt:184
+#: ./content/kontratazioa.py:294
 msgid "behin_behineko_adjudikazioaren_zenbatekoa"
 msgstr ""
 
 #. Default: "adjudikazioduna"
-<<<<<<< HEAD
-#: ./browser/kontratazioaview.pt:171
+#: ./browser/kontratazioaview.pt:179
+#: ./content/kontratazioa.py:282
 msgid "behin_behineko_adjudikazioduna"
 msgstr ""
 
-#: ./browser/kontratazioaview.pt:160
-=======
-#: ./browser/kontratazioaview.pt:195
-msgid "behin_behineko_adjudikazioduna"
-msgstr ""
-
-#: ./browser/kontratazioaview.pt:184
->>>>>>> master
+#: ./browser/kontratazioaview.pt:168
+#: ./content/kontratazioa.py:259
 msgid "behin_behineko_file"
 msgstr ""
 
 #. Default: "kontratazio profileko data"
-<<<<<<< HEAD
-#: ./browser/kontratazioaview.pt:182
-=======
-#: ./browser/kontratazioaview.pt:206
->>>>>>> master
+#: ./browser/kontratazioaview.pt:190
+#: ./content/kontratazioa.py:309
 msgid "behin_behineko_profile_date"
 msgstr ""
 
 #. Default: "Behin betiko adjudikazio data"
-<<<<<<< HEAD
-#: ./browser/kontratazioaview.pt:196
-=======
-#: ./browser/kontratazioaview.pt:221
->>>>>>> master
+#: ./browser/kontratazioaview.pt:204
+#: ./content/kontratazioa.py:354
 msgid "behin_betiko_adjudikazio_date"
 msgstr ""
 
 #. Default: "Adjudikazioaren zenbatekoa"
-<<<<<<< HEAD
-#: ./browser/kontratazioaview.pt:209
-=======
-#: ./browser/kontratazioaview.pt:234
->>>>>>> master
+#: ./browser/kontratazioaview.pt:217
+#: ./content/kontratazioa.py:377
 msgid "behin_betiko_adjudikazioaren_zenbatekoa"
 msgstr ""
 
 #. Default: "adjudikazioduna"
-<<<<<<< HEAD
-#: ./browser/kontratazioaview.pt:204
+#: ./browser/kontratazioaview.pt:212
+#: ./content/kontratazioa.py:365
 msgid "behin_betiko_adjudikazioduna"
 msgstr ""
 
-#: ./browser/kontratazioaview.pt:193
-=======
-#: ./browser/kontratazioaview.pt:229
-msgid "behin_betiko_adjudikazioduna"
-msgstr ""
-
-#: ./browser/kontratazioaview.pt:218
->>>>>>> master
+#: ./browser/kontratazioaview.pt:201
+#: ./content/kontratazioa.py:341
 msgid "behin_betiko_file"
 msgstr ""
 
 #. Default: "kontratazio profileko data"
-<<<<<<< HEAD
-#: ./browser/kontratazioaview.pt:215
-=======
-#: ./browser/kontratazioaview.pt:240
->>>>>>> master
+#: ./browser/kontratazioaview.pt:223
+#: ./content/kontratazioa.py:392
 msgid "behin_betiko_profile_date"
 msgstr ""
 
 #. Default: "Contact Information"
-#: ./browser/kontratazioaview.pt:144
+#: ./browser/kontratazioaview.pt:157
+#: ./content/kontratazioafolder.py:90
 msgid "contact_information"
 msgstr ""
 
 #: ./browser/kontratazioaview.pt:21
+#: ./content/kontratazioafolder.py:29
 msgid "contract_type"
 msgstr ""
 
 #. Default: "Kontratu data"
-#: ./browser/kontratazioaview.pt:232
+#: ./browser/kontratazioaview.pt:228
+#: ./content/kontratazioa.py:423
 msgid "contrato_date"
 msgstr ""
 
 #. Default: "Esleitu gabekoaren adjudikazioduna"
-#: ./browser/kontratazioaview.pt:228
+#: ./browser/kontratazioaview.pt:245
+#: ./content/kontratazioa.py:458
 msgid "desierto_adjudikazio_date"
 msgstr ""
 
-#: ./content/kontratazioa.py:400
+#: ./content/kontratazioa.py:446
 msgid "desierto_file"
 msgstr ""
 
-#: ./browser/kontratazioaview.pt:225
+#: ./browser/kontratazioaview.pt:242
 msgid "desierto_goiburua"
 msgstr ""
 
-#: ./content/kontratazioa.py:427
+#: ./content/kontratazioa.py:473
 msgid "desierto_profile_date"
 msgstr ""
 
 #. Default: "Uko egitearen adjudikazio data"
-#: ./browser/kontratazioaview.pt:256
+#: ./browser/kontratazioaview.pt:266
+#: ./content/kontratazioa.py:494
 msgid "desistimiento_adjudikazio_date"
 msgstr ""
 
 #. Default: "Uko egitearen fitxategia"
-#: ./browser/kontratazioaview.pt:259
+#: ./browser/kontratazioaview.pt:269
+#: ./content/kontratazioa.py:482
 msgid "desistimiento_file"
 msgstr ""
 
-#: ./browser/kontratazioaview.pt:253
+#: ./browser/kontratazioaview.pt:263
 msgid "desistimiento_goiburua"
 msgstr ""
 
-#: ./content/kontratazioa.py:463
+#: ./content/kontratazioa.py:509
 msgid "desistimiento_profile_date"
 msgstr ""
 
 #. Default: "Documentation"
-#: ./browser/kontratazioaview.pt:92
+#: ./browser/kontratazioaview.pt:96
 msgid "documentation"
 msgstr ""
 
 #. Default: "DOUE PDF"
-#: ./browser/kontratazioaview.pt:128
+#: ./browser/kontratazioaview.pt:134
+#: ./content/kontratazioa.py:199
 msgid "doue_file"
 msgstr ""
 
-#: ./content/kontratazioa.py:215
+#: ./content/kontratazioa.py:209
 msgid "doue_information"
 msgstr ""
 
-#. Default: "eskaintza_ekonomikoa_date"
 #: ./browser/kontratazioaview.pt:151
+#: ./content/kontratazioa.py:238
 msgid "eskaintza_ekonomikoa_date"
 msgstr ""
 
+#: ./browser/kontratazioafolderview.pt:26
 #: ./browser/kontratazioaview.pt:14
+#: ./content/kontratazioa.py:26
 msgid "file_number"
 msgstr ""
 
+#. Default: "Kontrataziorako barne jarraibideak"
+#: ./browser/kontratazioafolderview.pt:14
+msgid "instrucciones-internas"
+msgstr ""
+
+msgid "instrucciones-internas-url"
+msgstr ""
+
 #: ./browser/kontratazioaview.pt:35
+#: ./content/kontratazioa.py:52
+#: ./content/kontratazioafolder.py:53
 msgid "izapidea"
 msgstr ""
 
 #: ./browser/kontratazioaview.pt:49
+#: ./content/kontratazioafolder.py:67
 msgid "kontratazio_organoa"
 msgstr ""
 
-#. Default: "kontratazioa"
 #: ./profiles/default/types/kontratazioa.xml
 msgid "kontratazioa"
 msgstr ""
 
-#. Default: "kontratazioaFolder"
 #: ./profiles/default/types/kontratazioaFolder.xml
 msgid "kontratazioaFolder"
 msgstr ""
 
 #. Default: "Kontratua"
-#: ./browser/kontratazioafolderview.pt:21
+#: ./browser/kontratazioafolderview.pt:26
 msgid "kontratua"
 msgstr ""
 
-#: ./content/kontratazioa.py:159
-msgid "kontratua sinatzeko data"
-msgstr ""
-
-#. Default: "Kontratua sinatzeko data"
-#: ./browser/kontratazioaview.pt:147
-msgid "kontratuasinatu_date"
-msgstr ""
-
 #. Default: "Last date"
-#: ./browser/kontratazioaview.pt:137
+#: ./browser/kontratazioaview.pt:143
+#: ./content/kontratazioa.py:225
 msgid "last_date"
 msgstr ""
 
 #. Default: "Lizitazio-aurrekontua"
-#: ./browser/kontratazioaview.pt:85
+#: ./browser/kontratazioaview.pt:88
+#: ./content/kontratazioa.py:117
 msgid "lizitazio_aurrekontua"
 msgstr ""
 
 #. Default: "Organo contratacion date"
-#: ./browser/kontratazioaview.pt:56
+#: ./browser/kontratazioaview.pt:57
+#: ./content/kontratazioa.py:76
 msgid "organo_contratacion_date"
 msgstr ""
 
 #: ./browser/kontratazioaview.pt:28
+#: ./content/kontratazioa.py:43
+#: ./content/kontratazioafolder.py:41
 msgid "process"
 msgstr ""
 
 #. Default: "Publikazio urterik ez dutenak"
-#: ./browser/kontratazioafolderview.pt:18
+#: ./browser/kontratazioafolderview.pt:23
 msgid "publikazio-urte-gabe"
 msgstr ""
 
 #. Default: "Published data"
-#: ./browser/kontratazioaview.pt:99
+#: ./browser/kontratazioaview.pt:104
+#: ./content/kontratazioa.py:142
 msgid "published_date"
 msgstr ""
 
 #. Default: "Published data boletin"
-#: ./browser/kontratazioaview.pt:106
+#: ./browser/kontratazioaview.pt:111
+#: ./content/kontratazioa.py:155
 msgid "published_date_boletin"
 msgstr ""
 
 #. Default: "Published data DOUE"
-#: ./browser/kontratazioaview.pt:121
+#: ./browser/kontratazioaview.pt:127
+#: ./content/kontratazioa.py:189
 msgid "published_date_doue"
 msgstr ""
 
-#: ./content/kontratazioa.py:38
+#: ./content/kontratazioa.py:35
 msgid "put_contract_type"
 msgstr ""
 
-<<<<<<< HEAD
-#: ./content/kontratazioa.py:131
-=======
-#: ./content/kontratazioa.py:181
->>>>>>> master
+#: ./content/kontratazioa.py:127
 msgid "put_documentation"
 msgstr ""
 
-#: ./content/kontratazioa.py:66
+#: ./content/kontratazioa.py:62
 msgid "put_kontratazio_organoa"
 msgstr ""
 
-<<<<<<< HEAD
-#: ./content/kontratazioa.py:472
-=======
-#: ./content/kontratazioa.py:359
->>>>>>> master
+#: ./content/kontratazioa.py:518
 msgid "state"
 msgstr ""
 
-#: ./content/kontratazioafolder.py:76
+#: ./content/kontratazioafolder.py:79
 msgid "state_source"
 msgstr ""
 
 #. Default: "Texto del anuncio"
-#: ./browser/kontratazioaview.pt:236
+#: ./browser/kontratazioaview.pt:232
+#: ./content/kontratazioa.py:435
 msgid "texto_del_anuncio"
 msgstr ""
 
 #. Default: "Xedea"
-#: ./browser/kontratazioafolderview.pt:21
+#: ./browser/kontratazioafolderview.pt:26
 msgid "xedea"
 msgstr ""
 

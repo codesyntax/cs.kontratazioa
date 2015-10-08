@@ -8,7 +8,11 @@
         <tal:main-macro metal:define-macro="main">
         <h1 class="documentFirstHeading">
           <tal:content content="here/Title"></tal:content>
-	</h1>
+	      </h1>
+
+        <tal:define define="lang here/REQUEST/LANGUAGE">
+          <p class="contratante"><a i18n:domain="cs.kontratazioa" i18n:translate="instrucciones-internas" tal:attributes="href python:here.portal_url() + context.utranslate('instrucciones-internas-url', domain='cs.kontratazioa', target_language=lang)">Kontrataziorako barne jarraibideak</a></p>
+        </tal:define>
 	<ul id="tabs" tal:define="lista here/@@state_list; ul_dict python: lista[0]; states python: lista[1]">
 	<li tal:repeat="li states" tal:attributes="class python: ul_dict[li['state']]"><a tal:attributes="href string:${here/absolute_url}?id=${li/state}" tal:content="python: li['state'] + ' (' + str(li['len']) + ')'"></a></li>
 	</ul>
@@ -19,7 +23,7 @@
           <h2  tal:condition="python:year==1" i18n:translate="publikazio-urte-gabe">Publikazio urterik ez dutenak</h2>
 
           <table class="grid">
-          <tr><th i18n:translate="kontratua">Kontratua</th><th i18n:translate="xedea">Xedea</th><th i18n:translate="file-number"></th></tr>
+          <tr><th i18n:translate="kontratua">Kontratua</th><th i18n:translate="xedea">Xedea</th><th i18n:translate="file_number"></th></tr>
           <tal:define define="kontratazio_lista dict/kontratazioak" repeat="kontratazioa kontratazio_lista">
           <tr tal:define="obj python: kontratazioa.getObject()"><td tal:content="python: obj.getContract_type()"></td><td><a tal:content="kontratazioa/Title" tal:attributes="href string:${kontratazioa/getURL}"></a></td>
           <td tal:content="python:obj.getFile_number()"></td>

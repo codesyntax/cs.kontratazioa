@@ -16,6 +16,8 @@ from cs.kontratazioa.config import PROJECTNAME
 kontratazioaFolderSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 
     # -*- Your Archetypes field definitions here ... -*-
+
+
     atapi.LinesField(
         name='contract_type',
         storage=atapi.AnnotationStorage(),
