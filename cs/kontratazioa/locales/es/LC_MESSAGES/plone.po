@@ -26,4 +26,3 @@ msgstr "Licitación"
 
 msgid "label_schema_others"
 msgstr "Otros"
-

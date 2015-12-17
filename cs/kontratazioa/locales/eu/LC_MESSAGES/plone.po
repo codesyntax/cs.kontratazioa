@@ -26,4 +26,3 @@ msgstr "Lizitazioa"
 
 msgid "label_schema_others"
 msgstr "Bestelakoak"
-
