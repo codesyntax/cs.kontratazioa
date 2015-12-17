@@ -35,9 +35,10 @@ setup(name='cs.kontratazioa',
       namespace_packages=['cs', ],
       include_package_data=True,
       zip_safe=False,
+      setup_requires=["PasteScript"],
+      paster_plugins=["ZopeSkel"],
       install_requires=['setuptools',
                         # -*- Extra requirements: -*-
-                        'Plone'
                         ],
       entry_points="""
       # -*- entry_points -*-

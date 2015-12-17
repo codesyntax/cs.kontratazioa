@@ -10,6 +10,7 @@
 <object name="portal_factory" meta_type="Plone Factory Tool">
   <factorytypes>
     <!-- -*- extra stuff goes here -*- -->
+    <type portal_type="Aldaketa" />
     <type portal_type="kontratazioa" />
     <type portal_type="kontratazioaFolder" />
   </factorytypes>

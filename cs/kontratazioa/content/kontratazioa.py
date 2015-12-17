@@ -128,6 +128,16 @@ kontratazioaSchema = atapi.ManagedSchema((
     ),
 
     atapi.DateTimeField(
+        name='memoria_date',
+        storage=atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        widget=atapi.CalendarWidget(
+            label=_(u"memoria_date"),
+        ),
+    ),
+
+    atapi.DateTimeField(
         name='eskaintza_ekonomikoa_date',
         storage=atapi.AnnotationStorage(),
         required=False,
